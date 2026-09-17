@@ -1,5 +1,0 @@
-MEME		https://www.datamonkey.org/meme/6aaaaf7dbe6cb785029174e2
-FEL		https://www.datamonkey.org/fel/6aaaaf8fbe6cb785029175e8
-FUBAR		https://www.datamonkey.org/fubar/6aaaaf9cbe6cb785029176d7
-SLAC		https://www.datamonkey.org/slac/6aaab0b1be6cb78502917bca
-aBSREL		https://www.datamonkey.org/absrel/6aaaafe1be6cb78502917890
