@@ -1,0 +1,2886 @@
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/AY742933.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/AY742933.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473081
+    frame=VIRT-3473081:5'3' Frame 2  len=722aa  pident=97.9%  bitscore=1191.0  qcov=81%  [PASS]
+    frame=VIRT-3473081:5'3' Frame 2  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473081:5'3' Frame 2  len=722aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/AY742933.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/AY742933.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/EU659112.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/EU659112.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473094
+    frame=VIRT-3473094:5'3' Frame 1  len=722aa  pident=99.8%  bitscore=1211.0  qcov=81%  [PASS]
+    frame=VIRT-3473094:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473094:5'3' Frame 1  len=722aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/EU659112.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/EU659112.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/FJ222821.1_ref_CPV2C_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/FJ222821.1_ref_CPV2C_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458218
+    frame=VIRT-3458218:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1187.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3458218:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/FJ222821.1_ref_CPV2C_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/FJ222821.1_ref_CPV2C_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/FPV_JO24_Sample_11_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/FPV_JO24_Sample_11_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3458243
+    frame=VIRT-3458243:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    frame=VIRT-3458243:5'3' Frame 3  len=400aa  pident=99.7%  bitscore=750.0  qcov=91%  [PASS]
+    --> BEST: frame=VIRT-3458243:5'3' Frame 3  len=400aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/FPV_JO24_Sample_11_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/FPV_JO24_Sample_11_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KP081409.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KP081409.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458990
+    frame=VIRT-3458990:5'3' Frame 2  len=354aa  pident=99.4%  bitscore=733.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3458990:5'3' Frame 2  len=354aa  pident=99.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KP081409.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KP081409.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268105.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268105.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459143
+    frame=VIRT-3459143:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459143:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268105.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268105.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268106.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268106.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459280
+    frame=VIRT-3459280:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459280:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268106.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268106.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268107.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268107.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459359
+    frame=VIRT-3459359:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459359:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268107.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268107.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268108.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268108.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459371
+    frame=VIRT-3459371:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1189.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459371:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268108.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268108.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268109.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268109.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459519
+    frame=VIRT-3459519:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1187.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459519:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268109.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268109.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268110.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268110.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459566
+    frame=VIRT-3459566:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1189.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459566:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268110.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268110.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268111.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268111.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459640
+    frame=VIRT-3459640:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459640:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268111.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268111.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268112.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268112.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459725
+    frame=VIRT-3459725:5'3' Frame 1  len=584aa  pident=97.9%  bitscore=1189.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459725:5'3' Frame 1  len=584aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268112.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268112.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268113.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268113.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459778
+    frame=VIRT-3459778:5'3' Frame 1  len=584aa  pident=97.9%  bitscore=1189.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459778:5'3' Frame 1  len=584aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268113.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268113.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268114.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268114.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459822
+    frame=VIRT-3459822:5'3' Frame 1  len=584aa  pident=97.9%  bitscore=1191.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459822:5'3' Frame 1  len=584aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268114.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268114.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268115.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268115.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3459905
+    frame=VIRT-3459905:5'3' Frame 1  len=584aa  pident=97.9%  bitscore=1189.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3459905:5'3' Frame 1  len=584aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268115.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268115.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268116.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268116.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3460001
+    frame=VIRT-3460001:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3460001:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268116.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268116.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268117.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268117.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3460060
+    frame=VIRT-3460060:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3460060:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268117.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268117.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268118.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268118.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3460179
+    frame=VIRT-3460179:5'3' Frame 1  len=584aa  pident=97.8%  bitscore=1188.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3460179:5'3' Frame 1  len=584aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268118.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268118.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX268119.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX268119.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3460234
+    frame=VIRT-3460234:5'3' Frame 1  len=584aa  pident=98.3%  bitscore=1196.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3460234:5'3' Frame 1  len=584aa  pident=98.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX268119.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX268119.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX434461.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX434461.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473184
+    frame=VIRT-3473184:5'3' Frame 3  len=722aa  pident=99.8%  bitscore=1210.0  qcov=81%  [PASS]
+    frame=VIRT-3473184:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473184:5'3' Frame 3  len=722aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX434461.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX434461.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/KX900570.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/KX900570.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473440
+    frame=VIRT-3473440:5'3' Frame 3  len=722aa  pident=99.8%  bitscore=1211.0  qcov=81%  [PASS]
+    frame=VIRT-3473440:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473440:5'3' Frame 3  len=722aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/KX900570.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/KX900570.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/M24003.1_ref_CPV2A_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/M24003.1_ref_CPV2A_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458320
+    frame=VIRT-3458320:5'3' Frame 1  len=722aa  pident=97.9%  bitscore=1192.0  qcov=81%  [PASS]
+    --> BEST: frame=VIRT-3458320:5'3' Frame 1  len=722aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/M24003.1_ref_CPV2A_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/M24003.1_ref_CPV2A_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/M38245.1_ref_CPV2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/M38245.1_ref_CPV2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3458422
+    frame=VIRT-3458422:5'3' Frame 3  len=722aa  pident=98.6%  bitscore=1199.0  qcov=81%  [PASS]
+    frame=VIRT-3458422:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3458422:5'3' Frame 3  len=722aa  pident=98.6%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/M38245.1_ref_CPV2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/M38245.1_ref_CPV2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/M38246.1_ref_FPV_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/M38246.1_ref_FPV_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3458555
+    frame=VIRT-3458555:5'3' Frame 3  len=722aa  pident=100.0%  bitscore=1212.0  qcov=81%  [PASS]
+    frame=VIRT-3458555:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3458555:5'3' Frame 3  len=722aa  pident=100.0%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/M38246.1_ref_FPV_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/M38246.1_ref_FPV_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/M74849.1_ref_CPV2B_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/M74849.1_ref_CPV2B_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458793
+    frame=VIRT-3458793:5'3' Frame 1  len=722aa  pident=97.9%  bitscore=1191.0  qcov=81%  [PASS]
+    --> BEST: frame=VIRT-3458793:5'3' Frame 1  len=722aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/M74849.1_ref_CPV2B_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/M74849.1_ref_CPV2B_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MF510157.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MF510157.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473719
+    frame=VIRT-3473719:5'3' Frame 2  len=722aa  pident=97.1%  bitscore=1182.0  qcov=81%  [PASS]
+    frame=VIRT-3473719:5'3' Frame 2  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473719:5'3' Frame 2  len=722aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MF510157.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MF510157.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MG013488.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MG013488.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473731
+    frame=VIRT-3473731:5'3' Frame 3  len=722aa  pident=97.1%  bitscore=1182.0  qcov=81%  [PASS]
+    frame=VIRT-3473731:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473731:5'3' Frame 3  len=722aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MG013488.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MG013488.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW539053.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW539053.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3462273
+    frame=VIRT-3462273:5'3' Frame 1  len=722aa  pident=97.3%  bitscore=1184.0  qcov=81%  [PASS]
+    frame=VIRT-3462273:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3462273:5'3' Frame 1  len=722aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW539053.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW539053.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653248.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653248.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3460281
+    frame=VIRT-3460281:5'3' Frame 1  len=722aa  pident=97.8%  bitscore=1188.0  qcov=81%  [PASS]
+    frame=VIRT-3460281:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3460281:5'3' Frame 1  len=722aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653248.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653248.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653249.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653249.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3460300
+    frame=VIRT-3460300:5'3' Frame 3  len=722aa  pident=97.4%  bitscore=1186.0  qcov=81%  [PASS]
+    frame=VIRT-3460300:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3460300:5'3' Frame 3  len=722aa  pident=97.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653249.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653249.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653250.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653250.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3460437
+    frame=VIRT-3460437:5'3' Frame 3  len=722aa  pident=97.4%  bitscore=1186.0  qcov=81%  [PASS]
+    frame=VIRT-3460437:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3460437:5'3' Frame 3  len=722aa  pident=97.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653250.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653250.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653251.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653251.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3460789
+    frame=VIRT-3460789:5'3' Frame 1  len=722aa  pident=97.6%  bitscore=1186.0  qcov=81%  [PASS]
+    frame=VIRT-3460789:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3460789:5'3' Frame 1  len=722aa  pident=97.6%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653251.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653251.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653252.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653252.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3461187
+    frame=VIRT-3461187:5'3' Frame 2  len=722aa  pident=97.6%  bitscore=1189.0  qcov=81%  [PASS]
+    frame=VIRT-3461187:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3461187:5'3' Frame 2  len=722aa  pident=97.6%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653252.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653252.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653253.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653253.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3461704
+    frame=VIRT-3461704:5'3' Frame 1  len=722aa  pident=97.8%  bitscore=1189.0  qcov=81%  [PASS]
+    frame=VIRT-3461704:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3461704:5'3' Frame 1  len=722aa  pident=97.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653253.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653253.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MW653256.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MW653256.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3462085
+    frame=VIRT-3462085:5'3' Frame 1  len=722aa  pident=97.9%  bitscore=1191.0  qcov=81%  [PASS]
+    frame=VIRT-3462085:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3462085:5'3' Frame 1  len=722aa  pident=97.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MW653256.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MW653256.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056881.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056881.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463027
+    frame=VIRT-3463027:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1181.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463027:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056881.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056881.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056882.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056882.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463236
+    frame=VIRT-3463236:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1181.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463236:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056882.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056882.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056883.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056883.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463306
+    frame=VIRT-3463306:5'3' Frame 1  len=584aa  pident=97.3%  bitscore=1182.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463306:5'3' Frame 1  len=584aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056883.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056883.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056884.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056884.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463346
+    frame=VIRT-3463346:5'3' Frame 1  len=584aa  pident=97.3%  bitscore=1182.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463346:5'3' Frame 1  len=584aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056884.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056884.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056885.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056885.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463454
+    frame=VIRT-3463454:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1179.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463454:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056885.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056885.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056886.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056886.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463491
+    frame=VIRT-3463491:5'3' Frame 1  len=584aa  pident=97.3%  bitscore=1182.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463491:5'3' Frame 1  len=584aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056886.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056886.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056887.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056887.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463607
+    frame=VIRT-3463607:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1181.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463607:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056887.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056887.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056888.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056888.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463738
+    frame=VIRT-3463738:5'3' Frame 1  len=584aa  pident=96.9%  bitscore=1178.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463738:5'3' Frame 1  len=584aa  pident=96.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056888.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056888.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056889.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056889.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463832
+    frame=VIRT-3463832:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1180.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463832:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056889.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056889.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056890.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056890.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463918
+    frame=VIRT-3463918:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1181.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463918:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056890.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056890.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056891.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056891.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3463988
+    frame=VIRT-3463988:5'3' Frame 1  len=584aa  pident=97.4%  bitscore=1184.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3463988:5'3' Frame 1  len=584aa  pident=97.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056891.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056891.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/MZ056892.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/MZ056892.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464143
+    frame=VIRT-3464143:5'3' Frame 1  len=584aa  pident=97.3%  bitscore=1182.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464143:5'3' Frame 1  len=584aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/MZ056892.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/MZ056892.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OL330977.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OL330977.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3462313
+    frame=VIRT-3462313:5'3' Frame 1  len=584aa  pident=97.6%  bitscore=1187.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3462313:5'3' Frame 1  len=584aa  pident=97.6%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OL330977.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OL330977.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OL330978.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OL330978.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3462406
+    frame=VIRT-3462406:5'3' Frame 1  len=584aa  pident=97.4%  bitscore=1184.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3462406:5'3' Frame 1  len=584aa  pident=97.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OL330978.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OL330978.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OL330979.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OL330979.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3462516
+    frame=VIRT-3462516:5'3' Frame 1  len=584aa  pident=97.4%  bitscore=1184.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3462516:5'3' Frame 1  len=584aa  pident=97.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OL330979.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OL330979.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OL330980.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OL330980.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3462643
+    frame=VIRT-3462643:5'3' Frame 1  len=584aa  pident=97.3%  bitscore=1183.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3462643:5'3' Frame 1  len=584aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OL330980.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OL330980.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100696.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100696.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464192
+    frame=VIRT-3464192:5'3' Frame 1  len=584aa  pident=96.9%  bitscore=1177.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464192:5'3' Frame 1  len=584aa  pident=96.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100696.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100696.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100697.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100697.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464300
+    frame=VIRT-3464300:5'3' Frame 1  len=584aa  pident=96.9%  bitscore=1179.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464300:5'3' Frame 1  len=584aa  pident=96.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100697.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100697.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100698.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100698.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464394
+    frame=VIRT-3464394:5'3' Frame 1  len=584aa  pident=96.7%  bitscore=1175.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464394:5'3' Frame 1  len=584aa  pident=96.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100698.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100698.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100699.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100699.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464548
+    frame=VIRT-3464548:5'3' Frame 1  len=584aa  pident=97.1%  bitscore=1181.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464548:5'3' Frame 1  len=584aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100699.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100699.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100700.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100700.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464709
+    frame=VIRT-3464709:5'3' Frame 1  len=584aa  pident=97.3%  bitscore=1182.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464709:5'3' Frame 1  len=584aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100700.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100700.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100701.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100701.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464811
+    frame=VIRT-3464811:5'3' Frame 1  len=584aa  pident=96.9%  bitscore=1177.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464811:5'3' Frame 1  len=584aa  pident=96.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100701.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100701.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM100702.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM100702.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3464954
+    frame=VIRT-3464954:5'3' Frame 1  len=584aa  pident=97.4%  bitscore=1184.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3464954:5'3' Frame 1  len=584aa  pident=97.4%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM100702.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM100702.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM638043.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM638043.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3473842
+    frame=VIRT-3473842:5'3' Frame 3  len=722aa  pident=99.8%  bitscore=1210.0  qcov=81%  [PASS]
+    frame=VIRT-3473842:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3473842:5'3' Frame 3  len=722aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM638043.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM638043.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM721655.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM721655.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3462879
+    frame=VIRT-3462879:5'3' Frame 3  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    frame=VIRT-3462879:5'3' Frame 1  len=584aa  pident=96.9%  bitscore=1179.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3462879:5'3' Frame 1  len=584aa  pident=96.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM721655.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM721655.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OM721656.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OM721656.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3462953
+    frame=VIRT-3462953:5'3' Frame 2  len=722aa  pident=96.9%  bitscore=1179.0  qcov=81%  [PASS]
+    frame=VIRT-3462953:5'3' Frame 2  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3462953:5'3' Frame 2  len=722aa  pident=96.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OM721656.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OM721656.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OR451707.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OR451707.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3465050
+    frame=VIRT-3465050:5'3' Frame 1  len=722aa  pident=95.9%  bitscore=1162.0  qcov=81%  [PASS]
+    frame=VIRT-3465050:5'3' Frame 1  len=669aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3465050:5'3' Frame 1  len=722aa  pident=95.9%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OR451707.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OR451707.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OR667800.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OR667800.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3465274
+    frame=VIRT-3465274:5'3' Frame 1  len=722aa  pident=97.3%  bitscore=1182.0  qcov=81%  [PASS]
+    frame=VIRT-3465274:5'3' Frame 1  len=669aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3465274:5'3' Frame 1  len=722aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OR667800.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OR667800.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OR667801.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OR667801.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3465623
+    frame=VIRT-3465623:5'3' Frame 1  len=722aa  pident=97.3%  bitscore=1182.0  qcov=81%  [PASS]
+    frame=VIRT-3465623:5'3' Frame 1  len=669aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3465623:5'3' Frame 1  len=722aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OR667801.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OR667801.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OR667802.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OR667802.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3465803
+    frame=VIRT-3465803:5'3' Frame 1  len=722aa  pident=97.1%  bitscore=1177.0  qcov=81%  [PASS]
+    frame=VIRT-3465803:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3465803:5'3' Frame 1  len=722aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OR667802.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OR667802.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OR667803.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OR667803.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3465993
+    frame=VIRT-3465993:5'3' Frame 1  len=722aa  pident=97.3%  bitscore=1182.0  qcov=81%  [PASS]
+    frame=VIRT-3465993:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3465993:5'3' Frame 1  len=722aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OR667803.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OR667803.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/OR667804.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/OR667804.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 2
+
+Sample: VIRT-3466274
+    frame=VIRT-3466274:5'3' Frame 1  len=722aa  pident=97.3%  bitscore=1182.0  qcov=81%  [PASS]
+    frame=VIRT-3466274:5'3' Frame 1  len=668aa  pident=0.0%  bitscore=0.0  qcov=0%  [fail]
+    --> BEST: frame=VIRT-3466274:5'3' Frame 1  len=722aa  pident=97.3%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/OR667804.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/OR667804.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663041.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663041.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3466532
+    frame=VIRT-3466532:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3466532:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663041.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663041.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663042.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663042.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3466659
+    frame=VIRT-3466659:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3466659:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663042.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663042.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663044.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663044.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3466711
+    frame=VIRT-3466711:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3466711:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663044.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663044.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663045.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663045.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3466760
+    frame=VIRT-3466760:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3466760:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663045.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663045.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663047.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663047.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3466942
+    frame=VIRT-3466942:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3466942:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663047.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663047.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663048.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663048.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467052
+    frame=VIRT-3467052:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467052:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663048.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663048.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663050.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663050.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467123
+    frame=VIRT-3467123:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467123:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663050.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663050.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663052.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663052.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467199
+    frame=VIRT-3467199:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467199:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663052.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663052.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663055.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663055.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467240
+    frame=VIRT-3467240:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467240:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663055.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663055.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663056.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663056.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467298
+    frame=VIRT-3467298:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467298:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663056.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663056.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663059.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663059.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467386
+    frame=VIRT-3467386:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467386:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663059.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663059.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663061.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663061.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467449
+    frame=VIRT-3467449:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467449:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663061.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663061.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663062.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663062.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467522
+    frame=VIRT-3467522:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467522:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663062.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663062.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663067.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663067.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467557
+    frame=VIRT-3467557:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467557:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663067.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663067.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663070.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663070.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467626
+    frame=VIRT-3467626:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467626:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663070.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663070.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663071.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663071.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467697
+    frame=VIRT-3467697:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467697:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663071.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663071.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663072.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663072.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467783
+    frame=VIRT-3467783:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467783:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663072.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663072.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663073.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663073.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467819
+    frame=VIRT-3467819:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467819:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663073.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663073.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PP663074.2_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PP663074.2_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467857
+    frame=VIRT-3467857:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467857:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PP663074.2_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PP663074.2_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521942.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521942.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467947
+    frame=VIRT-3467947:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467947:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521942.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521942.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521943.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521943.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3467990
+    frame=VIRT-3467990:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3467990:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521943.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521943.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521944.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521944.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468056
+    frame=VIRT-3468056:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468056:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521944.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521944.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521945.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521945.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468105
+    frame=VIRT-3468105:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468105:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521945.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521945.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521946.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521946.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468174
+    frame=VIRT-3468174:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468174:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521946.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521946.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521947.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521947.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468198
+    frame=VIRT-3468198:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468198:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521947.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521947.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521948.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521948.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468423
+    frame=VIRT-3468423:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468423:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521948.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521948.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521949.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521949.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468496
+    frame=VIRT-3468496:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468496:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521949.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521949.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521950.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521950.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468590
+    frame=VIRT-3468590:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468590:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521950.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521950.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521951.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521951.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468760
+    frame=VIRT-3468760:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468760:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521951.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521951.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521952.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521952.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3468965
+    frame=VIRT-3468965:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3468965:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521952.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521952.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521953.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521953.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3469439
+    frame=VIRT-3469439:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3469439:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521953.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521953.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521954.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521954.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3469629
+    frame=VIRT-3469629:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3469629:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521954.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521954.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521955.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521955.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3469810
+    frame=VIRT-3469810:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3469810:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521955.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521955.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521956.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521956.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3469920
+    frame=VIRT-3469920:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3469920:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521956.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521956.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521957.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521957.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3470056
+    frame=VIRT-3470056:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3470056:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521957.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521957.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521958.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521958.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3470287
+    frame=VIRT-3470287:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3470287:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521958.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521958.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521959.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521959.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3470382
+    frame=VIRT-3470382:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3470382:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521959.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521959.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521960.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521960.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3470501
+    frame=VIRT-3470501:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1206.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3470501:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521960.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521960.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521961.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521961.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3470533
+    frame=VIRT-3470533:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3470533:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521961.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521961.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521962.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521962.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3471066
+    frame=VIRT-3471066:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3471066:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521962.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521962.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521963.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521963.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3471414
+    frame=VIRT-3471414:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3471414:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521963.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521963.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521964.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521964.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3471735
+    frame=VIRT-3471735:5'3' Frame 1  len=584aa  pident=99.8%  bitscore=1208.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3471735:5'3' Frame 1  len=584aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521964.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521964.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV521965.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV521965.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3471977
+    frame=VIRT-3471977:5'3' Frame 1  len=584aa  pident=99.7%  bitscore=1207.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3471977:5'3' Frame 1  len=584aa  pident=99.7%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV521965.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV521965.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808486.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808486.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472212
+    frame=VIRT-3472212:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472212:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808486.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808486.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808488.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808488.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472357
+    frame=VIRT-3472357:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472357:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808488.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808488.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808489.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808489.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472441
+    frame=VIRT-3472441:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472441:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808489.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808489.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808490.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808490.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472484
+    frame=VIRT-3472484:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472484:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808490.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808490.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808491.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808491.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472587
+    frame=VIRT-3472587:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472587:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808491.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808491.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808492.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808492.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472756
+    frame=VIRT-3472756:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472756:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808492.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808492.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808493.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808493.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472877
+    frame=VIRT-3472877:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472877:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808493.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808493.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808495.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808495.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472931
+    frame=VIRT-3472931:5'3' Frame 1  len=429aa  pident=99.8%  bitscore=885.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472931:5'3' Frame 1  len=429aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808495.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808495.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/PV808496.1_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/PV808496.1_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3472996
+    frame=VIRT-3472996:5'3' Frame 1  len=429aa  pident=99.5%  bitscore=884.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3472996:5'3' Frame 1  len=429aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/PV808496.1_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/PV808496.1_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/sample12_feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/sample12_feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455159
+    frame=VIRT-3455159:5'3' Frame 2  len=491aa  pident=99.6%  bitscore=1020.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455159:5'3' Frame 2  len=491aa  pident=99.6%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/sample12_feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/sample12_feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample18_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample18_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455291
+    frame=VIRT-3455291:5'3' Frame 1  len=502aa  pident=96.8%  bitscore=1017.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455291:5'3' Frame 1  len=502aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample18_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample18_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample25_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample25_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455433
+    frame=VIRT-3455433:5'3' Frame 2  len=502aa  pident=99.8%  bitscore=1043.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455433:5'3' Frame 2  len=502aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample25_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample25_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample27_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample27_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455563
+    frame=VIRT-3455563:5'3' Frame 2  len=502aa  pident=99.8%  bitscore=1043.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455563:5'3' Frame 2  len=502aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample27_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample27_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample38_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample38_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455608
+    frame=VIRT-3455608:5'3' Frame 2  len=502aa  pident=99.8%  bitscore=1043.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455608:5'3' Frame 2  len=502aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample38_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample38_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample44_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample44_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455649
+    frame=VIRT-3455649:5'3' Frame 2  len=501aa  pident=99.8%  bitscore=1040.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455649:5'3' Frame 2  len=501aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample44_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample44_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample47_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample47_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455696
+    frame=VIRT-3455696:5'3' Frame 3  len=443aa  pident=97.5%  bitscore=904.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455696:5'3' Frame 3  len=443aa  pident=97.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample47_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample47_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/sample51_canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/sample51_canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455831
+    frame=VIRT-3455831:5'3' Frame 2  len=503aa  pident=96.8%  bitscore=1019.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455831:5'3' Frame 2  len=503aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/sample51_canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/sample51_canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample57_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample57_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3455913
+    frame=VIRT-3455913:5'3' Frame 2  len=503aa  pident=96.8%  bitscore=1019.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3455913:5'3' Frame 2  len=503aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample57_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample57_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample67_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample67_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3456052
+    frame=VIRT-3456052:5'3' Frame 1  len=503aa  pident=99.6%  bitscore=1045.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3456052:5'3' Frame 1  len=503aa  pident=99.6%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample67_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample67_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample68_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample68_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3456148
+    frame=VIRT-3456148:5'3' Frame 2  len=502aa  pident=96.8%  bitscore=1017.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3456148:5'3' Frame 2  len=502aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample68_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample68_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample69_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample69_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3456415
+    frame=VIRT-3456415:5'3' Frame 1  len=257aa  pident=100.0%  bitscore=537.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3456415:5'3' Frame 1  len=257aa  pident=100.0%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample69_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample69_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample70_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample70_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3456680
+    frame=VIRT-3456680:5'3' Frame 2  len=502aa  pident=99.8%  bitscore=1043.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3456680:5'3' Frame 2  len=502aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample70_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample70_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample72_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample72_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3456848
+    frame=VIRT-3456848:5'3' Frame 1  len=502aa  pident=96.8%  bitscore=1017.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3456848:5'3' Frame 1  len=502aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample72_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample72_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample76_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample76_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3457274
+    frame=VIRT-3457274:5'3' Frame 2  len=401aa  pident=96.8%  bitscore=815.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3457274:5'3' Frame 2  len=401aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample76_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample76_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample77_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample77_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3457522
+    frame=VIRT-3457522:5'3' Frame 2  len=503aa  pident=96.8%  bitscore=1019.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3457522:5'3' Frame 2  len=503aa  pident=96.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample77_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample77_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample7_Feline_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample7_Feline_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3457782
+    frame=VIRT-3457782:5'3' Frame 2  len=491aa  pident=99.8%  bitscore=1022.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3457782:5'3' Frame 2  len=491aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample7_Feline_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample7_Feline_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample8_Canine_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample8_Canine_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3457891
+    frame=VIRT-3457891:5'3' Frame 2  len=491aa  pident=97.1%  bitscore=999.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3457891:5'3' Frame 2  len=491aa  pident=97.1%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample8_Canine_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample8_Canine_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/Sample_Lion_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/Sample_Lion_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3457940
+    frame=VIRT-3457940:5'3' Frame 1  len=503aa  pident=99.8%  bitscore=1046.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3457940:5'3' Frame 1  len=503aa  pident=99.8%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/Sample_Lion_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/Sample_Lion_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/vaccineCanine_MSD_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/vaccineCanine_MSD_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3457996
+    frame=VIRT-3457996:5'3' Frame 2  len=390aa  pident=98.5%  bitscore=807.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3457996:5'3' Frame 2  len=390aa  pident=98.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/vaccineCanine_MSD_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/vaccineCanine_MSD_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/vaccineCanine_Zoetis_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/vaccineCanine_Zoetis_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458089
+    frame=VIRT-3458089:5'3' Frame 2  len=390aa  pident=99.2%  bitscore=813.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3458089:5'3' Frame 2  len=390aa  pident=99.2%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/vaccineCanine_Zoetis_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/vaccineCanine_Zoetis_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/vaccineFeline_MSD_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/vaccineFeline_MSD_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458145
+    frame=VIRT-3458145:5'3' Frame 2  len=501aa  pident=99.2%  bitscore=1036.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3458145:5'3' Frame 2  len=501aa  pident=99.2%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/vaccineFeline_MSD_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/vaccineFeline_MSD_best_orf.fasta.log.txt
+================================================================================
+================================================================================
+VP2 ORF picking run
+Input file:        Expasy_translate/Expasy_output/vaccineFeline_Zoetis_translated.fasta
+Output file:       Expasy_translate/Expasy_output/best_orf/vaccineFeline_Zoetis_best_orf.fasta
+VP2 BLAST db:      refs/blastdb/vp2_db
+Min ORF length:    150 aa
+Min identity:      30.0%
+================================================================================
+
+Total candidate ORFs (>= 150 aa) across all samples: 1
+
+Sample: VIRT-3458200
+    frame=VIRT-3458200:5'3' Frame 2  len=431aa  pident=99.5%  bitscore=897.0  qcov=100%  [PASS]
+    --> BEST: frame=VIRT-3458200:5'3' Frame 2  len=431aa  pident=99.5%
+
+================================================================================
+Summary: 1 sequences written, 0 samples skipped, 1 total samples processed
+Output FASTA: Expasy_translate/Expasy_output/best_orf/vaccineFeline_Zoetis_best_orf.fasta
+Log file:     Expasy_translate/Expasy_output/best_orf/vaccineFeline_Zoetis_best_orf.fasta.log.txt
+================================================================================
