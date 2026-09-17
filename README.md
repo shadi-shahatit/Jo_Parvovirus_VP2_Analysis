@@ -95,7 +95,7 @@ We tested several outgroup sequences, including NC_001510 (Protoparvovirus roden
 
 ## Combine sequences
 
-All sample, vaccine, reference, and NCBI Virus sequences were combined:
+All sample, vaccine, reference, and NCBI Virus sequences were combined (n = 142):
 
 ```bash
 seqkit seq *.fa refs/*.fa NCBIvirus_seq_filtered_final.fasta add_seq/*.fasta > combined_sample_v3_vac_ref_ncbi_add_v142.fasta
