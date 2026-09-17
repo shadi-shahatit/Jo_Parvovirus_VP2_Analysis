@@ -2,16 +2,16 @@
 
 ## Overview
 
-This workflow describes the analysis of Sanger sequences for Parvovirus, including trimming sequences, comparing to the reference sequences, VP2 ORF identification, multiple sequence alignment, phylogenetic analysis, and downstream sequence variation analyses.
+This workflow describes the analysis of Sanger sequences for Parvovirus, including trimming sequences, comparing to reference sequences, VP2 ORF identification, multiple sequence alignment, phylogenetic analysis, and downstream sequence variation analyses.
 
 The workflow includes:
 
 1. Sanger sequence trimming using sangeranalyseR
 2. Contig assembly and full sequence preparation
-3. Addition of references, regional NCBI Virus, and outgroup sequences
+3. Addition of references and regional NCBI Viruses
 4. DNA translation and VP2 ORF selection
 5. DNA and protein multiple sequence alignment
-6. Neighbor-Joining and Maximum Likelihood phylogenetic analyses
+6. Phylogenetic analyses with Neighbor-Joining, Maximum Likelihood, and Bayesian Inference 
 7. Additional sequence variation analyses
 
 ---
@@ -26,6 +26,7 @@ Required software:
 - ExPASy Translate
 - BLAST+
 - IQ-TREE2
+- MrBayes
 - R packages for sequence alignment, phylogenetics, and visualization
 
 ---
@@ -34,17 +35,17 @@ Required software:
 
 ## 1.1 Sanger trimming using sangeranalyseR
 
-Raw Sanger chromatograms were processed using `sangeranalyseR` (v4) to trim sequences and generate cleaned sequence reads. See sangeranalyseR.R
+Our samples included 18 qPCR-positive samples of 9 canine, 9 feline, and 1 lion, together with 4 vaccine-associated strains: vaccineCanine_MSD, vaccineCanine_Zoetis, vaccineFeline_MSD, and vaccineFeline_Zoetis. Raw Sanger chromatograms were processed using `sangeranalyseR` (v4) to trim sequences and generate cleaned sequence reads. See sangeranalyseR.R
 
 ---
 
 ## 1.2 Contig assembly and full sequence preparation
 
-Trimmed Sanger reads were assembled into contigs and full sequences using SnapGene. Sequence names were manually checked and adjusted to FASTA formatting.
+Trimmed Sanger reads were assembled into contigs and full sequences using SnapGene (alternatively, with Contig). Sequence names were manually checked and adjusted to FASTA formatting.
 
 ---
 
-## 1.3 Reference, NCBI Virus, and outgroup sequence collection
+## 1.3 Addition of references and regional NCBI Viruses
 
 ## Reference sequences
 
@@ -52,17 +53,16 @@ Reference sequences included:
 
 | Accession | Description |
 |-----------|-------------|
+| EU659112.1 | FPV oldest isolate |
 | M38246.1 | FPV |
 | M38245.1 | CPV2 |
 | M24003.1 | CPV2A |
 | M74849.1 | CPV2B |
-| AY380577.1 | CPV2c |
 | FJ222821.1 | CPV2c |
-| FPV_JO24_Sample_11 | Jordan FPV sample |
 
 ## NCBI Virus sequences
 
-Sequences were downloaded from NCBI Virus: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/. Accessed: 20/07/2026
+Sequences were downloaded from NCBI Virus: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/ (accessed on 20/07/2026). 
 
 Filtering criteria:
 
@@ -85,26 +85,19 @@ Filtering criteria:
   - Turkey
   - Iraq
 
-A total of 107 NCBI Virus sequences were included.
+A total of 107 NCBI Virus sequences were included. We also added key global sequences for comparison, including KX434461.1 (Italy), KX900570.1 (China), OM638043 (Egypt), AY742933 (recent CPV2a), MG013488 (CPV2c, China), and MF510157 (CPV2c, Italy).
 
 ## Outgroup sequences
 
-The following sequences were included as outgroups:
-
-| Accession | Description |
-|-----------|-------------|
-| NC_001510 | Protoparvovirus_rodent1 |
-| NC_001718.1 | Protoparvovirus_ungulate1 |
-| NC_029797 | Megabat_bufavirus |
-| NC_038544 | Primate_protoparvovirus1 |
+We tested several outgroup sequences, including NC_001510 (Protoparvovirus rodent1), NC_001718.1 (Protoparvovirus ungulate1), NC_029797 (Megabat bufavirus), and NC_038544 (Primate protoparvovirus1), but divergence was too high, so we eventually rooted the tree with the oldest FPV sequence instead (EU659112.1).
 
 ## Combine sequences
 
-All sample, reference, NCBI Virus, and outgroup sequences were combined:
+All sample, vaccine, reference, and NCBI Virus sequences were combined:
 
 ```bash
-seqkit seq *.fa refs/*.fa NCBIvirus_seq_filtered_final.fasta outgroups/*.fasta > combined_sample_vac_ref_ncbi_out.fasta
-seqkit stats combined_sample_vac_ref_ncbi_out.fasta
+seqkit seq *.fa refs/*.fa NCBIvirus_seq_filtered_final.fasta add_seq/*.fasta > combined_sample_v3_vac_ref_ncbi_add_v142.fasta
+seqkit stats combined_sample_v3_vac_ref_ncbi_add_v142.fasta 
 ```
 
 ## 1.4 DNA translation and VP2 ORF selection
