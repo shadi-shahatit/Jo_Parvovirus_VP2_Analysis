@@ -2,7 +2,7 @@
 
 ## Overview
 
-This workflow describes the analysis of Sanger sequences for Parvovirus, including trimming sequences, comparing to reference sequences, VP2 ORF identification, multiple sequence alignment, phylogenetic analysis, and downstream sequence variation analyses.
+This workflow describes the analysis of Sanger sequences for Parvovirus, including trimming sequences, comparing to reference sequences, VP2 ORF identification, multiple sequence alignment, phylogenetic analysis, and downstream variation and selection analyses.
 
 The workflow includes:
 
