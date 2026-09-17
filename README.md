@@ -250,7 +250,7 @@ The analyses generate the following final outputs:
 |--------|-------------|
 | Combined DNA FASTA file | Final sequences for our samples, vaccines, references, and NCBI virus sequences |
 | Combined protein FASTA file | Final Expasy translated amino acid sequences selected from six-frame translations after ORF filtering |
-| DNA multiple sequence alignment | MUSCLE-generated alignments of DNA and protein sequences |
+| Multiple sequence alignments | MUSCLE-generated alignments of DNA and protein sequences |
 | Phylogenetic trees | NJ, ML, and BI trees generated from DNA and protein (rooted and unrooted) |
 | VP2 amino acid variants table | Three-letter formatted amino acid substitution table to compare between samples, vaccine, and references |
 | Selection analysis table | Summary statistics of SLAC, FEL, MEME, and FUBAR results and a combined per-codon table |
