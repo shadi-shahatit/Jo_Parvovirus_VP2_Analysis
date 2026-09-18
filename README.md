@@ -238,7 +238,7 @@ Sequence variation analyses included:
 
 ## 8. Selection analysis
 
-Selection analysis was performed on the VP2 coding sequences using the Datamonkey server, applying the following methods: SLAC, FEL, MEME, and FUBAR to estimate site-specific dN/dS ratios and detect signatures of purifying and diversifying selection across the VP2 alignment.
+Selection analysis was performed on the VP2 coding sequences (aln/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_v142_repseq.fasta) using the Datamonkey server. We applied the following methods: SLAC, FEL, MEME, and FUBAR to estimate site-specific dN/dS ratios and detect signatures of purifying and diversifying selection across the VP2 alignment.
 
 ---
 
