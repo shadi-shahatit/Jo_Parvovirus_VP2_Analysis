@@ -1,0 +1,754 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_FINAL_SVRNA_v3_vVetRes.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 1001
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 142 sequences with 1932 nucleotide sites
+Number of constant sites: 1734 (= 89.7516% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1734 (= 89.7516% of all sites)
+Number of parsimony informative sites: 126
+Number of distinct site patterns: 260
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+R2          -4859.622   10253.244 +    0.171   10339.249 +    0.242   11739.449 +    0.754
+TPM3+F+R2         -4858.618   10253.235 +    0.172   10339.936 +    0.172   11745.006 -   0.0468
+TPM3u+F+R2        -4858.620   10253.239 +    0.171   10339.940 +    0.171   11745.011 -   0.0467
+HKY+F+I           -4866.186   10264.372 - 0.000654   10349.684 -  0.00131   11745.011 -   0.0467
+K3Pu+F+R2         -4859.426   10254.852 +   0.0764   10341.553 +   0.0764   11746.623 -   0.0209
+TN+F+R2           -4859.510   10255.021 +   0.0702   10341.722 +   0.0702   11746.792 -   0.0192
+TPM2u+F+R2        -4859.622   10255.243 +   0.0628   10341.944 +   0.0628   11747.014 -   0.0172
+TPM2+F+R2         -4859.622   10255.243 +   0.0628   10341.944 +   0.0628   11747.015 -   0.0172
+HKY+F+I+G4        -4863.708   10261.415 -  0.00287   10347.420 -  0.00407   11747.620 -   0.0127
+TPM3u+F+I         -4864.992   10263.984 - 0.000795   10349.989 -  0.00113   11750.190 -  0.00351
+TPM3+F+I          -4864.993   10263.986 - 0.000794   10349.990 -  0.00112   11750.191 -  0.00351
+TN+F+I            -4865.374   10264.749 - 0.000542   10350.754 - 0.000768   11750.954 -  0.00239
+K3Pu+F+I          -4865.952   10265.905 - 0.000304   10351.910 - 0.000431   11752.110 -  0.00134
+TIM3+F+R2         -4858.510   10255.021 +   0.0702   10342.422 -   0.0495   11752.359 -  0.00119
+TPM2u+F+I         -4866.143   10266.287 - 0.000251   10352.292 - 0.000356   11752.492 -  0.00111
+TPM2+F+I          -4866.143   10266.287 - 0.000251   10352.292 - 0.000356   11752.492 -  0.00111
+TPM3u+F+I+G4      -4862.576   10261.151 -  0.00328   10347.852 -  0.00328   11752.923 - 0.000894
+TPM3+F+I+G4       -4862.617   10261.235 -  0.00314   10347.936 -  0.00314   11753.006 - 0.000858
+TIM+F+R2          -4859.310   10256.619 -   0.0316   10344.020 -   0.0223   11753.957 - 0.000533
+TN+F+I+G4         -4863.200   10262.400 -  0.00175   10349.101 -  0.00175   11754.171 - 0.000479
+TIM2+F+R2         -4859.510   10257.020 -   0.0258   10344.421 -   0.0182   11754.358 - 0.000436
+K3Pu+F+I+G4       -4863.491   10262.983 -  0.00131   10349.684 -  0.00131   11754.754 - 0.000358
+TPM2+F+I+G4       -4863.694   10263.388 -  0.00107   10350.089 -  0.00107   11755.159 - 0.000292
+TPM2u+F+I+G4      -4863.694   10263.388 -  0.00107   10350.089 -  0.00107   11755.159 - 0.000292
+TIM3+F+I          -4864.138   10264.276 - 0.000687   10350.977 - 0.000687   11756.047 - 0.000188
+TIM+F+I           -4865.142   10266.285 - 0.000252   10352.986 - 0.000252   11758.056 - 6.87e-05
+TIM2+F+I          -4865.328   10266.655 - 0.000209   10353.357 - 0.000209   11758.427 - 5.71e-05
+TVM+F+R2          -4858.005   10256.011 -   0.0428   10344.114 -   0.0212   11758.915 - 4.47e-05
+TIM3+F+I+G4       -4862.037   10262.074 -  0.00206   10349.475 -  0.00146   11759.412 - 3.49e-05
+TIM+F+I+G4        -4862.983   10263.965 - 0.000802   10351.366 - 0.000565   11761.303 - 1.35e-05
+TIM2+F+I+G4       -4863.191   10264.381 - 0.000652   10351.782 - 0.000459   11761.719 -  1.1e-05
+TVM+F+I           -4864.343   10266.686 - 0.000206   10354.087 - 0.000145   11764.024 - 3.47e-06
+GTR+F+R2          -4857.927   10257.854 -    0.017   10346.663 -  0.00594   11766.324 -  1.1e-06
+TVM+F+I+G4        -4861.945   10263.891 - 0.000833   10351.994 - 0.000413   11766.795 - 8.69e-07
+GTR+F+I           -4863.448   10266.896 - 0.000185   10354.999 - 9.19e-05   11769.800 - 1.94e-07
+GTR+F+I+G4        -4861.367   10264.733 - 0.000546   10353.543 -  0.00019   11773.203 - 3.53e-08
+GTR+F+R3          -4857.985   10261.971 -  0.00217   10352.202 - 0.000372   11781.574 - 5.37e-10
+GTR+F+G4          -4878.160   10296.321 - 7.56e-11   10384.425 - 3.75e-11   11799.225 - 7.89e-14
+K2P+R2            -4955.448   10438.897 - 8.29e-42   10522.832 -  3.3e-41   11908.403 - 1.55e-37
+K2P+I             -4961.000   10448.000 - 8.74e-44   10531.252 - 4.91e-43   11911.940 - 2.64e-38
+K3P+R2            -4953.866   10437.732 - 1.48e-41   10522.354 -  4.2e-41   11912.805 - 1.71e-38
+TNe+R2            -4954.857   10439.715 -  5.5e-42   10524.337 - 1.56e-41   11914.787 - 6.35e-39
+K2P+I+G4          -4958.923   10445.846 - 2.57e-43   10529.781 - 1.02e-42   11915.352 - 4.79e-39
+K3P+I             -4959.379   10446.757 - 1.63e-43   10530.693 - 6.49e-43   11916.263 - 3.04e-39
+F81+F+R2          -4952.554   10437.108 - 2.03e-41   10522.420 - 4.06e-41   11917.747 - 1.45e-39
+TIM2e+R2          -4953.061   10438.122 - 1.22e-41   10523.433 - 2.45e-41   11918.760 - 8.72e-40
+TNe+I             -4960.751   10449.502 - 4.13e-44   10533.437 - 1.64e-43   11919.008 -  7.7e-40
+TIMe+R2           -4953.274   10438.549 - 9.86e-42   10523.860 - 1.98e-41   11919.188 - 7.04e-40
+K3P+I+G4          -4957.312   10444.624 - 4.73e-43   10529.245 - 1.34e-42   11919.696 - 5.46e-40
+F81+F+I           -4957.779   10445.559 - 2.96e-43   10530.181 - 8.38e-43   11920.631 - 3.42e-40
+TIM3e+R2          -4954.659   10441.319 - 2.47e-42   10526.630 - 4.94e-42   11921.957 - 1.76e-40
+TNe+I+G4          -4958.585   10447.170 - 1.32e-43   10531.791 - 3.75e-43   11922.242 - 1.53e-40
+TIM2e+I           -4958.850   10447.700 - 1.02e-43   10532.322 - 2.87e-43   11922.772 - 1.17e-40
+TIMe+I            -4959.128   10448.257 - 7.69e-44   10532.878 - 2.17e-43   11923.329 - 8.88e-41
+F81+F+I+G4        -4955.740   10443.480 - 8.38e-43   10528.791 - 1.68e-42   11924.118 - 5.98e-41
+TVMe+R2           -4952.594   10439.188 - 7.16e-42   10525.193 - 1.01e-41   11925.393 - 3.16e-41
+TIM2e+I+G4        -4956.703   10445.406 -  3.2e-43   10530.718 - 6.41e-43   11926.045 - 2.28e-41
+TIM3e+I           -4960.604   10451.209 - 1.76e-44   10535.831 - 4.97e-44   11926.281 - 2.03e-41
+TIMe+I+G4         -4956.969   10445.939 - 2.45e-43   10531.250 - 4.91e-43   11926.577 - 1.75e-41
+TVMe+I            -4958.086   10448.173 - 8.02e-44   10533.485 - 1.61e-43   11928.812 - 5.72e-42
+TIM3e+I+G4        -4958.396   10448.791 - 5.89e-44   10534.103 - 1.18e-43   11929.430 -  4.2e-42
+SYM+R2            -4952.009   10440.017 - 4.73e-42   10526.718 - 4.73e-42   11931.789 - 1.29e-42
+TVMe+I+G4         -4956.006   10446.012 - 2.36e-43   10532.017 - 3.35e-43   11932.218 - 1.04e-42
+SYM+I             -4957.818   10449.637 - 3.86e-44   10535.642 - 5.46e-44   11935.842 -  1.7e-43
+SYM+I+G4          -4955.609   10447.219 - 1.29e-43   10533.920 - 1.29e-43   11938.990 - 3.53e-44
+GTR+F             -4999.773   10537.547 - 3.14e-63   10624.948 - 2.21e-63   12034.885 -  5.3e-65
+JC+R2             -5037.271   10600.542 - 6.57e-77   10683.794 - 3.69e-76   12064.482 - 1.98e-71
+JC+I              -5042.634   10609.268 - 8.37e-79   10691.839 -  6.6e-78   12067.641 - 4.09e-72
+JC+I+G4           -5040.556   10607.112 - 2.46e-78   10690.364 - 1.38e-77   12071.052 - 7.42e-73
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+R2
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 5.2632
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 5.2632
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3534
+  pi(C) = 0.1601
+  pi(G) = 0.1957
+  pi(T) = 0.2908
+
+Rate matrix Q:
+
+  A  -0.864322  0.0934282  0.601122  0.169772
+  C  0.206312  -1.21406  0.114213  0.893538
+  G   1.08586  0.0934282  -1.34906  0.169772
+  T  0.206312  0.491729  0.114213  -0.812254
+
+Model of rate heterogeneity: FreeRate with 2 categories
+Site proportion and rates:  (0.927989,0.279269) (0.0720113,10.2879)
+
+ Category  Relative_rate  Proportion
+  1         0.279269       0.927989
+  2         10.2879        0.0720113
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4840.468849 (s.e. 155.167660)
+Unconstrained log-likelihood (without tree): -7667.906834
+Number of free parameters (#branches + #model parameters): 267
+Akaike information criterion (AIC) score: 10214.937698
+Corrected Akaike information criterion (AICc) score: 10300.942506
+Bayesian information criterion (BIC) score: 11701.142739
+
+Total tree length (sum of branch lengths): 0.185518
+Sum of internal branch lengths: 0.082767 (44.614249% of tree length)
+
+WARNING: 56 near-zero internal branches (<0.000518) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'KP081409.1_Feline_parvovirus_Iran' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--KP081409.1_Feline_parvovirus_Iran
+|
++--M38246.1_ref_FPV
+|
+|     +--vaccineFeline_MSD
+|  +--| (80.3/61)
+|  |  +--vaccineFeline_Zoetis
++--| (50.4/76)
+   |  +**EU659112.1_ref_FPV_oldest
+   +**| (0/14)
+      |                                +--Sample27_Feline
+      |                             +**| (0/15)
+      |                             |  +**Sample25_Feline
+      |                          +**| (0/93)
+      |                          |  |  +--Sample69_Feline
+      |                          |  +**| (0/24)
+      |                          |     |  +**Sample38_Feline
+      |                          |     +**| (0/92)
+      |                          |        +**Sample70_Feline
+      |                       +--| (77.5/92)
+      |                       |  |  +**Sample44_Feline
+      |                       |  +**| (0/93)
+      |                       |     +**Sample7_Feline
+      |                    +--| (77.8/48)
+      |                    |  |  +**PP663048.2_Feline_parvovirus_Egypt
+      |                    |  +--| (93/93)
+      |                    |     +**PV521947.1_Feline_parvovirus_Egypt
+      |                 +**| (0/6)
+      |                 |  |              +**PV521962.1_Feline_parvovirus_Egypt
+      |                 |  |           +--| (96.4/96)
+      |                 |  |           |  |  +**PV808489.1_Feline_parvovirus_Egypt
+      |                 |  |           |  +**| (0/98)
+      |                 |  |           |     +**PV808490.1_Feline_parvovirus_Egypt
+      |                 |  |        +**| (0/23)
+      |                 |  |        |  |     +--PV521960.1_Feline_parvovirus_Egypt
+      |                 |  |        |  |  +--| (85.3/65)
+      |                 |  |        |  |  |  +**PV808495.1_Feline_parvovirus_Egypt
+      |                 |  |        |  +--| (84.3/39)
+      |                 |  |        |     |  +**PV521942.1_Feline_parvovirus_Egypt
+      |                 |  |        |     +**| (0/13)
+      |                 |  |        |        |     +--PV521949.1_Feline_parvovirus_Egypt
+      |                 |  |        |        |  +--| (78.9/57)
+      |                 |  |        |        |  |  +--PV521961.1_Feline_parvovirus_Egypt
+      |                 |  |        |        +**| (0/8)
+      |                 |  |        |           |     +**PV521963.1_Feline_parvovirus_Egypt
+      |                 |  |        |           |  +--| (0/14)
+      |                 |  |        |           |  |  +**PP663041.2_Feline_parvovirus_Egypt
+      |                 |  |        |           +**| (0/27)
+      |                 |  |        |              +**PP663045.2_Feline_parvovirus_Egypt
+      |                 |  |     +**| (0/22)
+      |                 |  |     |  |  +**PV521953.1_Feline_parvovirus_Egypt
+      |                 |  |     |  +**| (0/63)
+      |                 |  |     |     +**PV521954.1_Feline_parvovirus_Egypt
+      |                 |  |  +--| (91.6/57)
+      |                 |  |  |  |  +**PP663055.2_Feline_parvovirus_Egypt
+      |                 |  |  |  +**| (0/62)
+      |                 |  |  |     +**PP663056.2_Feline_parvovirus_Egypt
+      |                 |  +**| (0/14)
+      |                 |     |  +**PP663074.2_Feline_parvovirus_Egypt
+      |                 |     +**| (0/32)
+      |                 |        |  +**PV521964.1_Feline_parvovirus_Egypt
+      |                 |        +**| (0/47)
+      |                 |           +**OM638043.1_Feline_parvovirus_Egypt
+      |              +--| (83/36)
+      |              |  +--PV521948.1_Feline_parvovirus_Egypt
+      |           +**| (0/15)
+      |           |  |  +--PP663044.2_Feline_parvovirus_Egypt
+      |           |  +**| (0/52)
+      |           |     +--PP663071.2_Feline_parvovirus_Egypt
+      |        +--| (91/64)
+      |        |  |  +**PP663059.2_Feline_parvovirus_Egypt
+      |        |  +--| (84.5/64)
+      |        |     +**PV521955.1_Feline_parvovirus_Egypt
+      |     +--| (72.1/40)
+      |     |  +--KX434461.1_Feline_parvovirus_IZSSI_Italy
+      |  +--| (77.1/79)
+      |  |  |  +--KX900570.1_Feline_parvovirus_HH6_China
+      |  |  +--| (75.5/14)
+      |  |     |              +**PP663047.2_Feline_parvovirus_Egypt
+      |  |     |           +--| (79.4/64)
+      |  |     |           |  +**PV521946.1_Feline_parvovirus_Egypt
+      |  |     |        +--| (89.4/72)
+      |  |     |        |  |                    +**PP663061.2_Feline_parvovirus_Egypt
+      |  |     |        |  |                 +--| (92.1/65)
+      |  |     |        |  |                 |  +**PV521956.1_Feline_parvovirus_Egypt
+      |  |     |        |  |              +**| (0/4)
+      |  |     |        |  |              |  |     +**PP663042.2_Feline_parvovirus_Egypt
+      |  |     |        |  |              |  |  +--| (84.1/58)
+      |  |     |        |  |              |  |  |  +**PV521943.1_Feline_parvovirus_Egypt
+      |  |     |        |  |              |  +**| (0/5)
+      |  |     |        |  |              |     |  +**PV521952.1_Feline_parvovirus_Egypt
+      |  |     |        |  |              |     +--| (85.6/63)
+      |  |     |        |  |              |        +**PV808492.1_Feline_parvovirus_Egypt
+      |  |     |        |  |           +**| (0/1)
+      |  |     |        |  |           |  +**PV521957.1_Feline_parvovirus_Egypt
+      |  |     |        |  |        +**| (0/2)
+      |  |     |        |  |        |  +**PV521945.1_Feline_parvovirus_Egypt
+      |  |     |        |  |     +**| (0/36)
+      |  |     |        |  |     |  |     +**PV521944.1_Feline_parvovirus_Egypt
+      |  |     |        |  |     |  |  +--| (83.1/66)
+      |  |     |        |  |     |  |  |  +**PV808488.1_Feline_parvovirus_Egypt
+      |  |     |        |  |     |  +**| (0/14)
+      |  |     |        |  |     |     |  +**PV521951.1_Feline_parvovirus_Egypt
+      |  |     |        |  |     |     +--| (92.1/64)
+      |  |     |        |  |     |        +**PV808491.1_Feline_parvovirus_Egypt
+      |  |     |        |  |  +**| (0/18)
+      |  |     |        |  |  |  +**PP663067.2_Feline_parvovirus_Egypt
+      |  |     |        |  +--| (0/64)
+      |  |     |        |     +**PP663062.2_Feline_parvovirus_Egypt
+      |  |     |     +--| (78.5/68)
+      |  |     |     |  +--sample12_feline
+      |  |     |  +--| (81.3/28)
+      |  |     |  |  +**Sample67_Feline
+      |  |     +--| (94.3/84)
+      |  |        |  +**PP663052.2_Feline_parvovirus_Egypt
+      |  |        +--| (75.6/86)
+      |  |           +**PV521950.1_Feline_parvovirus_Egypt
+      +--| (84.4/82)
+         |                                                                                +--OR451707.1_Canine_parvovirus_2_Iraq
+         |                                                                             +**| (61.4/53)
+         |                                                                             |  +--------OR667802.1_Canine_parvovirus_2_Iraq
+         |                                                                          +--| (77.8/60)
+         |                                                                          |  |  +**OR667800.1_Canine_parvovirus_2_Iraq
+         |                                                                          |  +**| (0/99)
+         |                                                                          |     +**OR667801.1_Canine_parvovirus_2_Iraq
+         |                                                                       +--| (90.4/100)
+         |                                                                       |  |  +**OR667803.1_Canine_parvovirus_2_Iraq
+         |                                                                       |  +--| (87.3/99)
+         |                                                                       |     +**OR667804.1_Canine_parvovirus_2_Iraq
+         |                                                                  +----| (93.1/93)
+         |                                                                  |    |        +--sample51_canine
+         |                                                                  |    |     +**| (0/24)
+         |                                                                  |    |     |  |  +--Sample72_Canine
+         |                                                                  |    |     |  +**| (0/30)
+         |                                                                  |    |     |     +--MZ056889.1_Canine_parvovirus_2_Egypt
+         |                                                                  |    |  +**| (0/14)
+         |                                                                  |    |  |  +--MZ056885.1_Canine_parvovirus_2_Egypt
+         |                                                                  |    +--| (94/97)
+         |                                                                  |       |                             +--OM100698.1_Canine_parvovirus_2_Egypt
+         |                                                                  |       |                          +--| (79.2/46)
+         |                                                                  |       |                          |  +--OM100701.1_Canine_parvovirus_2_Egypt
+         |                                                                  |       |                       +--| (87/59)
+         |                                                                  |       |                       |  +**OM100696.1_Canine_parvovirus_2_Egypt
+         |                                                                  |       |                    +**| (0/10)
+         |                                                                  |       |                    |  +--OM100697.1_Canine_parvovirus_2_Egypt
+         |                                                                  |       |                 +**| (0/10)
+         |                                                                  |       |                 |  +**OM100699.1_Canine_parvovirus_2_Egypt
+         |                                                                  |       |              +**| (0/10)
+         |                                                                  |       |              |  |     +--MF510157.1_Canine_parvovirus_2c_Italy
+         |                                                                  |       |              |  |  +**| (0/5)
+         |                                                                  |       |              |  |  |  +**Sample57_Canine
+         |                                                                  |       |              |  +--| (86/6)
+         |                                                                  |       |              |     +**MG013488.1_Canine_parvovirus_2c_China
+         |                                                                  |       |           +**| (0/3)
+         |                                                                  |       |           |  |  +**Sample18_Canine
+         |                                                                  |       |           |  +--| (85/65)
+         |                                                                  |       |           |     +**Sample8_Canine
+         |                                                                  |       |        +**| (0/3)
+         |                                                                  |       |        |  |  +**Sample76_Canine
+         |                                                                  |       |        |  +--| (93.3/88)
+         |                                                                  |       |        |     +--Sample77_Canine
+         |                                                                  |       |     +**| (0/8)
+         |                                                                  |       |     |  +--Sample47_Canine
+         |                                                                  |       |  +**| (0/20)
+         |                                                                  |       |  |  +--Sample68_Canine
+         |                                                                  |       +--| (84.5/11)
+         |                                                                  |          |  +**MZ056884.1_Canine_parvovirus_2_Egypt
+         |                                                                  |          +**| (0/83)
+         |                                                                  |             +**MZ056886.1_Canine_parvovirus_2_Egypt
+         |                                                               +--| (71.4/32)
+         |                                                               |  |  +--OM721656.1_Canine_parvovirus_2b_Turkey
+         |                                                               |  +--| (28.7/62)
+         |                                                               |     |  +--MW539053.1_Canine_parvovirus_2b_Turkey
+         |                                                               |     +**| (0/41)
+         |                                                               |        |        +--MZ056881.1_Canine_parvovirus_2_Egypt
+         |                                                               |        |     +**| (0/19)
+         |                                                               |        |     |  +--MZ056888.1_Canine_parvovirus_2_Egypt
+         |                                                               |        |  +**| (0/16)
+         |                                                               |        |  |  |  +**MZ056882.1_Canine_parvovirus_2_Egypt
+         |                                                               |        |  |  +**| (0/69)
+         |                                                               |        |  |     +**MZ056890.1_Canine_parvovirus_2_Egypt
+         |                                                               |        +--| (90.5/82)
+         |                                                               |           +--MZ056887.1_Canine_parvovirus_2_Egypt
+         |                                                            +--| (92.5/41)
+         |                                                            |  +--OM721655.1_Canine_parvovirus_2b_Turkey
+         |                                                         +**| (0/18)
+         |                                                         |  |  +**MZ056883.1_Canine_parvovirus_2_Egypt
+         |                                                         |  +--| (81.4/73)
+         |                                                         |     +**MZ056892.1_Canine_parvovirus_2_Egypt
+         |                                                      +--| (79.1/29)
+         |                                                      |  +--MZ056891.1_Canine_parvovirus_2_Egypt
+         |                                                   +--| (81.5/30)
+         |                                                   |  +--OL330979.1_Canine_parvovirus_2_Iran
+         |                                                +**| (0/26)
+         |                                                |  +**OM100702.1_Canine_parvovirus_2_Egypt
+         |                                            +---| (94.1/56)
+         |                                            |   +--OM100700.1_Canine_parvovirus_2_Egypt
+         |                                     +------| (99/94)
+         |                                     |      |        +--OL330980.1_Canine_parvovirus_2_Iran
+         |                                     |      |     +**| (0/62)
+         |                                     |      |     |  +--MW653250.1_Canine_parvovirus_2a_Iran
+         |                                     |      |  +**| (0/92)
+         |                                     |      |  |  +**OL330978.1_Canine_parvovirus_2_Iran
+         |                                     |      +--| (71.8/80)
+         |                                     |         +**MW653249.1_Canine_parvovirus_2a_Iran
+         |                                 +---| (96.4/76)
+         |                                 |   +**OL330977.1_Canine_parvovirus_2_Iran
+         |                              +--| (87.1/61)
+         |                              |  |  +**KX268105.1_Canine_parvovirus_2_Turkey
+         |                              |  +--| (75.2/75)
+         |                              |     +**KX268117.1_Canine_parvovirus_2_Turkey
+         |                           +**| (0/37)
+         |                           |  +--KX268107.1_Canine_parvovirus_2_Turkey
+         |                        +--| (83.9/52)
+         |                        |  |  +**KX268106.1_Canine_parvovirus_2_Turkey
+         |                        |  +--| (84.2/75)
+         |                        |     +**KX268118.1_Canine_parvovirus_2_Turkey
+         |                     +**| (0/34)
+         |                     |  |  +--KX268108.1_Canine_parvovirus_2_Turkey
+         |                     |  +--| (98.1/97)
+         |                     |     |  +--KX268110.1_Canine_parvovirus_2_Turkey
+         |                     |     +--| (75.4/74)
+         |                     |        +--KX268114.1_Canine_parvovirus_2_Turkey
+         |                  +--| (82.3/42)
+         |                  |  +----MW653251.1_Canine_parvovirus_2b_Iran
+         |               +**| (0/22)
+         |               |  |     +--KX268109.1_Canine_parvovirus_2_Turkey
+         |               |  |  +--| (86.6/63)
+         |               |  |  |  +**MW653253.1_Canine_parvovirus_2c_Iran
+         |               |  +--| (87.2/68)
+         |               |     +**FJ222821.1_ref_CPV2C
+         |            +--| (79/71)
+         |            |  |                 +**KX268112.1_Canine_parvovirus_2_Turkey
+         |            |  |           +-----| (99.7/100)
+         |            |  |           |     +**KX268113.1_Canine_parvovirus_2_Turkey
+         |            |  |        +--| (72.9/57)
+         |            |  |        |  +--MW653252.1_Canine_parvovirus_2b_Iran
+         |            |  |     +--| (70.3/35)
+         |            |  |     |  +--MW653248.1_Canine_parvovirus_2a_Iran
+         |            |  |  +--| (79.8/11)
+         |            |  |  |  |     +--KX268115.1_Canine_parvovirus_2_Turkey
+         |            |  |  |  |  +--| (90.9/87)
+         |            |  |  |  |  |  +**MW653256.1_Canine_parvovirus_2a_Iran
+         |            |  |  |  +**| (0/30)
+         |            |  |  |     +--AY742933.1_recent_Canine_parvovirus_2a_NewZealand
+         |            |  +--| (77.1/28)
+         |            |     |  +--KX268111.1_Canine_parvovirus_2_Turkey
+         |            |     +--| (94.3/96)
+         |            |        +**KX268116.1_Canine_parvovirus_2_Turkey
+         |         +--| (78.7/83)
+         |         |  +--M74849.1_ref_CPV2B
+         |      +--| (93.4/98)
+         |      |  +--M24003.1_ref_CPV2A
+         +------| (99.9/100)
+                |           +--vaccineCanine_MSD
+                |        +**| (0/68)
+                |        |  +--vaccineCanine_Hepra
+                |     +--| (78/64)
+                |     |  +**M38245.1_ref_CPV2
+                |  +**| (0/62)
+                |  |  +--KX268119.1_Canine_parvovirus_2_Turkey
+                +**| (0/66)
+                   +**vaccineCanine_Zoetis
+
+Tree in newick format:
+
+(KP081409.1_Feline_parvovirus_Iran:0.0029651388,M38246.1_ref_FPV:0.0007171627,((vaccineFeline_MSD:0.0014424831,vaccineFeline_Zoetis:0.0008614013)80.3/61:0.0006959370,(EU659112.1_ref_FPV_oldest:0.0000028961,(((((((((((Sample27_Feline:0.0014613095,Sample25_Feline:0.0000009965)0/15:0.0000028538,(Sample69_Feline:0.0010470219,(Sample38_Feline:0.0000009965,Sample70_Feline:0.0000009965)0/92:0.0000009965)0/24:0.0000022748)0/93:0.0000020391,(Sample44_Feline:0.0000009965,Sample7_Feline:0.0000009965)0/93:0.0000026250)77.5/92:0.0007086744,(PP663048.2_Feline_parvovirus_Egypt:0.0000023144,PV521947.1_Feline_parvovirus_Egypt:0.0000020749)93/93:0.0019400038)77.8/48:0.0006361490,(((((PV521962.1_Feline_parvovirus_Egypt:0.0000025788,(PV808489.1_Feline_parvovirus_Egypt:0.0000009965,PV808490.1_Feline_parvovirus_Egypt:0.0000009965)0/98:0.0000020383)96.4/96:0.0019276195,((PV521960.1_Feline_parvovirus_Egypt:0.0006401910,PV808495.1_Feline_parvovirus_Egypt:0.0000026258)85.3/65:0.0006403314,(PV521942.1_Feline_parvovirus_Egypt:0.0000028085,((PV521949.1_Feline_parvovirus_Egypt:0.0006411696,PV521961.1_Feline_parvovirus_Egypt:0.0006406172)78.9/57:0.0006432784,((PV521963.1_Feline_parvovirus_Egypt:0.0000021877,PP663041.2_Feline_parvovirus_Egypt:0.0000019309)0/14:0.0006390491,PP663045.2_Feline_parvovirus_Egypt:0.0000009965)0/27:0.0000011885)0/8:0.0000022347)0/13:0.0000027920)84.3/39:0.0006393825)0/23:0.0000021840,(PV521953.1_Feline_parvovirus_Egypt:0.0000009965,PV521954.1_Feline_parvovirus_Egypt:0.0000009965)0/63:0.0000009965)0/22:0.0000021447,(PP663055.2_Feline_parvovirus_Egypt:0.0000009965,PP663056.2_Feline_parvovirus_Egypt:0.0000009965)0/62:0.0000009965)91.6/57:0.0006387226,(PP663074.2_Feline_parvovirus_Egypt:0.0000009965,(PV521964.1_Feline_parvovirus_Egypt:0.0000009965,OM638043.1_Feline_parvovirus_Egypt:0.0000009965)0/47:0.0000009965)0/32:0.0000009965)0/14:0.0000022447)0/6:0.0000022219,PV521948.1_Feline_parvovirus_Egypt:0.0012795896)83/36:0.0007216829,(PP663044.2_Feline_parvovirus_Egypt:0.0008149227,PP663071.2_Feline_parvovirus_Egypt:0.0008122849)0/52:0.0000023251)0/15:0.0000020192,(PP663059.2_Feline_parvovirus_Egypt:0.0000009965,PV521955.1_Feline_parvovirus_Egypt:0.0000009965)84.5/64:0.0006401835)91/64:0.0014548378,KX434461.1_Feline_parvovirus_IZSSI_Italy:0.0005411813)72.1/40:0.0005386923,(KX900570.1_Feline_parvovirus_HH6_China:0.0014836493,(((((PP663047.2_Feline_parvovirus_Egypt:0.0000022932,PV521946.1_Feline_parvovirus_Egypt:0.0000020322)79.4/64:0.0006329699,(((((((PP663061.2_Feline_parvovirus_Egypt:0.0000009965,PV521956.1_Feline_parvovirus_Egypt:0.0000009965)92.1/65:0.0006369619,((PP663042.2_Feline_parvovirus_Egypt:0.0000026030,PV521943.1_Feline_parvovirus_Egypt:0.0000020310)84.1/58:0.0006381843,(PV521952.1_Feline_parvovirus_Egypt:0.0000022133,PV808492.1_Feline_parvovirus_Egypt:0.0000025542)85.6/63:0.0006381868)0/5:0.0000021717)0/4:0.0000021452,PV521957.1_Feline_parvovirus_Egypt:0.0000021524)0/1:0.0000021479,PV521945.1_Feline_parvovirus_Egypt:0.0000009965)0/2:0.0000021448,((PV521944.1_Feline_parvovirus_Egypt:0.0000009965,PV808488.1_Feline_parvovirus_Egypt:0.0000009965)83.1/66:0.0006382560,(PV521951.1_Feline_parvovirus_Egypt:0.0000029053,PV808491.1_Feline_parvovirus_Egypt:0.0000024016)92.1/64:0.0006382567)0/14:0.0000021946)0/36:0.0000022524,PP663067.2_Feline_parvovirus_Egypt:0.0000009965)0/18:0.0000022904,PP663062.2_Feline_parvovirus_Egypt:0.0000009965)0/64:0.0006465622)89.4/72:0.0012845323,sample12_feline:0.0007295485)78.5/68:0.0017086211,Sample67_Feline:0.0000026571)81.3/28:0.0008464707,(PP663052.2_Feline_parvovirus_Egypt:0.0000009965,PV521950.1_Feline_parvovirus_Egypt:0.0000009965)75.6/86:0.0006500799)94.3/84:0.0019601769)75.5/14:0.0007187949)77.1/79:0.0005218369,(((((((((((((((((((((((OR451707.1_Canine_parvovirus_2_Iraq:0.0035420019,OR667802.1_Canine_parvovirus_2_Iraq:0.0087881652)61.4/53:0.0002621059,(OR667800.1_Canine_parvovirus_2_Iraq:0.0000009965,OR667801.1_Canine_parvovirus_2_Iraq:0.0000009965)0/99:0.0000019749)77.8/60:0.0005355764,(OR667803.1_Canine_parvovirus_2_Iraq:0.0000009965,OR667804.1_Canine_parvovirus_2_Iraq:0.0000009965)87.3/99:0.0010671852)90.4/100:0.0029632944,(((sample51_canine:0.0014478211,(Sample72_Canine:0.0007235324,MZ056889.1_Canine_parvovirus_2_Egypt:0.0006253667)0/30:0.0000063480)0/24:0.0000010856,MZ056885.1_Canine_parvovirus_2_Egypt:0.0012640739)0/14:0.0000029270,((((((((((OM100698.1_Canine_parvovirus_2_Egypt:0.0012767844,OM100701.1_Canine_parvovirus_2_Egypt:0.0006343838)79.2/46:0.0006260130,OM100696.1_Canine_parvovirus_2_Egypt:0.0000022656)87/59:0.0006288736,OM100697.1_Canine_parvovirus_2_Egypt:0.0019014634)0/10:0.0000024300,OM100699.1_Canine_parvovirus_2_Egypt:0.0000009965)0/10:0.0000020644,((MF510157.1_Canine_parvovirus_2c_Italy:0.0005762368,Sample57_Canine:0.0000009965)0/5:0.0000017952,MG013488.1_Canine_parvovirus_2c_China:0.0000009965)86/6:0.0005775929)0/10:0.0001111220,(Sample18_Canine:0.0000009965,Sample8_Canine:0.0000009965)85/65:0.0006972794)0/3:0.0000022065,(Sample76_Canine:0.0000020573,Sample77_Canine:0.0006996608)93.3/88:0.0014024031)0/3:0.0000104909,Sample47_Canine:0.0008381232)0/8:0.0000221871,Sample68_Canine:0.0007191362)0/20:0.0004340223,(MZ056884.1_Canine_parvovirus_2_Egypt:0.0000009965,MZ056886.1_Canine_parvovirus_2_Egypt:0.0000009965)0/83:0.0000021098)84.5/11:0.0005779937)94/97:0.0028218908)93.1/93:0.0055019666,(OM721656.1_Canine_parvovirus_2b_Turkey:0.0035454337,(MW539053.1_Canine_parvovirus_2b_Turkey:0.0011198697,(((MZ056881.1_Canine_parvovirus_2_Egypt:0.0012511664,MZ056888.1_Canine_parvovirus_2_Egypt:0.0006252053)0/19:0.0000024716,(MZ056882.1_Canine_parvovirus_2_Egypt:0.0000009965,MZ056890.1_Canine_parvovirus_2_Egypt:0.0000009965)0/69:0.0000009965)0/16:0.0000021006,MZ056887.1_Canine_parvovirus_2_Egypt:0.0006238669)90.5/82:0.0012592529)0/41:0.0000023574)28.7/62:0.0007303350)71.4/32:0.0015704560,OM721655.1_Canine_parvovirus_2b_Turkey:0.0012183852)92.5/41:0.0027947540,(MZ056883.1_Canine_parvovirus_2_Egypt:0.0000009965,MZ056892.1_Canine_parvovirus_2_Egypt:0.0000009965)81.4/73:0.0006315568)0/18:0.0000023913,MZ056891.1_Canine_parvovirus_2_Egypt:0.0006296923)79.1/29:0.0009350417,OL330979.1_Canine_parvovirus_2_Iran:0.0006307583)81.5/30:0.0009238187,OM100702.1_Canine_parvovirus_2_Egypt:0.0000009965)0/26:0.0000020630,OM100700.1_Canine_parvovirus_2_Egypt:0.0006278455)94.1/56:0.0038810317,(((OL330980.1_Canine_parvovirus_2_Iran:0.0012582642,MW653250.1_Canine_parvovirus_2a_Iran:0.0015839233)0/62:0.0001512636,OL330978.1_Canine_parvovirus_2_Iran:0.0000009965)0/92:0.0000027840,MW653249.1_Canine_parvovirus_2a_Iran:0.0000021017)71.8/80:0.0007291261)99/94:0.0068148609,OL330977.1_Canine_parvovirus_2_Iran:0.0000028573)96.4/76:0.0037742808,(KX268105.1_Canine_parvovirus_2_Turkey:0.0000009965,KX268117.1_Canine_parvovirus_2_Turkey:0.0000009965)75.2/75:0.0006123673)87.1/61:0.0018734384,KX268107.1_Canine_parvovirus_2_Turkey:0.0012718987)0/37:0.0000027743,(KX268106.1_Canine_parvovirus_2_Turkey:0.0000009965,KX268118.1_Canine_parvovirus_2_Turkey:0.0000009965)84.2/75:0.0006334113)83.9/52:0.0009184725,(KX268108.1_Canine_parvovirus_2_Turkey:0.0006377346,(KX268110.1_Canine_parvovirus_2_Turkey:0.0006354213,KX268114.1_Canine_parvovirus_2_Turkey:0.0006356848)75.4/74:0.0006388296)98.1/97:0.0025759718)0/34:0.0000026118,MW653251.1_Canine_parvovirus_2b_Iran:0.0053837219)82.3/42:0.0008849103,((KX268109.1_Canine_parvovirus_2_Turkey:0.0012726509,MW653253.1_Canine_parvovirus_2c_Iran:0.0000021503)86.6/63:0.0005891862,FJ222821.1_ref_CPV2C:0.0000023146)87.2/68:0.0005894786)0/22:0.0000026801,(((((KX268112.1_Canine_parvovirus_2_Turkey:0.0000009965,KX268113.1_Canine_parvovirus_2_Turkey:0.0000009965)99.7/100:0.0058638600,MW653252.1_Canine_parvovirus_2b_Iran:0.0033437125)72.9/57:0.0005680609,MW653248.1_Canine_parvovirus_2a_Iran:0.0035718105)70.3/35:0.0005319582,((KX268115.1_Canine_parvovirus_2_Turkey:0.0012735440,MW653256.1_Canine_parvovirus_2a_Iran:0.0000009965)90.9/87:0.0011795929,AY742933.1_recent_Canine_parvovirus_2a_NewZealand:0.0017758814)0/30:0.0000019762)79.8/11:0.0005397562,(KX268111.1_Canine_parvovirus_2_Turkey:0.0012619405,KX268116.1_Canine_parvovirus_2_Turkey:0.0000020780)94.3/96:0.0019290528)77.1/28:0.0005428711)79/71:0.0007945445,M74849.1_ref_CPV2B:0.0011802104)78.7/83:0.0007772352,M24003.1_ref_CPV2A:0.0005432014)93.4/98:0.0017089095,((((vaccineCanine_MSD:0.0030342846,vaccineCanine_Hepra:0.0028453296)0/68:0.0000019958,M38245.1_ref_CPV2:0.0000026889)78/64:0.0005509537,KX268119.1_Canine_parvovirus_2_Turkey:0.0026004435)0/62:0.0004514377,vaccineCanine_Zoetis:0.0000023488)0/66:0.0000141504)99.9/100:0.0074147246)84.4/82:0.0011062401)0/14:0.0000028822)50.4/76:0.0014533176);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4842.768908
+Robinson-Foulds distance between ML tree and consensus tree: 54
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--KP081409.1_Feline_parvovirus_Iran
+|
++--M38246.1_ref_FPV
+|
+|        +--vaccineFeline_MSD
+|     +--| (61)
+|     |  +--vaccineFeline_Zoetis
+|  +--| (44)
+|  |  +--EU659112.1_ref_FPV_oldest
++--| (76)
+   |                                +--Sample27_Feline
+   |                             +--| (63)
+   |                             |  +--Sample69_Feline
+   |                          +--| (93)
+   |                          |  |  +--Sample25_Feline
+   |                          |  +--| (60)
+   |                          |     |  +--Sample38_Feline
+   |                          |     +--| (92)
+   |                          |        +--Sample70_Feline
+   |                       +--| (92)
+   |                       |  |  +--Sample44_Feline
+   |                       |  +--| (93)
+   |                       |     +--Sample7_Feline
+   |                    +--| (48)
+   |                    |  |  +--PP663048.2_Feline_parvovirus_Egypt
+   |                    |  +--| (93)
+   |                    |     +--PV521947.1_Feline_parvovirus_Egypt
+   |                 +--| (14)
+   |                 |  +--PV521948.1_Feline_parvovirus_Egypt
+   |              +--| (36)
+   |              |  |              +--PV521962.1_Feline_parvovirus_Egypt
+   |              |  |           +--| (96)
+   |              |  |           |  |  +--PV808489.1_Feline_parvovirus_Egypt
+   |              |  |           |  +--| (98)
+   |              |  |           |     +--PV808490.1_Feline_parvovirus_Egypt
+   |              |  |        +--| (23)
+   |              |  |        |  |     +--PV521960.1_Feline_parvovirus_Egypt
+   |              |  |        |  |  +--| (65)
+   |              |  |        |  |  |  +--PV808495.1_Feline_parvovirus_Egypt
+   |              |  |        |  +--| (39)
+   |              |  |        |     |  +--PV521942.1_Feline_parvovirus_Egypt
+   |              |  |        |     +--| (13)
+   |              |  |        |        |     +--PV521949.1_Feline_parvovirus_Egypt
+   |              |  |        |        |  +--| (57)
+   |              |  |        |        |  |  +--PV521961.1_Feline_parvovirus_Egypt
+   |              |  |        |        +--| (8)
+   |              |  |        |           |     +--PV521963.1_Feline_parvovirus_Egypt
+   |              |  |        |           |  +--| (31)
+   |              |  |        |           |  |  +--PP663045.2_Feline_parvovirus_Egypt
+   |              |  |        |           +--| (27)
+   |              |  |        |              |           +**PP663041.2_Feline_parvovirus_Egypt
+   |              |  |        |              |        +**|
+   |              |  |        |              |        |  +**PP663073.2_Feline_parvovirus_Egypt
+   |              |  |        |              |     +**|
+   |              |  |        |              |     |  +**PP663070.2_Feline_parvovirus_Egypt
+   |              |  |        |              |  +**|
+   |              |  |        |              |  |  +**PP663072.2_Feline_parvovirus_Egypt
+   |              |  |        |              +--|
+   |              |  |        |                 +**PP663050.2_Feline_parvovirus_Egypt
+   |              |  |     +--| (22)
+   |              |  |     |  |  +--PV521953.1_Feline_parvovirus_Egypt
+   |              |  |     |  +--| (63)
+   |              |  |     |     +--PV521954.1_Feline_parvovirus_Egypt
+   |              |  |  +--| (57)
+   |              |  |  |  |  +--PP663055.2_Feline_parvovirus_Egypt
+   |              |  |  |  +--| (62)
+   |              |  |  |     +--PP663056.2_Feline_parvovirus_Egypt
+   |              |  +--| (14)
+   |              |     |  +--PP663074.2_Feline_parvovirus_Egypt
+   |              |     +--| (32)
+   |              |        |  +--PV521964.1_Feline_parvovirus_Egypt
+   |              |        +--| (47)
+   |              |           +--OM638043.1_Feline_parvovirus_Egypt
+   |           +--| (64)
+   |           |  |     +--PP663059.2_Feline_parvovirus_Egypt
+   |           |  |  +--| (64)
+   |           |  |  |  +--PV521955.1_Feline_parvovirus_Egypt
+   |           |  +--| (15)
+   |           |     |  +--PP663044.2_Feline_parvovirus_Egypt
+   |           |     +--| (52)
+   |           |        +--PP663071.2_Feline_parvovirus_Egypt
+   |        +--| (40)
+   |        |  +--KX434461.1_Feline_parvovirus_IZSSI_Italy
+   |     +--| (67)
+   |     |  |           +--PP663047.2_Feline_parvovirus_Egypt
+   |     |  |        +--| (64)
+   |     |  |        |  +--PV521946.1_Feline_parvovirus_Egypt
+   |     |  |     +--| (72)
+   |     |  |     |  |              +--PP663061.2_Feline_parvovirus_Egypt
+   |     |  |     |  |           +--| (65)
+   |     |  |     |  |           |  +--PV521956.1_Feline_parvovirus_Egypt
+   |     |  |     |  |        +--| (5)
+   |     |  |     |  |        |  |     +--PV521952.1_Feline_parvovirus_Egypt
+   |     |  |     |  |        |  |  +--| (63)
+   |     |  |     |  |        |  |  |  +--PV808492.1_Feline_parvovirus_Egypt
+   |     |  |     |  |        |  +--| (18)
+   |     |  |     |  |        |     |  +--PV521951.1_Feline_parvovirus_Egypt
+   |     |  |     |  |        |     +--| (64)
+   |     |  |     |  |        |        +--PV808491.1_Feline_parvovirus_Egypt
+   |     |  |     |  |     +--| (3)
+   |     |  |     |  |     |  |           +**PV521945.1_Feline_parvovirus_Egypt
+   |     |  |     |  |     |  |        +**|
+   |     |  |     |  |     |  |        |  +**PV521965.1_Feline_parvovirus_Egypt
+   |     |  |     |  |     |  |     +**|
+   |     |  |     |  |     |  |     |  +**PV521958.1_Feline_parvovirus_Egypt
+   |     |  |     |  |     |  |  +--|
+   |     |  |     |  |     |  |  |  +**PV521959.1_Feline_parvovirus_Egypt
+   |     |  |     |  |     |  +--| (38)
+   |     |  |     |  |     |     +--PV521957.1_Feline_parvovirus_Egypt
+   |     |  |     |  |  +--| (36)
+   |     |  |     |  |  |  |     +--PP663042.2_Feline_parvovirus_Egypt
+   |     |  |     |  |  |  |  +--| (58)
+   |     |  |     |  |  |  |  |  +--PV521943.1_Feline_parvovirus_Egypt
+   |     |  |     |  |  |  +--| (15)
+   |     |  |     |  |  |     |  +--PV521944.1_Feline_parvovirus_Egypt
+   |     |  |     |  |  |     +--| (66)
+   |     |  |     |  |  |        +--PV808488.1_Feline_parvovirus_Egypt
+   |     |  |     |  +--| (64)
+   |     |  |     |     |           +**PP663062.2_Feline_parvovirus_Egypt
+   |     |  |     |     |        +**|
+   |     |  |     |     |        |  +**PV808486.1_Feline_parvovirus_Egypt
+   |     |  |     |     |     +**|
+   |     |  |     |     |     |  +**PV808493.1_Feline_parvovirus_Egypt
+   |     |  |     |     |  +--|
+   |     |  |     |     |  |  +**PV808496.1_Feline_parvovirus_Egypt
+   |     |  |     |     +--| (29)
+   |     |  |     |        +--PP663067.2_Feline_parvovirus_Egypt
+   |     |  |  +--| (68)
+   |     |  |  |  +--sample12_feline
+   |     |  +--| (84)
+   |     |     |  +--Sample67_Feline
+   |     |     +--| (60)
+   |     |        |  +--PP663052.2_Feline_parvovirus_Egypt
+   |     |        +--| (86)
+   |     |           +--PV521950.1_Feline_parvovirus_Egypt
+   |  +--| (79)
+   |  |  +--KX900570.1_Feline_parvovirus_HH6_China
+   +--| (82)
+      |                                                                          +--OR451707.1_Canine_parvovirus_2_Iraq
+      |                                                                       +--| (53)
+      |                                                                       |  +--------OR667802.1_Canine_parvovirus_2_Iraq
+      |                                                                    +--| (60)
+      |                                                                    |  |  +--OR667800.1_Canine_parvovirus_2_Iraq
+      |                                                                    |  +--| (99)
+      |                                                                    |     +--OR667801.1_Canine_parvovirus_2_Iraq
+      |                                                                 +--| (100)
+      |                                                                 |  |  +--OR667803.1_Canine_parvovirus_2_Iraq
+      |                                                                 |  +--| (99)
+      |                                                                 |     +--OR667804.1_Canine_parvovirus_2_Iraq
+      |                                                            +----| (93)
+      |                                                            |    |        +--sample51_canine
+      |                                                            |    |     +--| (24)
+      |                                                            |    |     |  |  +--Sample72_Canine
+      |                                                            |    |     |  +--| (30)
+      |                                                            |    |     |     +--MZ056889.1_Canine_parvovirus_2_Egypt
+      |                                                            |    |  +--| (14)
+      |                                                            |    |  |  +--MZ056885.1_Canine_parvovirus_2_Egypt
+      |                                                            |    +--| (97)
+      |                                                            |       |                 +--OM100698.1_Canine_parvovirus_2_Egypt
+      |                                                            |       |              +--| (46)
+      |                                                            |       |              |  +--OM100701.1_Canine_parvovirus_2_Egypt
+      |                                                            |       |           +--| (59)
+      |                                                            |       |           |  +--OM100696.1_Canine_parvovirus_2_Egypt
+      |                                                            |       |        +--| (12)
+      |                                                            |       |        |  |           +--Sample76_Canine
+      |                                                            |       |        |  |        +--| (88)
+      |                                                            |       |        |  |        |  +--Sample77_Canine
+      |                                                            |       |        |  |     +--| (9)
+      |                                                            |       |        |  |     |  |  +--Sample18_Canine
+      |                                                            |       |        |  |     |  +--| (65)
+      |                                                            |       |        |  |     |     +--Sample8_Canine
+      |                                                            |       |        |  |  +--| (27)
+      |                                                            |       |        |  |  |  |     +--OM100697.1_Canine_parvovirus_2_Egypt
+      |                                                            |       |        |  |  |  |  +--| (14)
+      |                                                            |       |        |  |  |  |  |  +--Sample68_Canine
+      |                                                            |       |        |  |  |  +--| (12)
+      |                                                            |       |        |  |  |     +--Sample47_Canine
+      |                                                            |       |        |  +--| (10)
+      |                                                            |       |        |     +--OM100699.1_Canine_parvovirus_2_Egypt
+      |                                                            |       |     +--| (24)
+      |                                                            |       |     |  |  +--MF510157.1_Canine_parvovirus_2c_Italy
+      |                                                            |       |     |  +--| (38)
+      |                                                            |       |     |     +--MG013488.1_Canine_parvovirus_2c_China
+      |                                                            |       |  +--| (20)
+      |                                                            |       |  |  +--Sample57_Canine
+      |                                                            |       +--| (11)
+      |                                                            |          |  +--MZ056884.1_Canine_parvovirus_2_Egypt
+      |                                                            |          +--| (83)
+      |                                                            |             +--MZ056886.1_Canine_parvovirus_2_Egypt
+      |                                                         +--| (32)
+      |                                                         |  |  +--OM721656.1_Canine_parvovirus_2b_Turkey
+      |                                                         |  +--| (62)
+      |                                                         |     |  +--MW539053.1_Canine_parvovirus_2b_Turkey
+      |                                                         |     +--| (41)
+      |                                                         |        |  +--MZ056881.1_Canine_parvovirus_2_Egypt
+      |                                                         |        +--| (82)
+      |                                                         |           |     +--MZ056887.1_Canine_parvovirus_2_Egypt
+      |                                                         |           |  +--| (22)
+      |                                                         |           |  |  |  +--MZ056882.1_Canine_parvovirus_2_Egypt
+      |                                                         |           |  |  +--| (69)
+      |                                                         |           |  |     +--MZ056890.1_Canine_parvovirus_2_Egypt
+      |                                                         |           +--| (33)
+      |                                                         |              +--MZ056888.1_Canine_parvovirus_2_Egypt
+      |                                                      +--| (41)
+      |                                                      |  +--OM721655.1_Canine_parvovirus_2b_Turkey
+      |                                                   +--| (29)
+      |                                                   |  |  +--MZ056891.1_Canine_parvovirus_2_Egypt
+      |                                                   |  +--| (25)
+      |                                                   |     |  +--MZ056883.1_Canine_parvovirus_2_Egypt
+      |                                                   |     +--| (73)
+      |                                                   |        +--MZ056892.1_Canine_parvovirus_2_Egypt
+      |                                                +--| (30)
+      |                                                |  +--OL330979.1_Canine_parvovirus_2_Iran
+      |                                            +---| (56)
+      |                                            |   |  +--OM100700.1_Canine_parvovirus_2_Egypt
+      |                                            |   +--| (35)
+      |                                            |      +--OM100702.1_Canine_parvovirus_2_Egypt
+      |                                     +------| (94)
+      |                                     |      |        +--OL330980.1_Canine_parvovirus_2_Iran
+      |                                     |      |     +--| (62)
+      |                                     |      |     |  +--MW653250.1_Canine_parvovirus_2a_Iran
+      |                                     |      |  +--| (92)
+      |                                     |      |  |  +--OL330978.1_Canine_parvovirus_2_Iran
+      |                                     |      +--| (80)
+      |                                     |         +--MW653249.1_Canine_parvovirus_2a_Iran
+      |                                 +---| (76)
+      |                                 |   +--OL330977.1_Canine_parvovirus_2_Iran
+      |                              +--| (61)
+      |                              |  |  +--KX268105.1_Canine_parvovirus_2_Turkey
+      |                              |  +--| (75)
+      |                              |     +--KX268117.1_Canine_parvovirus_2_Turkey
+      |                           +--| (37)
+      |                           |  +--KX268107.1_Canine_parvovirus_2_Turkey
+      |                        +--| (52)
+      |                        |  |  +--KX268106.1_Canine_parvovirus_2_Turkey
+      |                        |  +--| (75)
+      |                        |     +--KX268118.1_Canine_parvovirus_2_Turkey
+      |                     +--| (34)
+      |                     |  |  +--KX268108.1_Canine_parvovirus_2_Turkey
+      |                     |  +--| (97)
+      |                     |     |  +--KX268110.1_Canine_parvovirus_2_Turkey
+      |                     |     +--| (74)
+      |                     |        +--KX268114.1_Canine_parvovirus_2_Turkey
+      |                  +--| (42)
+      |                  |  +----MW653251.1_Canine_parvovirus_2b_Iran
+      |               +--| (22)
+      |               |  |     +--KX268109.1_Canine_parvovirus_2_Turkey
+      |               |  |  +--| (63)
+      |               |  |  |  +--MW653253.1_Canine_parvovirus_2c_Iran
+      |               |  +--| (68)
+      |               |     +--FJ222821.1_ref_CPV2C
+      |            +--| (71)
+      |            |  |              +--KX268112.1_Canine_parvovirus_2_Turkey
+      |            |  |        +-----| (100)
+      |            |  |        |     +--KX268113.1_Canine_parvovirus_2_Turkey
+      |            |  |     +--| (57)
+      |            |  |     |  +--MW653252.1_Canine_parvovirus_2b_Iran
+      |            |  |  +--| (35)
+      |            |  |  |  +---MW653248.1_Canine_parvovirus_2a_Iran
+      |            |  +--| (28)
+      |            |     |        +--KX268115.1_Canine_parvovirus_2_Turkey
+      |            |     |     +--| (87)
+      |            |     |     |  +--MW653256.1_Canine_parvovirus_2a_Iran
+      |            |     |  +--| (30)
+      |            |     |  |  +--AY742933.1_recent_Canine_parvovirus_2a_NewZealand
+      |            |     +--| (13)
+      |            |        |  +--KX268111.1_Canine_parvovirus_2_Turkey
+      |            |        +--| (96)
+      |            |           +--KX268116.1_Canine_parvovirus_2_Turkey
+      |         +--| (83)
+      |         |  +--M74849.1_ref_CPV2B
+      |      +--| (98)
+      |      |  +--M24003.1_ref_CPV2A
+      +------| (100)
+             |           +--vaccineCanine_MSD
+             |        +--| (68)
+             |        |  +--vaccineCanine_Hepra
+             |     +--| (64)
+             |     |  +--M38245.1_ref_CPV2
+             |  +--| (62)
+             |  |  +--KX268119.1_Canine_parvovirus_2_Turkey
+             +--| (66)
+                +--vaccineCanine_Zoetis
+
+
+Consensus tree in newick format: 
+
+(KP081409.1_Feline_parvovirus_Iran:0.0029830936,M38246.1_ref_FPV:0.0007206159,(((vaccineFeline_MSD:0.0014510506,vaccineFeline_Zoetis:0.0008666929)61:0.0007008981,EU659112.1_ref_FPV_oldest:0.0000020097)44:0.0000020097,(((((((((((Sample27_Feline:0.0014696162,Sample69_Feline:0.0010530260)63:0.0000020097,(Sample25_Feline:0.0000020097,(Sample38_Feline:0.0000020097,Sample70_Feline:0.0000020097)92:0.0000020097)60:0.0000020097)93:0.0000020097,(Sample44_Feline:0.0000020097,Sample7_Feline:0.0000020097)93:0.0000020097)92:0.0007133473,(PP663048.2_Feline_parvovirus_Egypt:0.0000020097,PV521947.1_Feline_parvovirus_Egypt:0.0000020097)93:0.0019500040)48:0.0006397840,PV521948.1_Feline_parvovirus_Egypt:0.0012862133)14:0.0000020097,(((((PV521962.1_Feline_parvovirus_Egypt:0.0000020097,(PV808489.1_Feline_parvovirus_Egypt:0.0000020097,PV808490.1_Feline_parvovirus_Egypt:0.0000020097)98:0.0000020097)96:0.0019374539,((PV521960.1_Feline_parvovirus_Egypt:0.0006439730,PV808495.1_Feline_parvovirus_Egypt:0.0000020097)65:0.0006441189,(PV521942.1_Feline_parvovirus_Egypt:0.0000020097,((PV521949.1_Feline_parvovirus_Egypt:0.0006449403,PV521961.1_Feline_parvovirus_Egypt:0.0006443590)57:0.0006470693,((PV521963.1_Feline_parvovirus_Egypt:0.0005191552,PP663045.2_Feline_parvovirus_Egypt:0.0000020097)31:0.0001237546,((((PP663041.2_Feline_parvovirus_Egypt:0.0000000000,PP663073.2_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PP663070.2_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PP663072.2_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PP663050.2_Feline_parvovirus_Egypt:0.0000000000):0.0000020097)27:0.0000020097)8:0.0000020097)13:0.0000020097)39:0.0006431692)23:0.0000020097,(PV521953.1_Feline_parvovirus_Egypt:0.0000020097,PV521954.1_Feline_parvovirus_Egypt:0.0000020097)63:0.0000020097)22:0.0000020097,(PP663055.2_Feline_parvovirus_Egypt:0.0000020097,PP663056.2_Feline_parvovirus_Egypt:0.0000020097)62:0.0000020097)57:0.0006425224,(PP663074.2_Feline_parvovirus_Egypt:0.0000020097,(PV521964.1_Feline_parvovirus_Egypt:0.0000020097,OM638043.1_Feline_parvovirus_Egypt:0.0000020097)47:0.0000020097)32:0.0000020097)14:0.0000020097)36:0.0007254384,((PP663059.2_Feline_parvovirus_Egypt:0.0000020097,PV521955.1_Feline_parvovirus_Egypt:0.0000020097)64:0.0006441152,(PP663044.2_Feline_parvovirus_Egypt:0.0008197887,PP663071.2_Feline_parvovirus_Egypt:0.0008171290)52:0.0000020097)15:0.0000020097)64:0.0014598990,KX434461.1_Feline_parvovirus_IZSSI_Italy:0.0005441282)40:0.0004477527,((((PP663047.2_Feline_parvovirus_Egypt:0.0000020097,PV521946.1_Feline_parvovirus_Egypt:0.0000020097)64:0.0006411377,(((((PP663061.2_Feline_parvovirus_Egypt:0.0000020097,PV521956.1_Feline_parvovirus_Egypt:0.0000020097)65:0.0006409048,((PV521952.1_Feline_parvovirus_Egypt:0.0000020097,PV808492.1_Feline_parvovirus_Egypt:0.0000020097)63:0.0006421252,(PV521951.1_Feline_parvovirus_Egypt:0.0000020097,PV808491.1_Feline_parvovirus_Egypt:0.0000020097)64:0.0006422053)18:0.0000020097)5:0.0000020097,((((PV521945.1_Feline_parvovirus_Egypt:0.0000000000,PV521965.1_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PV521958.1_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PV521959.1_Feline_parvovirus_Egypt:0.0000000000):0.0000020097,PV521957.1_Feline_parvovirus_Egypt:0.0000020097)38:0.0000020097)3:0.0000020097,((PP663042.2_Feline_parvovirus_Egypt:0.0000020097,PV521943.1_Feline_parvovirus_Egypt:0.0000020097)58:0.0006421405,(PV521944.1_Feline_parvovirus_Egypt:0.0000020097,PV808488.1_Feline_parvovirus_Egypt:0.0000020097)66:0.0006422232)15:0.0000020097)36:0.0004649075,((((PP663062.2_Feline_parvovirus_Egypt:0.0000000000,PV808486.1_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PV808493.1_Feline_parvovirus_Egypt:0.0000000000):0.0000000000,PV808496.1_Feline_parvovirus_Egypt:0.0000000000):0.0000020097,PP663067.2_Feline_parvovirus_Egypt:0.0000020097)29:0.0000020097)64:0.0001767122)72:0.0006500374,sample12_feline:0.0014568109)68:0.0012964717,(Sample67_Feline:0.0007299701,(PP663052.2_Feline_parvovirus_Egypt:0.0000020097,PV521950.1_Feline_parvovirus_Egypt:0.0000020097)86:0.0006621876)60:0.0006406492)84:0.0019661723)67:0.0000883900,KX900570.1_Feline_parvovirus_HH6_China:0.0021977065)79:0.0005263181,(((((((((((((((((((((OR451707.1_Canine_parvovirus_2_Iraq:0.0035615094,OR667802.1_Canine_parvovirus_2_Iraq:0.0088332306)53:0.0002609877,(OR667800.1_Canine_parvovirus_2_Iraq:0.0000020097,OR667801.1_Canine_parvovirus_2_Iraq:0.0000020097)99:0.0000020097)60:0.0005386302,(OR667803.1_Canine_parvovirus_2_Iraq:0.0000020097,OR667804.1_Canine_parvovirus_2_Iraq:0.0000020097)99:0.0010728162)100:0.0029745744,(((sample51_canine:0.0014576275,(Sample72_Canine:0.0007285662,MZ056889.1_Canine_parvovirus_2_Egypt:0.0005159055)30:0.0001191003)24:0.0000020097,MZ056885.1_Canine_parvovirus_2_Egypt:0.0012727539)14:0.0000020097,((((((OM100698.1_Canine_parvovirus_2_Egypt:0.0012857159,OM100701.1_Canine_parvovirus_2_Egypt:0.0006397678)46:0.0006302157,OM100696.1_Canine_parvovirus_2_Egypt:0.0000020097)59:0.0006332157,((((Sample76_Canine:0.0000020097,Sample77_Canine:0.0007049047)88:0.0014118461,(Sample18_Canine:0.0000020097,Sample8_Canine:0.0000020097)65:0.0007024646)9:0.0000020097,((OM100697.1_Canine_parvovirus_2_Egypt:0.0019113349,Sample68_Canine:0.0007246316)14:0.0000020097,Sample47_Canine:0.0008444385)12:0.0000020097)27:0.0000020097,OM100699.1_Canine_parvovirus_2_Egypt:0.0000020097)10:0.0000020097)12:0.0006331989,(MF510157.1_Canine_parvovirus_2c_Italy:0.0005816295,MG013488.1_Canine_parvovirus_2c_China:0.0000020097)38:0.0000020097)24:0.0000538882,Sample57_Canine:0.0000020097)20:0.0005306017,(MZ056884.1_Canine_parvovirus_2_Egypt:0.0000020097,MZ056886.1_Canine_parvovirus_2_Egypt:0.0000020097)83:0.0006337087)11:0.0000020097)97:0.0028357192)93:0.0055241928,(OM721656.1_Canine_parvovirus_2b_Turkey:0.0035644205,(MW539053.1_Canine_parvovirus_2b_Turkey:0.0011262387,(MZ056881.1_Canine_parvovirus_2_Egypt:0.0012590910,((MZ056887.1_Canine_parvovirus_2_Egypt:0.0006278357,(MZ056882.1_Canine_parvovirus_2_Egypt:0.0000020097,MZ056890.1_Canine_parvovirus_2_Egypt:0.0000020097)69:0.0000020097)22:0.0000020097,MZ056888.1_Canine_parvovirus_2_Egypt:0.0006291852)33:0.0000020097)82:0.0012673225)41:0.0000021502)62:0.0007349568)32:0.0015762676,OM721655.1_Canine_parvovirus_2b_Turkey:0.0012254693)41:0.0028067201,(MZ056891.1_Canine_parvovirus_2_Egypt:0.0006336579,(MZ056883.1_Canine_parvovirus_2_Egypt:0.0000020097,MZ056892.1_Canine_parvovirus_2_Egypt:0.0000020097)73:0.0006355578)25:0.0000020097)29:0.0009399506,OL330979.1_Canine_parvovirus_2_Iran:0.0006346794)30:0.0009286364,(OM100700.1_Canine_parvovirus_2_Egypt:0.0006317806,OM100702.1_Canine_parvovirus_2_Egypt:0.0000020097)35:0.0000020097)56:0.0038999873,(((OL330980.1_Canine_parvovirus_2_Iran:0.0012658134,MW653250.1_Canine_parvovirus_2a_Iran:0.0015556742)62:0.0001893173,OL330978.1_Canine_parvovirus_2_Iran:0.0000020097)92:0.0000025187,MW653249.1_Canine_parvovirus_2a_Iran:0.0000020097)80:0.0007301423)94:0.0068471254,OL330977.1_Canine_parvovirus_2_Iran:0.0000020097)76:0.0037914768,(KX268105.1_Canine_parvovirus_2_Turkey:0.0000020097,KX268117.1_Canine_parvovirus_2_Turkey:0.0000020097)75:0.0006162483)61:0.0018825330,KX268107.1_Canine_parvovirus_2_Turkey:0.0012796330)37:0.0000023469,(KX268106.1_Canine_parvovirus_2_Turkey:0.0000020097,KX268118.1_Canine_parvovirus_2_Turkey:0.0000020097)75:0.0006372532)52:0.0009234294,(KX268108.1_Canine_parvovirus_2_Turkey:0.0006415270,(KX268110.1_Canine_parvovirus_2_Turkey:0.0006392478,KX268114.1_Canine_parvovirus_2_Turkey:0.0006394836)74:0.0006426963)97:0.0025913158)34:0.0000023469,MW653251.1_Canine_parvovirus_2b_Iran:0.0054113359)42:0.0008894176,((KX268109.1_Canine_parvovirus_2_Turkey:0.0012801886,MW653253.1_Canine_parvovirus_2c_Iran:0.0000020097)63:0.0005923407,FJ222821.1_ref_CPV2C:0.0000020097)68:0.0005929554)22:0.0000024120,((((KX268112.1_Canine_parvovirus_2_Turkey:0.0000020097,KX268113.1_Canine_parvovirus_2_Turkey:0.0000020097)100:0.0064892147,MW653252.1_Canine_parvovirus_2b_Iran:0.0028468862)57:0.0005656321,MW653248.1_Canine_parvovirus_2a_Iran:0.0041328145)35:0.0005482181,(((KX268115.1_Canine_parvovirus_2_Turkey:0.0012809796,MW653256.1_Canine_parvovirus_2a_Iran:0.0000020097)87:0.0012033508,AY742933.1_recent_Canine_parvovirus_2a_NewZealand:0.0018089285)30:0.0005376328,(KX268111.1_Canine_parvovirus_2_Turkey:0.0012692996,KX268116.1_Canine_parvovirus_2_Turkey:0.0000020097)96:0.0019683433)13:0.0000020097)28:0.0005788518)71:0.0008020778,M74849.1_ref_CPV2B:0.0011865517)83:0.0007839797,M24003.1_ref_CPV2A:0.0005464059)98:0.0017168174,((((vaccineCanine_MSD:0.0030530800,vaccineCanine_Hepra:0.0028625683)68:0.0000020097,M38245.1_ref_CPV2:0.0000020097)64:0.0005541563,KX268119.1_Canine_parvovirus_2_Turkey:0.0026153001)62:0.0004652488,vaccineCanine_Zoetis:0.0000020097)66:0.0000022157)100:0.0074471877)82:0.0011107505)76:0.0014587257);
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov  7 17:39:23 2026
+Total CPU time used: 1857.661058 seconds (0h:30m:57s)
+Total wall-clock time used: 374.9310663 seconds (0h:6m:14s)
+
