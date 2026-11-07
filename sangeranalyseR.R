@@ -1152,5 +1152,119 @@ parvo_samples <- c(
   "NONE"
 )
 
+## TO ANALYZE the vaccine Hepra sanger res from Macrogene for canine
 
-              
+sanger_ab1_directory <- "/home/shadi/Desktop/ParvoProject/sanger_res_final/sangeranalyseR_samples_v4/"
+
+parvo_samples <- c(
+  "vaccine_Hepra_canine"
+)
+
+for (sample in parvo_samples) {
+  sanger_ab1_directory_sample <- paste0(sanger_ab1_directory, sample)
+  cat("Processing:", sample, "\n")
+  
+  my_sangerAlignment <- SangerAlignment(inputSource          = "ABIF",
+                                        processMethod        = "REGEX",
+                                        ABIF_Directory       = paste0(sanger_ab1_directory_sample, "/"),
+                                        REGEX_SuffixForward  = "_F.ab1$",
+                                        REGEX_SuffixReverse  = "_R.ab1$",
+                                        ## can be M1 or M2 trimming methods
+                                        TrimmingMethod        = "M1",
+                                        M1TrimmingCutoff      = 0.01,         # 0.0001 or 0.01 or 0.001
+                                        M2CutoffQualityScore  = NULL,
+                                        M2SlidingWindowSize   = NULL,
+                                        # TrimmingMethod        = "M2",
+                                        # M1TrimmingCutoff      = NULL,
+                                        # M2CutoffQualityScore  = 20,             # or 29 or 20 or 40
+                                        # M2SlidingWindowSize   = 10,             # or 15 or 10 or 4
+                                        baseNumPerRow        = 100,
+                                        heightPerRow         = 200,
+                                        signalRatioCutoff    = 0.20,            # could be 0.33 or 0.25
+                                        showTrimmed          = TRUE,
+                                        refAminoAcidSeq      = "SRQWLFSTNHKDIGTLYFIFGAWAGMVGTSLSILIRAELGHPGALIGDDQIYNVIVTAHAFIMIFFMVMPIMIGGFGNWLVPLMLGAPDMAFPRMNNMSFWLLPPALSLLLVSSMVENGAGTGWTVYPPLSAGIAHGGASVDLAIFSLHLAGISSILGAVNFITTVINMRSTGISLDRMPLFVWSVVITALLLLLSLPVLAGAITMLLTDRNLNTSFFDPAGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIISQESGKKETFGSLGMIYAMLAIGLLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAVPTGIKIFSWLATLHGTQLSYSPAILWALGFVFLFTVGGLTGVVLANSSVDIILHDTYYVVAHFHYVLSMGAVFAIMAGFIHWYPLFTGLTLNNKWLKSHFIIMFIGVNLTFFPQHFLGLAGMPRRYSDYPDAYTTWNIVSTIGSTISLLGILFFFFIIWESLVSQRQVIYPIQLNSSIEWYQNTPPAEHSYSELPLLTN",
+                                        minReadsNum          = 2,
+                                        minReadLength        = 20,
+                                        minFractionCall      = 0.5,
+                                        maxFractionLost      = 0.5,
+                                        geneticCode          = GENETIC_CODE,
+                                        acceptStopCodons     = TRUE,
+                                        readingFrame         = 1,
+                                        processorsNum        = 2)
+  
+  fail_table <- my_sangerAlignment@objectResults@readResultTable
+  if (nrow(fail_table[fail_table$creationResult == FALSE, ]) == 0) {cat("all is good, proceed :-)\n")}
+  
+  assign(paste0("sangerAlignment_", sample), my_sangerAlignment)
+  
+  contig_df <- do.call(rbind, lapply(seq_along(my_sangerAlignment@contigList), function(i) {
+    data.frame(
+      sample               = sample,
+      contig               = names(my_sangerAlignment@contigList)[i],
+      contigSeq            = as.character(my_sangerAlignment@contigList[[i]]@contigSeq),
+      contigSeq_length     = nchar(as.character(my_sangerAlignment@contigList[[i]]@contigSeq)),
+      
+      # Fwd_PrimarySeq       = as.character(my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@primarySeq),
+      # Rev_PrimarySeq       = as.character(my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@primarySeq),
+      # Fwd_PriSeq_length    = nchar(as.character(my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@primarySeq)),
+      # Rev_PriSeq_length    = nchar(as.character(my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@primarySeq)),
+      
+      Fwd_start_trim       = (my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedStartPos),
+      Fwd_end_trim         = (my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedFinishPos),
+      Rev_start_trim       = (my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedStartPos),
+      Rev_end_trim         = (my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedFinishPos),
+      
+      Fwd_PrimSeq_trimmed  = as.character(subseq(my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@primarySeq,
+                                                 start = (my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedStartPos)+1,
+                                                 end = (my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedFinishPos))),
+      Rev_PrimSeq_trimmed  = as.character(subseq(my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@primarySeq,
+                                                 start = (my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedStartPos)+1,
+                                                 end = (my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedFinishPos))),
+      
+      Fwd_PriSeq_trim_len  = nchar(as.character(subseq(my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@primarySeq,
+                                                       start = (my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedStartPos)+1,
+                                                       end = (my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedFinishPos)))),
+      Rev_PriSeq_trim_len  = nchar(as.character(subseq(my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@primarySeq,
+                                                       start = (my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedStartPos)+1,
+                                                       end = (my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedFinishPos)))),
+      
+      Fwd_MeanQualityScore = my_sangerAlignment@contigList[[i]]@forwardReadList[[1]]@QualityReport@trimmedMeanQualityScore,
+      Rev_MeanQualityScore = my_sangerAlignment@contigList[[i]]@reverseReadList[[1]]@QualityReport@trimmedMeanQualityScore)
+  }))
+  
+  assign(paste0("contig_df_", sample), contig_df)
+  
+  fwd_rev_seqs <- c(
+    setNames(DNAStringSet(contig_df$Fwd_PrimSeq_trimmed), paste0(contig_df$contig, "_fwd")),
+    setNames(DNAStringSet(contig_df$Rev_PrimSeq_trimmed), paste0(contig_df$contig, "_rev")))
+  
+  writeXStringSet(fwd_rev_seqs, filepath = paste0(sanger_ab1_directory, "cap3_analysis_v4/", sample, "_trimmed.fasta"))
+  
+  cat("FASTA written for:", sample, "\n")
+  
+}
+
+## explore my_sangerAlignment & contig_df
+
+sangerAlignment_vaccine_Hepra_canine@objectResults@readResultTable
+contig_df_vaccine_Hepra_canine
+qualityBasePlot(sangerAlignment_vaccine_Hepra_canine@contigList$vaccine_Hepra_canine_81@forwardReadList[[1]])
+qualityBasePlot(sangerAlignment_vaccine_Hepra_canine@contigList$vaccine_Hepra_canine_81@reverseReadList[[1]])
+
+## passed with no errors
+sangerAlignment_vaccine_Hepra_canine@objectResults@readResultTable
+
+## have errors
+## NONE for 0.0001
+## NONE for 0.001
+## NONE for 0.01
+
+## TO ANALYZE the single primer res for vaccine_Hepra seq that failed above (READ_NUMBER_ERROR)
+
+sanger_ab1_directory <- "/home/shadi/Desktop/ParvoProject/sanger_res_final/sangeranalyseR_samples_v4/singleprimer_res/"
+
+parvo_samples <- c(
+  "NONE"
+)
+
+
