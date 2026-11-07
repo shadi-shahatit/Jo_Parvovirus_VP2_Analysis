@@ -1,0 +1,91 @@
+
+Analysis Description
+--------------------
+MEME (Mixed Effects Model of Evolution) estimates a site-wise synonymous
+(&alpha;) and a two-category mixture of non-synonymous (&beta;-, with
+proportion p-, and &beta;+ with proportion [1-p-]) rates, and uses a
+likelihood ratio test to determine if &beta;+ > &alpha; at a site. The
+estimates aggregate information over a proportion of branches at a site,
+so the signal is derived from episodic diversification, which is a
+combination of strength of selection [effect size] and the proportion of
+the tree affected. A subset of branches can be selected for testing as
+well, in which case an additional (nuisance) parameter will be inferred
+-- the non-synonymous rate on branches NOT selected for testing.
+Multiple partitions within a NEXUS file are also supported for
+recombination - aware analysis. Version 3.0 adds a different format for
+ancestral state reconstruction, branch-site posterior storage, and
+site-level heterogeneity testing. Version 4 adds support for multiple
+hits and more than 2 rate classes on omega, as well as site-level
+imputation option. Version 4.1 fixes bugs with EBF computation for > 2
+more rates and MH reporting. 
+
+- __Requirements__: in-frame codon alignment and a phylogenetic tree
+
+- __Citation__: Detecting Individual Sites Subject to Episodic Diversifying Selection.
+_PLoS Genet_ 8(7): e1002764.
+
+- __Written by__: Sergei L. Kosakovsky Pond, Steven Weaver
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 4.1
+
+
+>code => Universal
+/home/datamonkey/datamonkey-js-server/app/meme/output/6aef7a57cd31798ca76fc953.tre
+/home/datamonkey/datamonkey-js-server/app/meme/output/6aef7a57cd31798ca76fc953.tre
+
+>Loaded a multiple sequence alignment with **63** sequences, **584** codons, and **1** partitions from `/home/datamonkey/datamonkey-js-server/app/meme/output/6aef7a57cd31798ca76fc953`
+
+>branches => All
+
+>Select the p-value threshold to use when testing for selection (permissible range = [0,1], default value = 0.1): 
+>pvalue => 0.1
+
+>[Advanced setting, will result in MUCH SLOWER run time] Perform parametric bootstrap resampling to derive site-level null LRT distributions up to this many replicates per site. Recommended use for small to medium (<30 sequences) datasets (permissible range = [0,1000], default value = 50, integer): 
+>resample => 0
+The number omega rate classes to include in the model [2 is the strongly recommended default] (permissible range = [2,4], default value = 2, integer): 
+>rates => 2
+
+>multiple-hits => None
+
+>impute-states => No
+
+>precision => standard
+
+
+### Branches to include in the MEME analysis
+Selected 123 branches to include in the MEME analysis: `KP081409_1_FELINE_PARVOVIRUS_IRAN, M38246_1_REF_FPV, Node22, EU659112_1_REF_FPV_OLDEST, Node21, VACCINEFELINE_MSD, Node20, SAMPLE27_FELINE, SAMPLE69_FELINE, SAMPLE44_FELINE, Node37, SAMPLE38_FELINE, Node36, SAMPLE25_FELINE, Node35, Node33, SAMPLE7_FELINE, Node32, PV521947_1_FELINE_PARVOVIRUS_EGYPT, Node31, PP663074_2_FELINE_PARVOVIRUS_EGYPT, PP663073_2_FELINE_PARVOVIRUS_EGYPT, Node45, OM638043_1_FELINE_PARVOVIRUS_EGYPT, Node44, Node30, PP663047_2_FELINE_PARVOVIRUS_EGYPT, PV808491_1_FELINE_PARVOVIRUS_EGYPT, Node51, SAMPLE12_FELINE, Node50, SAMPLE67_FELINE, PP663052_2_FELINE_PARVOVIRUS_EGYPT, PV521950_1_FELINE_PARVOVIRUS_EGYPT, Node57, Node55, Node49, Node29, KX900570_1_FELINE_PARVOVIRUS_HH6_CHINA, Node28, KX434461_1_FELINE_PARVOVIRUS_IZSSI_ITALY, Node27, Node19, VACCINEFELINE_ZOETIS, Node18, VACCINECANINE_MSD, VACCINECANINE_HEPRA, M38245_1_REF_CPV2, Node66, Node64, KX268119_1_CANINE_PARVOVIRUS_2_TURKEY, VACCINECANINE_ZOETIS, Node69, Node63, Node17, M24003_1_REF_CPV2A, Node16, M74849_1_REF_CPV2B, Node15, KX268115_1_CANINE_PARVOVIRUS_2_TURKEY, MW653256_1_CANINE_PARVOVIRUS_2A_IRAN, Node76, AY742933_1_RECENT_CANINE_PARVOVIRUS_2A_NEWZEALAND, Node75, MW653252_1_CANINE_PARVOVIRUS_2B_IRAN, KX268116_1_CANINE_PARVOVIRUS_2_TURKEY, Node80, Node74, Node14, KX268109_1_CANINE_PARVOVIRUS_2_TURKEY, MW653253_1_CANINE_PARVOVIRUS_2C_IRAN, Node84, FJ222821_1_REF_CPV2C, Node83, Node13, MW653251_1_CANINE_PARVOVIRUS_2B_IRAN, Node12, MW653248_1_CANINE_PARVOVIRUS_2A_IRAN, Node11, OL330977_1_CANINE_PARVOVIRUS_2_IRAN, KX268117_1_CANINE_PARVOVIRUS_2_TURKEY, Node90, Node10, OM721656_1_CANINE_PARVOVIRUS_2B_TURKEY, MW539053_1_CANINE_PARVOVIRUS_2B_TURKEY, MZ056890_1_CANINE_PARVOVIRUS_2_EGYPT, Node96, Node94, MW653250_1_CANINE_PARVOVIRUS_2A_IRAN, OL330979_1_CANINE_PARVOVIRUS_2_IRAN, Node99, Node93, Node9, OR667801_1_CANINE_PARVOVIRUS_2_IRAQ, OR667803_1_CANINE_PARVOVIRUS_2_IRAQ, Node102, Node8, SAMPLE72_CANINE, Node7, SAMPLE51_CANINE, MZ056885_1_CANINE_PARVOVIRUS_2_EGYPT, Node106, Node6, SAMPLE57_CANINE, Node5, MF510157_1_CANINE_PARVOVIRUS_2C_ITALY, Node4, SAMPLE76_CANINE, SAMPLE77_CANINE, Node111, Node3, OM100699_1_CANINE_PARVOVIRUS_2_EGYPT, Node2, OM100697_1_CANINE_PARVOVIRUS_2_EGYPT, SAMPLE68_CANINE, Node115, Node1, SAMPLE47_CANINE, MZ056886_1_CANINE_PARVOVIRUS_2_EGYPT, Node118, SAMPLE18_CANINE, SAMPLE8_CANINE, Node121`
+
+
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+
+>kill-zero-lengths => Yes
+
+### Deleted 22 zero-length internal branches: `Node106, Node11, Node115, Node12, Node14, Node2, Node20, Node21, Node28, Node29, Node3, Node33, Node35, Node36, Node37, Node44, Node45, Node66, Node69, Node7, Node80, Node93`
+* Log(L) = -3813.39, AIC-c =  7889.09 (131 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  0.109
+
+### Obtaining the global omega estimate based on relative GTR branch lengths and nucleotide substitution biases
+* Log(L) = -3610.84, AIC-c =  7454.43 (116 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  0.117
+* non-synonymous/synonymous rate ratio for *test* =   0.1187
+
+>full-model => Yes
+Only analyze sites whose 1-based indices match the following list (null to skip) : 
+>limit-to-sites => null
+For sites whose 1-based indices match the following list, write out likelihood function snapshots (null string to skip) : 
+>save-lf-for-sites => null
+
+### Improving branch lengths, nucleotide substitution biases, and global dN/dS ratios under a full codon model
+* Log(L) = -3605.96
+* Log(L) = -3605.96, AIC-c =  7444.66 (116 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  0.118
+* non-synonymous/synonymous rate ratio for *test* =   0.1055
+
+### For partition 1 these sites are significant at p <=0.1
+
+|   Codon    | Partition  |   alpha    |non-syn rate (beta) distribution, rates : weights|    LRT     |Episodic selection detected?| # branches |         List of most common codon substitutions at this site          |
+|:----------:|:----------:|:----------:|:-----------------------------------------------:|:----------:|:--------------------------:|:----------:|:---------------------------------------------------------------------:|
+|     5      |     1      |    0.505   |            0.17/7348.36 : 0.95/0.05             |    4.078   |      Yes, p =  0.0608      |     1      |                         [2]gGa>gCa|[1]gCa>gGa                         |
+|    324     |     1      |    0.146   |            0.07/13687.02 : 0.96/0.04            |   17.688   |      Yes, p =  0.0001      |     1      |                         [2]ATt>TAt|[1]AtT>TtA                         |
