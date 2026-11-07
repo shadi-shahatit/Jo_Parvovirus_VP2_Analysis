@@ -37,7 +37,7 @@ Required software:
 
 ## 1.1 Sanger trimming using sangeranalyseR
 
-Our samples included 18 qPCR-positive samples of 9 canine, 9 feline, and 1 lion, together with 4 vaccine-associated strains: vaccineCanine_MSD, vaccineCanine_Zoetis, vaccineFeline_MSD, and vaccineFeline_Zoetis. Raw Sanger chromatograms were processed using the `sangeranalyseR` package to trim sequences and generate cleaned sequence reads. See `sangeranalyseR.R` (v4).
+Our samples included 18 qPCR-positive samples of 9 canine and 9 feline, together with 5 vaccine-associated strains: vaccineCanine_MSD, vaccineCanine_Zoetis, vaccineFeline_MSD, vaccineFeline_Zoetis, and vaccineCanine_Hepra. Raw Sanger chromatograms were processed using the `sangeranalyseR` package to trim sequences and generate cleaned sequence reads. See `sangeranalyseR.R` (v4).
 
 ---
 
@@ -98,8 +98,8 @@ We tested several outgroup sequences, including NC_001510 (Protoparvovirus roden
 All sample, vaccine, reference, and NCBI Virus sequences were combined (n = 142):
 
 ```bash
-seqkit seq *.fa refs/*.fa NCBIvirus_seq_filtered_final.fasta add_seq/*.fasta > combined_sample_v3_vac_ref_ncbi_add_v142.fasta
-seqkit stats combined_sample_v3_vac_ref_ncbi_add_v142.fasta 
+seqkit seq *.fa refs/*.fa NCBIvirus_seq_filtered_final.fasta add_seq/*.fasta > combined_sample_v3_vac_ref_ncbi_add_vVetRes.fasta
+seqkit stats combined_sample_v3_vac_ref_ncbi_add_vVetRes.fasta 
 ```
 
 ## 1.4 DNA translation and VP2 ORF selection
@@ -110,9 +110,9 @@ DNA sequences were translated using **ExPASy six-frame translation**.
 
 ```bash
 
-## run Expasy on bash for all samples from combined_sample_v3_vac_ref_ncbi_add_v142
+## run Expasy on bash for all samples from combined_sample_v3_vac_ref_ncbi_add_vVetRes
 
-f="combined_sample_v3_vac_ref_ncbi_add_v142.fasta" 
+f="combined_sample_v3_vac_ref_ncbi_add_vVetRes.fasta" 
 
 awk -v RS=">" 'NR>1 {
     n=split($0, lines, "\n")
@@ -150,8 +150,8 @@ done
 
 # combine all best-ORF fasta
 
-seqkit seq Expasy_translate/Expasy_output/best_orf/*_best_orf.fasta > Expasy_translate/Expasy_output/best_orf/combined_best_orf_sample_v3_vac_ref_ncbi_add_v142.fasta
-seqkit stats Expasy_translate/Expasy_output/best_orf/combined_best_orf_sample_v3_vac_ref_ncbi_add_v142.fasta
+seqkit seq Expasy_translate/Expasy_output/best_orf/*_best_orf.fasta > Expasy_translate/Expasy_output/best_orf/combined_best_orf_sample_v3_vac_ref_ncbi_add_vVetRes.fasta
+seqkit stats Expasy_translate/Expasy_output/best_orf/combined_best_orf_sample_v3_vac_ref_ncbi_add_vVetRes.fasta
 ```
 
 ## 5. DNA and protein multiple sequence alignment
@@ -165,7 +165,7 @@ MSA and downstream analyses were performed using `ParvoProject_MSA_Tree_v3.R`. T
 
 ## 6. Phylogenetic analyses with Neighbor-Joining, Maximum Likelihood, and Bayesian Inference 
 
-Phylogenetic trees were reconstructed from DNA and protein alignments using **Neighbor-Joining (NJ)**, **Maximum Likelihood (ML)**, and Bayesian Inference (BI) approaches. Nucleotide and amino acid substitution models were evaluated before selecting the best-performing models. Most importantly, ModelFinder in `IQ-TREE2` was used.
+Phylogenetic trees were reconstructed from DNA and protein alignments using **Neighbor-Joining (NJ)**, **Maximum Likelihood (ML)**, and **Bayesian Inference (BI)** approaches. Nucleotide and amino acid substitution models were evaluated before selecting the best-performing models. Most importantly, ModelFinder in `IQ-TREE2` was used.
 
 Neighbor-Joining trees were generated in R using the `ape` and `phangorn` packages.
 
@@ -173,7 +173,7 @@ Maximum Likelihood trees were generated using `IQ-TREE2` via
 
 ```bash
 iqtree2 \
-	-s aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_FINAL_SVRNA_v3_v142.fasta \
+	-s aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_FINAL_SVRNA_v3_vVetRes.fasta \
 	-m MFP \
 	-B 1000 \
 	-alrt 1000 \
@@ -181,11 +181,11 @@ iqtree2 \
 	-T 6 \
 	-seed 1001 \
 	-vv \
-	-pre iqtree_output/paper/Maxll_DNA_aln_Muscle_trimmed_FINAL_SVRNA_v3_v142 \
+	-pre iqtree_output/paper/Maxll_DNA_aln_Muscle_trimmed_FINAL_SVRNA_v3_vVetRes \
 	-redo
 
 iqtree2 \
-	-s aln/paper/Parvovirus_Protein_alignment_Muscle_FINAL_SVRNA_v3_v142.fasta \
+	-s aln/paper/Parvovirus_Protein_alignment_Muscle_FINAL_SVRNA_v3_vVetRes.fasta \
 	-m MFP \
 	-B 1000 \
 	-alrt 1000 \
@@ -193,7 +193,7 @@ iqtree2 \
 	-T 6 \
 	-seed 1001 \
 	-vv \
-	-pre iqtree_output/paper/Maxll_Protein_aln_Muscle_FINAL_SVRNA_v3_v142 \
+	-pre iqtree_output/paper/Maxll_Protein_aln_Muscle_FINAL_SVRNA_v3_vVetRes \
 	-redo
 ```
 
@@ -216,7 +216,7 @@ mrbayes_block <- "
 begin mrbayes;
   set autoclose=yes nowarn=yes;
   prset aamodelpr=fixed(jones);
-  lset rates=kmixture nmixtcat=2;
+  lset rates=propinv;
   mcmc ngen=2000000 samplefreq=1000 printfreq=1000 diagnfreq=10000 nchains=4;
   sump burnin=500;
   sumt burnin=500;
@@ -238,7 +238,7 @@ Sequence variation analyses included:
 
 ## 8. Selection analysis
 
-Selection analysis was performed on the VP2 coding sequences (aln/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_v142_repseq.fasta) using the Datamonkey server. We applied the following methods: SLAC, FEL, MEME, and FUBAR to estimate site-specific dN/dS ratios and detect signatures of purifying and diversifying selection across the VP2 alignment.
+Selection analysis was performed on the VP2 coding sequences (aln/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_vVetRes_repseq.fasta) using the Datamonkey server. We applied the following methods: SLAC, FEL, MEME, and FUBAR to estimate substitution rates and detect signatures of purifying and diversifying selection across the VP2 alignment.
 
 ---
 
