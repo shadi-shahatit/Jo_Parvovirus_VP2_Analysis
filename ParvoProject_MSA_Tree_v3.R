@@ -37,8 +37,8 @@ library(writexl)
 
 ## load the files
 
-dna_file <- file.path(sys_dir, "Parvo_sanger_full_seq","combined_sample_v3_vac_ref_ncbi_add_v142.fasta")
-protein_file <- file.path(sys_dir,"Parvo_sanger_full_seq/Expasy_translate/Expasy_output/best_orf","combined_best_orf_sample_v3_vac_ref_ncbi_add_v142.fasta")
+dna_file <- file.path(sys_dir, "Parvo_sanger_full_seq","combined_sample_v3_vac_ref_ncbi_add_vVetRes.fasta")
+protein_file <- file.path(sys_dir,"Parvo_sanger_full_seq/Expasy_translate/Expasy_output/best_orf","combined_best_orf_sample_v3_vac_ref_ncbi_add_vVetRes.fasta")
 
 dna_sequences <- readDNAStringSet(dna_file)
 protein_sequences <- readAAStringSet(protein_file)
@@ -191,9 +191,6 @@ dna_phy_Muscle_trimmed_CPV2C <- phyDat(as.matrix(dna_alignment_Muscle_trimmed_CP
 
 width(dna_alignment_Muscle_trimmed_CPV2C)/3
 
-writeXStringSet(DNAStringSet(dna_alignment_Muscle_trimmed_CPV2C),
-                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_v142.fasta"))
-
 ## Alignment
 
 ## Protein 
@@ -202,15 +199,18 @@ protein_alignment_Muscle <- msa(protein_sequences_mod, method = "Muscle")
 protein_phy_Muscle <- phyDat(as.matrix(protein_alignment_Muscle), type = "AA")
 
 writeXStringSet(DNAStringSet(dna_alignment_Muscle_trimmed),
-                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_FINAL_SVRNA_v3_v142.fasta"))
+                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_FINAL_SVRNA_v3_vVetRes.fasta"))
 writeXStringSet(AAStringSet(protein_alignment_Muscle),
-                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_Protein_alignment_Muscle_FINAL_SVRNA_v3_v142.fasta"))
+                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_Protein_alignment_Muscle_FINAL_SVRNA_v3_vVetRes.fasta"))
+
+writeXStringSet(DNAStringSet(dna_alignment_Muscle_trimmed_CPV2C),
+                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_vVetRes.fasta"))
 
 ## define color palette first for groups
 group_colors <- c(
   "Jo_Feline"        = "firebrick4",
   "Regional_Feline"  = "firebrick1",
-  "Jo_Lion"          = "maroon",
+  # "Jo_Lion"          = "maroon",
   "Jo_Canine"        = "darkblue",
   "Regional_Canine"  = "royalblue2",
   "Reference"        = "darkcyan",
@@ -232,9 +232,9 @@ dna_NJ_Muscle_trimmed_K80 <- NJ(dist.dna(as.DNAbin(dna_phy_Muscle_trimmed), mode
 
 model_test <- modelTest(dna_phy_Muscle_trimmed, model = c("JC","F81","K80"), G = FALSE, I = FALSE)
 # Model        df  logLik   AIC      BIC
-# JC 281 -5260.684 11083.37 12647.5 
-# F81 284 -5174.966 10917.93 12498.77 
-# K80 282 -5195.703 10955.41 12525.11 
+# JC 281 -5160.52 10883.04 12447.17 
+# F81 284 -5076.073 10720.15 12300.98 
+# K80 282 -5082.368 10728.74 12298.44 
 
 parsimony(dna_NJ_Muscle_trimmed_JC, dna_phy_Muscle_trimmed)
 parsimony(dna_NJ_Muscle_trimmed_F81, dna_phy_Muscle_trimmed)
@@ -530,9 +530,9 @@ protein_NJ_Muscle_LG <- NJ(dist.ml(protein_phy_Muscle,model = "LG"))
 
 model_test <- modelTest(protein_phy_Muscle, model = c("WAG","JTT","LG"), G = FALSE, I = FALSE)
 # Model        df  logLik   AIC      BIC
-# WAG 281 -2924.178 6410.356 7697.905 
-# JTT 281 -2909.251 6380.503 7668.052 
-# LG 281 -2948.542 6459.084 7746.633 
+# WAG 281 -2912.641 6387.283 7674.832 
+# JTT 281 -2899.993 6361.985 7649.535 
+# LG 281 -2935.317 6432.634 7720.183 
 
 parsimony(protein_NJ_Muscle_WAG, protein_phy_Muscle)
 parsimony(protein_NJ_Muscle_JTT, protein_phy_Muscle)
@@ -651,7 +651,7 @@ ggtreeplot_protein_NJ_Muscle_rooted_oldestFPV <- ggtree(protein_NJ_Muscle_rooted
 
 ## DNA
 
-dna_ML_Muscle_trimmed_tree <- read.tree(file.path(sys_dir,"Parvo_sanger_full_seq/iqtree_output/paper/Maxll_DNA_aln_Muscle_trimmed_FINAL_SVRNA_v3_v142.contree"))
+dna_ML_Muscle_trimmed_tree <- read.tree(file.path(sys_dir,"Parvo_sanger_full_seq/iqtree_output/paper/Maxll_DNA_aln_Muscle_trimmed_FINAL_SVRNA_v3_vVetRes.contree"))
 
 tip_df_dna <- data.frame(
   label = dna_ML_Muscle_trimmed_tree$tip.label,
@@ -875,51 +875,198 @@ tip_order <- plot_data$label[order(plot_data$y, decreasing = TRUE)]
 
 ## FINAL_SVRNA_v3_v142
 
+# tips_to_keep <- c(
+#   "Sample68_Canine",
+#   "OM100697.1_Canine_parvovirus_2_Egypt",
+#   "Sample47_Canine",
+#   "Sample8_Canine",
+#   "Sample18_Canine",
+#   "OM100699.1_Canine_parvovirus_2_Egypt",
+#   # "OM100701.1_Canine_parvovirus_2_Egypt",
+#   # "OM100698.1_Canine_parvovirus_2_Egypt",
+#   "OM100696.1_Canine_parvovirus_2_Egypt",
+#   "MG013488.1_Canine_parvovirus_2c_China",
+#   "MF510157.1_Canine_parvovirus_2c_Italy",
+#   "Sample57_Canine",
+#   "MZ056886.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056884.1_Canine_parvovirus_2_Egypt",
+#   "Sample77_Canine",
+#   "Sample76_Canine",
+#   "MZ056885.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056889.1_Canine_parvovirus_2_Egypt",
+#   "sample51_canine",
+#   "Sample72_Canine",
+#   "OR667801.1_Canine_parvovirus_2_Iraq",
+#   # "OR667800.1_Canine_parvovirus_2_Iraq",
+#   # "OR667802.1_Canine_parvovirus_2_Iraq",
+#   # "OR451707.1_Canine_parvovirus_2_Iraq",
+#   # "OR667804.1_Canine_parvovirus_2_Iraq",
+#   # "OR667803.1_Canine_parvovirus_2_Iraq",
+#   "MW653250.1_Canine_parvovirus_2a_Iran",
+#   "OL330980.1_Canine_parvovirus_2_Iran",
+#   # "OL330978.1_Canine_parvovirus_2_Iran",
+#   "MW653249.1_Canine_parvovirus_2a_Iran",
+#   "OM100702.1_Canine_parvovirus_2_Egypt",
+#   # "OM100700.1_Canine_parvovirus_2_Egypt",
+#   "OL330979.1_Canine_parvovirus_2_Iran",
+#   "MZ056892.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056883.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056891.1_Canine_parvovirus_2_Egypt",
+#   "OM721655.1_Canine_parvovirus_2b_Turkey",
+#   "MZ056890.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056882.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056887.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056888.1_Canine_parvovirus_2_Egypt",
+#   # "MZ056881.1_Canine_parvovirus_2_Egypt",
+#   "MW539053.1_Canine_parvovirus_2b_Turkey",
+#   # "OM721656.1_Canine_parvovirus_2b_Turkey",
+#   "OL330977.1_Canine_parvovirus_2_Iran",
+#   "KX268117.1_Canine_parvovirus_2_Turkey",
+#   # "KX268105.1_Canine_parvovirus_2_Turkey",
+#   # "KX268107.1_Canine_parvovirus_2_Turkey",
+#   # "KX268118.1_Canine_parvovirus_2_Turkey",
+#   # "KX268106.1_Canine_parvovirus_2_Turkey",
+#   # "KX268114.1_Canine_parvovirus_2_Turkey",
+#   # "KX268110.1_Canine_parvovirus_2_Turkey",
+#   # "KX268108.1_Canine_parvovirus_2_Turkey",
+#   "MW653251.1_Canine_parvovirus_2b_Iran",
+#   "MW653253.1_Canine_parvovirus_2c_Iran",
+#   # "KX268109.1_Canine_parvovirus_2_Turkey",
+#   "FJ222821.1_ref_CPV2C",
+#   "MW653256.1_Canine_parvovirus_2a_Iran",
+#   "KX268115.1_Canine_parvovirus_2_Turkey",
+#   "AY742933.1_recent_Canine_parvovirus_2a_NewZealand",
+#   "KX268116.1_Canine_parvovirus_2_Turkey",
+#   # "KX268111.1_Canine_parvovirus_2_Turkey",
+#   # "KX268113.1_Canine_parvovirus_2_Turkey",
+#   # "KX268112.1_Canine_parvovirus_2_Turkey",
+#   "MW653252.1_Canine_parvovirus_2b_Iran",
+#   "MW653248.1_Canine_parvovirus_2a_Iran",
+#   "M74849.1_ref_CPV2B",
+#   "M24003.1_ref_CPV2A",
+#   "M38245.1_ref_CPV2",
+#   "vaccineCanine_MSD",
+#   "KX268119.1_Canine_parvovirus_2_Turkey",
+#   "vaccineCanine_Zoetis",
+#   "Sample70_Feline",
+#   "Sample38_Feline",
+#   "Sample69_Feline",
+#   "Sample_Lion",
+#   "Sample25_Feline",
+#   "Sample27_Feline",
+#   "Sample7_Feline",
+#   "Sample44_Feline",
+#   "PV521947.1_Feline_parvovirus_Egypt",
+#   # "PP663048.2_Feline_parvovirus_Egypt",
+#   "OM638043.1_Feline_parvovirus_Egypt",
+#   # "PV521964.1_Feline_parvovirus_Egypt",
+#   # "PP663074.2_Feline_parvovirus_Egypt",
+#   # "PV521948.1_Feline_parvovirus_Egypt",
+#   # "PV808490.1_Feline_parvovirus_Egypt",
+#   # "PV808489.1_Feline_parvovirus_Egypt",
+#   # "PV521962.1_Feline_parvovirus_Egypt",
+#   # "PV521954.1_Feline_parvovirus_Egypt",
+#   # "PV521953.1_Feline_parvovirus_Egypt",
+#   # "PP663056.2_Feline_parvovirus_Egypt",
+#   # "PP663055.2_Feline_parvovirus_Egypt",
+#   # "PV808495.1_Feline_parvovirus_Egypt",
+#   # "PV521960.1_Feline_parvovirus_Egypt",
+#   # "PP663070.2_Feline_parvovirus_Egypt",
+#   # "PP663041.2_Feline_parvovirus_Egypt",
+#   # "PP663072.2_Feline_parvovirus_Egypt",
+#   # "PP663050.2_Feline_parvovirus_Egypt",
+#   "PP663073.2_Feline_parvovirus_Egypt",
+#   # "PV521961.1_Feline_parvovirus_Egypt",
+#   # "PV521949.1_Feline_parvovirus_Egypt",
+#   # "PP663045.2_Feline_parvovirus_Egypt",
+#   # "PV521942.1_Feline_parvovirus_Egypt",
+#   # "PV521963.1_Feline_parvovirus_Egypt",
+#   # "PP663071.2_Feline_parvovirus_Egypt",
+#   # "PP663044.2_Feline_parvovirus_Egypt",
+#   # "PV521955.1_Feline_parvovirus_Egypt",
+#   # "PP663059.2_Feline_parvovirus_Egypt",
+#   # "PV808491.1_Feline_parvovirus_Egypt",
+#   # "PV521951.1_Feline_parvovirus_Egypt",
+#   # "PV808488.1_Feline_parvovirus_Egypt",
+#   # "PV521944.1_Feline_parvovirus_Egypt",
+#   # "PV521943.1_Feline_parvovirus_Egypt",
+#   # "PP663042.2_Feline_parvovirus_Egypt",
+#   # "PV521965.1_Feline_parvovirus_Egypt",
+#   # "PV521945.1_Feline_parvovirus_Egypt",
+#   # "PV521959.1_Feline_parvovirus_Egypt",
+#   # "PV521958.1_Feline_parvovirus_Egypt",
+#   # "PV521957.1_Feline_parvovirus_Egypt",
+#   # "PV808492.1_Feline_parvovirus_Egypt",
+#   # "PV521952.1_Feline_parvovirus_Egypt",
+#   # "PV521956.1_Feline_parvovirus_Egypt",
+#   # "PP663061.2_Feline_parvovirus_Egypt",
+#   # "PV808496.1_Feline_parvovirus_Egypt",
+#   # "PP663062.2_Feline_parvovirus_Egypt",
+#   # "PV808493.1_Feline_parvovirus_Egypt",
+#   # "PV808486.1_Feline_parvovirus_Egypt",
+#   # "PP663067.2_Feline_parvovirus_Egypt",
+#   # "PV521946.1_Feline_parvovirus_Egypt",
+#   "PP663047.2_Feline_parvovirus_Egypt",
+#   "sample12_feline",
+#   "PV521950.1_Feline_parvovirus_Egypt",
+#   # "PP663052.2_Feline_parvovirus_Egypt",
+#   "Sample67_Feline",
+#   "KX434461.1_Feline_parvovirus_IZSSI_Italy",
+#   "KX900570.1_Feline_parvovirus_HH6_China",
+#   "M38246.1_ref_FPV",
+#   "KP081409.1_Feline_parvovirus_Iran",
+#   "vaccineFeline_Zoetis",
+#   "vaccineFeline_MSD",
+#   "EU659112.1_ref_FPV_oldest"
+# )
+
+## FINAL_SVRNA_v3_vVetRes
+
 tips_to_keep <- c(
+  "Sample8_Canine",
+  "Sample18_Canine",
+  "Sample77_Canine",
+  "Sample76_Canine",
   "Sample68_Canine",
   "OM100697.1_Canine_parvovirus_2_Egypt",
   "Sample47_Canine",
-  "Sample8_Canine",
-  "Sample18_Canine",
   "OM100699.1_Canine_parvovirus_2_Egypt",
   # "OM100701.1_Canine_parvovirus_2_Egypt",
   # "OM100698.1_Canine_parvovirus_2_Egypt",
-  "OM100696.1_Canine_parvovirus_2_Egypt",
+  # "OM100696.1_Canine_parvovirus_2_Egypt",
   "MG013488.1_Canine_parvovirus_2c_China",
   "MF510157.1_Canine_parvovirus_2c_Italy",
   "Sample57_Canine",
   "MZ056886.1_Canine_parvovirus_2_Egypt",
   # "MZ056884.1_Canine_parvovirus_2_Egypt",
-  "Sample77_Canine",
-  "Sample76_Canine",
-  "MZ056885.1_Canine_parvovirus_2_Egypt",
   # "MZ056889.1_Canine_parvovirus_2_Egypt",
-  "sample51_canine",
   "Sample72_Canine",
+  "sample51_canine",
+  "MZ056885.1_Canine_parvovirus_2_Egypt",
   "OR667801.1_Canine_parvovirus_2_Iraq",
   # "OR667800.1_Canine_parvovirus_2_Iraq",
   # "OR667802.1_Canine_parvovirus_2_Iraq",
   # "OR451707.1_Canine_parvovirus_2_Iraq",
   # "OR667804.1_Canine_parvovirus_2_Iraq",
-  # "OR667803.1_Canine_parvovirus_2_Iraq",
-  "MW653250.1_Canine_parvovirus_2a_Iran",
-  "OL330980.1_Canine_parvovirus_2_Iran",
-  # "OL330978.1_Canine_parvovirus_2_Iran",
-  "MW653249.1_Canine_parvovirus_2a_Iran",
-  "OM100702.1_Canine_parvovirus_2_Egypt",
-  # "OM100700.1_Canine_parvovirus_2_Egypt",
-  "OL330979.1_Canine_parvovirus_2_Iran",
-  "MZ056892.1_Canine_parvovirus_2_Egypt",
-  # "MZ056883.1_Canine_parvovirus_2_Egypt",
-  # "MZ056891.1_Canine_parvovirus_2_Egypt",
-  "OM721655.1_Canine_parvovirus_2b_Turkey",
+  "OR667803.1_Canine_parvovirus_2_Iraq",
   "MZ056890.1_Canine_parvovirus_2_Egypt",
   # "MZ056882.1_Canine_parvovirus_2_Egypt",
   # "MZ056887.1_Canine_parvovirus_2_Egypt",
   # "MZ056888.1_Canine_parvovirus_2_Egypt",
   # "MZ056881.1_Canine_parvovirus_2_Egypt",
   "MW539053.1_Canine_parvovirus_2b_Turkey",
-  # "OM721656.1_Canine_parvovirus_2b_Turkey",
+  "OM721656.1_Canine_parvovirus_2b_Turkey",
+  # "OM721655.1_Canine_parvovirus_2b_Turkey",
+  # "MZ056892.1_Canine_parvovirus_2_Egypt",
+  # "MZ056883.1_Canine_parvovirus_2_Egypt",
+  # "MZ056891.1_Canine_parvovirus_2_Egypt",
+  "OL330979.1_Canine_parvovirus_2_Iran",
+  # "OM100702.1_Canine_parvovirus_2_Egypt",
+  # "OM100700.1_Canine_parvovirus_2_Egypt",
+  "MW653250.1_Canine_parvovirus_2a_Iran",
+  # "OL330980.1_Canine_parvovirus_2_Iran",
+  # "OL330978.1_Canine_parvovirus_2_Iran",
+  # "MW653249.1_Canine_parvovirus_2a_Iran",
   "OL330977.1_Canine_parvovirus_2_Iran",
   "KX268117.1_Canine_parvovirus_2_Turkey",
   # "KX268105.1_Canine_parvovirus_2_Turkey",
@@ -931,7 +1078,7 @@ tips_to_keep <- c(
   # "KX268108.1_Canine_parvovirus_2_Turkey",
   "MW653251.1_Canine_parvovirus_2b_Iran",
   "MW653253.1_Canine_parvovirus_2c_Iran",
-  # "KX268109.1_Canine_parvovirus_2_Turkey",
+  "KX268109.1_Canine_parvovirus_2_Turkey",
   "FJ222821.1_ref_CPV2C",
   "MW653256.1_Canine_parvovirus_2a_Iran",
   "KX268115.1_Canine_parvovirus_2_Turkey",
@@ -944,24 +1091,23 @@ tips_to_keep <- c(
   "MW653248.1_Canine_parvovirus_2a_Iran",
   "M74849.1_ref_CPV2B",
   "M24003.1_ref_CPV2A",
-  "M38245.1_ref_CPV2",
+  "vaccineCanine_Hepra",
   "vaccineCanine_MSD",
+  "M38245.1_ref_CPV2",
   "KX268119.1_Canine_parvovirus_2_Turkey",
   "vaccineCanine_Zoetis",
-  "Sample70_Feline",
-  "Sample38_Feline",
-  "Sample69_Feline",
-  "Sample_Lion",
-  "Sample25_Feline",
-  "Sample27_Feline",
-  "Sample7_Feline",
-  "Sample44_Feline",
-  "PV521947.1_Feline_parvovirus_Egypt",
-  # "PP663048.2_Feline_parvovirus_Egypt",
-  "OM638043.1_Feline_parvovirus_Egypt",
-  # "PV521964.1_Feline_parvovirus_Egypt",
-  # "PP663074.2_Feline_parvovirus_Egypt",
-  # "PV521948.1_Feline_parvovirus_Egypt",
+  "PP663073.2_Feline_parvovirus_Egypt",
+  # "PP663041.2_Feline_parvovirus_Egypt",
+  # "PP663070.2_Feline_parvovirus_Egypt",
+  # "PP663072.2_Feline_parvovirus_Egypt",
+  # "PP663050.2_Feline_parvovirus_Egypt",
+  # "PP663045.2_Feline_parvovirus_Egypt",
+  # "PV521963.1_Feline_parvovirus_Egypt",
+  # "PV521961.1_Feline_parvovirus_Egypt",
+  # "PV521949.1_Feline_parvovirus_Egypt",
+  # "PV521942.1_Feline_parvovirus_Egypt",
+  # "PV808495.1_Feline_parvovirus_Egypt",
+  # "PV521960.1_Feline_parvovirus_Egypt",
   # "PV808490.1_Feline_parvovirus_Egypt",
   # "PV808489.1_Feline_parvovirus_Egypt",
   # "PV521962.1_Feline_parvovirus_Egypt",
@@ -969,56 +1115,57 @@ tips_to_keep <- c(
   # "PV521953.1_Feline_parvovirus_Egypt",
   # "PP663056.2_Feline_parvovirus_Egypt",
   # "PP663055.2_Feline_parvovirus_Egypt",
-  # "PV808495.1_Feline_parvovirus_Egypt",
-  # "PV521960.1_Feline_parvovirus_Egypt",
-  # "PP663070.2_Feline_parvovirus_Egypt",
-  # "PP663041.2_Feline_parvovirus_Egypt",
-  # "PP663072.2_Feline_parvovirus_Egypt",
-  # "PP663050.2_Feline_parvovirus_Egypt",
-  "PP663073.2_Feline_parvovirus_Egypt",
-  # "PV521961.1_Feline_parvovirus_Egypt",
-  # "PV521949.1_Feline_parvovirus_Egypt",
-  # "PP663045.2_Feline_parvovirus_Egypt",
-  # "PV521942.1_Feline_parvovirus_Egypt",
-  # "PV521963.1_Feline_parvovirus_Egypt",
+  "OM638043.1_Feline_parvovirus_Egypt",
+  # "PV521964.1_Feline_parvovirus_Egypt",
+  "PP663074.2_Feline_parvovirus_Egypt",
+  "Sample70_Feline",
+  "Sample38_Feline",
+  "Sample25_Feline",
+  "Sample69_Feline",
+  "Sample27_Feline",
+  "Sample7_Feline",
+  "Sample44_Feline",
+  "PV521947.1_Feline_parvovirus_Egypt",
+  # "PP663048.2_Feline_parvovirus_Egypt",
+  # "PV521948.1_Feline_parvovirus_Egypt",
   # "PP663071.2_Feline_parvovirus_Egypt",
   # "PP663044.2_Feline_parvovirus_Egypt",
   # "PV521955.1_Feline_parvovirus_Egypt",
   # "PP663059.2_Feline_parvovirus_Egypt",
-  # "PV808491.1_Feline_parvovirus_Egypt",
+  "KX434461.1_Feline_parvovirus_IZSSI_Italy",
+  "PV808491.1_Feline_parvovirus_Egypt",
   # "PV521951.1_Feline_parvovirus_Egypt",
-  # "PV808488.1_Feline_parvovirus_Egypt",
-  # "PV521944.1_Feline_parvovirus_Egypt",
-  # "PV521943.1_Feline_parvovirus_Egypt",
-  # "PP663042.2_Feline_parvovirus_Egypt",
-  # "PV521965.1_Feline_parvovirus_Egypt",
-  # "PV521945.1_Feline_parvovirus_Egypt",
-  # "PV521959.1_Feline_parvovirus_Egypt",
-  # "PV521958.1_Feline_parvovirus_Egypt",
-  # "PV521957.1_Feline_parvovirus_Egypt",
   # "PV808492.1_Feline_parvovirus_Egypt",
   # "PV521952.1_Feline_parvovirus_Egypt",
   # "PV521956.1_Feline_parvovirus_Egypt",
   # "PP663061.2_Feline_parvovirus_Egypt",
-  # "PV808496.1_Feline_parvovirus_Egypt",
+  # "PV521965.1_Feline_parvovirus_Egypt",
+  # "PV521945.1_Feline_parvovirus_Egypt",
+  # "PV521958.1_Feline_parvovirus_Egypt",
+  # "PV521959.1_Feline_parvovirus_Egypt",
+  # "PV521957.1_Feline_parvovirus_Egypt",
+  # "PV808488.1_Feline_parvovirus_Egypt",
+  # "PV521944.1_Feline_parvovirus_Egypt",
+  # "PV521943.1_Feline_parvovirus_Egypt",
+  # "PP663042.2_Feline_parvovirus_Egypt",
+  # "PV808486.1_Feline_parvovirus_Egypt",
   # "PP663062.2_Feline_parvovirus_Egypt",
   # "PV808493.1_Feline_parvovirus_Egypt",
-  # "PV808486.1_Feline_parvovirus_Egypt",
+  # "PV808496.1_Feline_parvovirus_Egypt",
   # "PP663067.2_Feline_parvovirus_Egypt",
   # "PV521946.1_Feline_parvovirus_Egypt",
   "PP663047.2_Feline_parvovirus_Egypt",
   "sample12_feline",
   "PV521950.1_Feline_parvovirus_Egypt",
-  # "PP663052.2_Feline_parvovirus_Egypt",
+  "PP663052.2_Feline_parvovirus_Egypt",
   "Sample67_Feline",
-  "KX434461.1_Feline_parvovirus_IZSSI_Italy",
   "KX900570.1_Feline_parvovirus_HH6_China",
   "M38246.1_ref_FPV",
   "KP081409.1_Feline_parvovirus_Iran",
   "vaccineFeline_Zoetis",
   "vaccineFeline_MSD",
   "EU659112.1_ref_FPV_oldest"
-  )
+)
 
 length(tips_to_keep) ## 65
 
@@ -1098,7 +1245,7 @@ ggtree(dna_ML_Muscle_trimmed_tree_filtered_rooted_oldestFPV, layout = "rectangul
 
 ## Protein
 
-protein_ML_Muscle_tree <- read.tree(file.path(sys_dir,"Parvo_sanger_full_seq/iqtree_output/paper/Maxll_Protein_aln_Muscle_FINAL_SVRNA_v3_v142.contree"))
+protein_ML_Muscle_tree <- read.tree(file.path(sys_dir,"Parvo_sanger_full_seq/iqtree_output/paper/Maxll_Protein_aln_Muscle_FINAL_SVRNA_v3_vVetRes.contree"))
 
 tip_df_protein <- data.frame(
   label = protein_ML_Muscle_tree$tip.label,
@@ -1396,7 +1543,7 @@ dna_list_for_nexus <- strsplit(as.character(dna_alignment_Muscle_trimmed), "")
 names(dna_list_for_nexus) <- names(dna_alignment_Muscle_trimmed)
 
 ## sanity check before writing
-length(dna_list_for_nexus)              ## should be 143
+length(dna_list_for_nexus)              ## should be 142
 length(dna_list_for_nexus[[1]])         ## should be 1932, not 1
 
 # write.nexus.data(dna_list_for_nexus,
@@ -1416,7 +1563,7 @@ length(dna_list_for_nexus[[1]])         ## should be 1932, not 1
 #     append = TRUE)
 
 write.nexus.data(dna_list_for_nexus,
-                 file = file.path(sys_dir, "Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3.nex"),
+                 file = file.path(sys_dir, "Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3_vVetRes.nex"),
                  format = "dna",
                  interleaved = FALSE)
 mrbayes_block <- "
@@ -1430,12 +1577,12 @@ begin mrbayes;
 end;
 "
 cat(mrbayes_block,
-    file = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3.nex",
+    file = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3_vVetRes.nex",
     append = TRUE)
 
 ## read the tree
 
-mrbayes_tree_dna <- read.nexus("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3.nex.con.tre")
+mrbayes_tree_dna <- read.nexus("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3_vVetRes.nex.con.tre")
 mrbayes_tree_dna_rooted <- root(mrbayes_tree_dna, outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
 
 tip_df_mrbayes <- data.frame(
@@ -1466,7 +1613,7 @@ ggtree(mrbayes_tree_dna_rooted, layout = "rectangular", size = 0.3) %<+% tip_df_
 
 ## with probability
 
-mrbayes_tree_dna <- read.beast("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3.nex.con.tre")
+mrbayes_tree_dna <- read.beast("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3_vVetRes.nex.con.tre")
 mrbayes_data <- as_tibble(mrbayes_tree_dna)[, c("node", "prob")]
 class(mrbayes_data) <- c("tbl_df", "tbl", "data.frame")
 n_tips <- length(mrbayes_tree_dna@phylo$tip.label)
@@ -1474,19 +1621,14 @@ print(mrbayes_data[mrbayes_data$prob > 0.95, ], n = 30)
 nrow(mrbayes_data[mrbayes_data$prob > 0.95, ])
 nrow(mrbayes_data[, ])
 
-## MrBayes trees is now built on FINAL_SVRNA_v3 with 143 seq, so lets remove FPV_JO24_Sample_11 manually 
+mrbayes_tree_dna 
 
-seq_to_remove <- "FPV_JO24_Sample_11"
-mrbayes_tree_dna_noJO24 <- drop.tip(mrbayes_tree_dna, seq_to_remove)
+length(mrbayes_tree_dna@phylo$tip.label)
 
-length(mrbayes_tree_dna_noJO24@phylo$tip.label)
-length(mrbayes_tree_dna_noJO24@phylo$tip.label)
-seq_to_remove %in% mrbayes_tree_dna_noJO24@phylo$tip.label
+mrbayes_tree_dna_rooted_oldestFPV <- root(as.phylo(mrbayes_tree_dna), outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
+mrbayes_tree_dna_rooted_oldestFPV <- treedata(phylo = mrbayes_tree_dna_rooted_oldestFPV, data = mrbayes_data)
 
-mrbayes_tree_dna_noJO24_rooted_oldestFPV <- root(as.phylo(mrbayes_tree_dna_noJO24), outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
-mrbayes_tree_dna_noJO24_rooted_oldestFPV <- treedata(phylo = mrbayes_tree_dna_noJO24_rooted_oldestFPV, data = mrbayes_data)
-
-ggtreeplot_mrbayes_tree_dna_noJO24_rooted_oldestFPV <- ggtree(mrbayes_tree_dna_noJO24_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
+ggtreeplot_mrbayes_tree_dna_rooted_oldestFPV <- ggtree(mrbayes_tree_dna_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
   geom_tiplab(aes(color = group), size = 2, offset = 0.002, align = TRUE, linesize = 0.1) +
   geom_tippoint(aes(color = group), size = 1.2) +
   geom_text2(aes(label = ifelse(!isTip & as.numeric(prob) >= 0, round(as.numeric(prob), 2), NA)), size = 1.8, hjust = 1.2, vjust = -0.4) +
@@ -1503,25 +1645,61 @@ ggtreeplot_mrbayes_tree_dna_noJO24_rooted_oldestFPV <- ggtree(mrbayes_tree_dna_n
 
 parsimony(dna_NJ_Muscle_trimmed_rooted_oldestFPV, dna_phy_Muscle_trimmed)
 parsimony(dna_ML_Muscle_trimmed_tree_rooted_oldestFPV, dna_phy_Muscle_trimmed)
-# parsimony(mrbayes_tree_dna_noJO24_rooted_oldestFPV, dna_phy_Muscle_trimmed) 
-parsimony(as.phylo(mrbayes_tree_dna_noJO24_rooted_oldestFPV), dna_phy_Muscle_trimmed)
-# parsimony(mrbayes_tree_dna_noJO24_rooted_oldestFPV@phylo, dna_phy_Muscle_trimmed)
+# parsimony(mrbayes_tree_dna_rooted_oldestFPV, dna_phy_Muscle_trimmed) 
+parsimony(as.phylo(mrbayes_tree_dna_rooted_oldestFPV), dna_phy_Muscle_trimmed)
+# parsimony(mrbayes_tree_dna_rooted_oldestFPV@phylo, dna_phy_Muscle_trimmed)
+
+## OLD
+## MrBayes trees is now built on FINAL_SVRNA_v3 with 143 seq, so lets remove FPV_JO24_Sample_11 manually 
+
+# seq_to_remove <- "FPV_JO24_Sample_11"
+# mrbayes_tree_dna_noJO24 <- drop.tip(mrbayes_tree_dna, seq_to_remove)
+# 
+# length(mrbayes_tree_dna_noJO24@phylo$tip.label)
+# length(mrbayes_tree_dna_noJO24@phylo$tip.label)
+# seq_to_remove %in% mrbayes_tree_dna_noJO24@phylo$tip.label
+# 
+# mrbayes_tree_dna_noJO24_rooted_oldestFPV <- root(as.phylo(mrbayes_tree_dna_noJO24), outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
+# mrbayes_tree_dna_noJO24_rooted_oldestFPV <- treedata(phylo = mrbayes_tree_dna_noJO24_rooted_oldestFPV, data = mrbayes_data)
+# 
+# ggtreeplot_mrbayes_tree_dna_noJO24_rooted_oldestFPV <- ggtree(mrbayes_tree_dna_noJO24_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
+#   geom_tiplab(aes(color = group), size = 2, offset = 0.002, align = TRUE, linesize = 0.1) +
+#   geom_tippoint(aes(color = group), size = 1.2) +
+#   geom_text2(aes(label = ifelse(!isTip & as.numeric(prob) >= 0, round(as.numeric(prob), 2), NA)), size = 1.8, hjust = 1.2, vjust = -0.4) +
+#   scale_color_manual(values = group_colors) +
+#   theme_tree2() +
+#   labs(
+#     # title = "Parvovirus DNA - MrBayes consensus DNA",
+#     color = "Group") +
+#   theme(legend.position = "bottom",
+#         plot.title = element_text(size = 14, face = "bold"),
+#         legend.text = element_text(size = 8)) +
+#   coord_cartesian(clip = "off") +
+#   hexpand(0.5, direction = 1)
+# 
+# parsimony(dna_NJ_Muscle_trimmed_rooted_oldestFPV, dna_phy_Muscle_trimmed)
+# parsimony(dna_ML_Muscle_trimmed_tree_rooted_oldestFPV, dna_phy_Muscle_trimmed)
+# # parsimony(mrbayes_tree_dna_noJO24_rooted_oldestFPV, dna_phy_Muscle_trimmed) 
+# parsimony(as.phylo(mrbayes_tree_dna_noJO24_rooted_oldestFPV), dna_phy_Muscle_trimmed)
+# # parsimony(mrbayes_tree_dna_noJO24_rooted_oldestFPV@phylo, dna_phy_Muscle_trimmed)
 
 ## filtration
 
-tips_to_keep
+## FINAL_SVRNA_v3_vVetRes
 
-# tips_to_drop <- setdiff(mrbayes_tree_dna_noJO24$tip.label, tips_to_keep)
-tips_to_drop <- setdiff(as.phylo(mrbayes_tree_dna_noJO24)$tip.label, tips_to_keep)
-mrbayes_tree_dna_noJO24_filtered <- drop.tip(mrbayes_tree_dna_noJO24, tips_to_drop)
-mrbayes_tree_dna_noJO24_filtered_rooted_oldestFPV <- root(mrbayes_tree_dna_noJO24_filtered, outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
+tips_to_keep 
 
-# length(mrbayes_tree_dna_noJO24$tip.label)
-# length(mrbayes_tree_dna_noJO24_filtered_rooted_oldestFPV$tip.label)
-length(as.phylo(mrbayes_tree_dna_noJO24)$tip.label)
-length(as.phylo(mrbayes_tree_dna_noJO24_filtered)$tip.label)
+# tips_to_drop <- setdiff(mrbayes_tree_dna$tip.label, tips_to_keep)
+tips_to_drop <- setdiff(as.phylo(mrbayes_tree_dna)$tip.label, tips_to_keep)
+mrbayes_tree_dna_filtered <- drop.tip(mrbayes_tree_dna, tips_to_drop)
+mrbayes_tree_dna_filtered_rooted_oldestFPV <- root(mrbayes_tree_dna_filtered, outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
 
-ggtree(mrbayes_tree_dna_noJO24_filtered_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
+# length(mrbayes_tree_dna$tip.label)
+# length(mrbayes_tree_dna_filtered_rooted_oldestFPV$tip.label)
+length(as.phylo(mrbayes_tree_dna)$tip.label)
+length(as.phylo(mrbayes_tree_dna_filtered)$tip.label)
+
+ggtree(mrbayes_tree_dna_filtered_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
   geom_tiplab(aes(color = group), size = 2, offset = 0.002, align = TRUE, linesize = 0.1) +
   geom_tippoint(aes(color = group), size = 1.2) +
   geom_text2(aes(label = label, subset = !isTip), size = 1.8, hjust = 1.2, vjust = -0.4) +
@@ -1540,7 +1718,7 @@ protein_list_for_nexus <- strsplit(as.character(protein_alignment_Muscle), "")
 names(protein_list_for_nexus) <- names(protein_alignment_Muscle)
 
 ## sanity check before writing
-length(protein_list_for_nexus)              ## should be 143
+length(protein_list_for_nexus)              ## should be 142
 length(protein_list_for_nexus[[1]])         ## should not be 1
 
 # write.nexus.data(protein_list_for_nexus,
@@ -1559,28 +1737,45 @@ length(protein_list_for_nexus[[1]])         ## should not be 1
 # cat(mrbayes_block,
 #     file = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/test_protein_msa_mrbayes.nex",
 #     append = TRUE)
+# write.nexus.data(protein_list_for_nexus,
+#                  file = file.path(sys_dir, "Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3.nex"),
+#                  format = "protein",
+#                  interleaved = FALSE)
+# mrbayes_block <- "
+# begin mrbayes;
+#   set autoclose=yes nowarn=yes;
+#   prset aamodelpr=fixed(jones);
+#   lset rates=kmixture nmixtcat=2;
+#   mcmc ngen=2000000 samplefreq=1000 printfreq=1000 diagnfreq=10000 nchains=4;
+#   sump burnin=500;
+#   sumt burnin=500;
+# end;
+# "
+# cat(mrbayes_block,
+#     file = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3.nex",
+#     append = TRUE)
 
 write.nexus.data(protein_list_for_nexus,
-                 file = file.path(sys_dir, "Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3.nex"),
+                 file = file.path(sys_dir, "Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3_vVetRes.nex"),
                  format = "protein",
                  interleaved = FALSE)
 mrbayes_block <- "
 begin mrbayes;
   set autoclose=yes nowarn=yes;
   prset aamodelpr=fixed(jones);
-  lset rates=kmixture nmixtcat=2;
+  lset rates=propinv;
   mcmc ngen=2000000 samplefreq=1000 printfreq=1000 diagnfreq=10000 nchains=4;
   sump burnin=500;
   sumt burnin=500;
 end;
 "
 cat(mrbayes_block,
-    file = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3.nex",
+    file = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3_vVetRes.nex",
     append = TRUE)
 
 ## read the tree
 
-mrbayes_tree_protein <- read.nexus("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3.nex.con.tre")
+mrbayes_tree_protein <- read.nexus("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3_vVetRes.nex.con.tre")
 mrbayes_tree_protein_rooted <- root(mrbayes_tree_protein, outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
 
 tip_df_mrbayes <- data.frame(
@@ -1611,7 +1806,7 @@ ggtree(mrbayes_tree_protein_rooted, layout = "rectangular", size = 0.3) %<+% tip
 
 ## with probability
 
-mrbayes_tree_protein <- read.beast("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3.nex.con.tre")
+mrbayes_tree_protein <- read.beast("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3_vVetRes.nex.con.tre")
 mrbayes_data <- as_tibble(mrbayes_tree_protein)[, c("node", "prob")]
 class(mrbayes_data) <- c("tbl_df", "tbl", "data.frame")
 n_tips <- length(mrbayes_tree_protein@phylo$tip.label)
@@ -1619,19 +1814,14 @@ print(mrbayes_data[mrbayes_data$prob > 0.95, ], n = 30)
 nrow(mrbayes_data[mrbayes_data$prob > 0.95, ])
 nrow(mrbayes_data[, ])
 
-## MrBayes trees is now built on FINAL_SVRNA_v3 with 143 seq, so lets remove FPV_JO24_Sample_11 manually 
-
-seq_to_remove <- "FPV_JO24_Sample_11"
-mrbayes_tree_protein_noJO24 <- drop.tip(mrbayes_tree_protein, seq_to_remove)
+mrbayes_tree_protein 
 
 length(mrbayes_tree_protein@phylo$tip.label)
-length(mrbayes_tree_protein_noJO24@phylo$tip.label)
-seq_to_remove %in% mrbayes_tree_protein_noJO24@phylo$tip.label
 
-mrbayes_tree_protein_noJO24_rooted_oldestFPV <- root(as.phylo(mrbayes_tree_protein_noJO24), outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
-mrbayes_tree_protein_noJO24_rooted_oldestFPV <- treedata(phylo = mrbayes_tree_protein_noJO24_rooted_oldestFPV, data = mrbayes_data)
+mrbayes_tree_protein_rooted_oldestFPV <- root(as.phylo(mrbayes_tree_protein), outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
+mrbayes_tree_protein_rooted_oldestFPV <- treedata(phylo = mrbayes_tree_protein_rooted_oldestFPV, data = mrbayes_data)
 
-ggtreeplot_mrbayes_tree_protein_noJO24_rooted_oldestFPV <- ggtree(mrbayes_tree_protein_noJO24_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
+ggtreeplot_mrbayes_tree_protein_rooted_oldestFPV <- ggtree(mrbayes_tree_protein_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
   geom_tiplab(aes(color = group), size = 2, offset = 0.002, align = TRUE, linesize = 0.1) +
   geom_tippoint(aes(color = group), size = 1.2) +
   geom_text2(aes(label = ifelse(!isTip & as.numeric(prob) >= 0, round(as.numeric(prob), 2), NA)), size = 1.8, hjust = 1.2, vjust = -0.4) +
@@ -1648,24 +1838,59 @@ ggtreeplot_mrbayes_tree_protein_noJO24_rooted_oldestFPV <- ggtree(mrbayes_tree_p
 
 parsimony(protein_NJ_Muscle_rooted_oldestFPV, protein_phy_Muscle)
 parsimony(protein_ML_Muscle_tree_rooted_oldestFPV, protein_phy_Muscle)
-# parsimony(mrbayes_tree_protein_noJO24_rooted_oldestFPV, protein_phy_Muscle)
-parsimony(as.phylo(mrbayes_tree_protein_noJO24_rooted_oldestFPV), protein_phy_Muscle)
+# parsimony(mrbayes_tree_protein_rooted_oldestFPV, protein_phy_Muscle)
+parsimony(as.phylo(mrbayes_tree_protein_rooted_oldestFPV), protein_phy_Muscle)
+
+## OLD
+## MrBayes trees is now built on FINAL_SVRNA_v3 with 143 seq, so lets remove FPV_JO24_Sample_11 manually 
+
+# seq_to_remove <- "FPV_JO24_Sample_11"
+# mrbayes_tree_protein_noJO24 <- drop.tip(mrbayes_tree_protein, seq_to_remove)
+# 
+# length(mrbayes_tree_protein@phylo$tip.label)
+# length(mrbayes_tree_protein_noJO24@phylo$tip.label)
+# seq_to_remove %in% mrbayes_tree_protein_noJO24@phylo$tip.label
+# 
+# mrbayes_tree_protein_noJO24_rooted_oldestFPV <- root(as.phylo(mrbayes_tree_protein_noJO24), outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
+# mrbayes_tree_protein_noJO24_rooted_oldestFPV <- treedata(phylo = mrbayes_tree_protein_noJO24_rooted_oldestFPV, data = mrbayes_data)
+# 
+# ggtreeplot_mrbayes_tree_protein_noJO24_rooted_oldestFPV <- ggtree(mrbayes_tree_protein_noJO24_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
+#   geom_tiplab(aes(color = group), size = 2, offset = 0.002, align = TRUE, linesize = 0.1) +
+#   geom_tippoint(aes(color = group), size = 1.2) +
+#   geom_text2(aes(label = ifelse(!isTip & as.numeric(prob) >= 0, round(as.numeric(prob), 2), NA)), size = 1.8, hjust = 1.2, vjust = -0.4) +
+#   scale_color_manual(values = group_colors) +
+#   theme_tree2() +
+#   labs(
+#     # title = "Parvovirus protein - MrBayes consensus protein",
+#     color = "Group") +
+#   theme(legend.position = "bottom",
+#         plot.title = element_text(size = 14, face = "bold"),
+#         legend.text = element_text(size = 8)) +
+#   coord_cartesian(clip = "off") +
+#   hexpand(0.5, direction = 1)
+# 
+# parsimony(protein_NJ_Muscle_rooted_oldestFPV, protein_phy_Muscle)
+# parsimony(protein_ML_Muscle_tree_rooted_oldestFPV, protein_phy_Muscle)
+# # parsimony(mrbayes_tree_protein_noJO24_rooted_oldestFPV, protein_phy_Muscle)
+# parsimony(as.phylo(mrbayes_tree_protein_noJO24_rooted_oldestFPV), protein_phy_Muscle)
 
 ## filtration
 
+## FINAL_SVRNA_v3_vVetRes
+
 tips_to_keep
 
-# tips_to_drop <- setdiff(mrbayes_tree_protein_noJO24$tip.label, tips_to_keep)
-tips_to_drop <- setdiff(as.phylo(mrbayes_tree_protein_noJO24)$tip.label, tips_to_keep)
-mrbayes_tree_protein_noJO24_filtered <- drop.tip(mrbayes_tree_protein_noJO24, tips_to_drop)
-mrbayes_tree_protein_noJO24_filtered_rooted_oldestFPV <- root(mrbayes_tree_protein_noJO24_filtered, outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
+# tips_to_drop <- setdiff(mrbayes_tree_protein$tip.label, tips_to_keep)
+tips_to_drop <- setdiff(as.phylo(mrbayes_tree_protein)$tip.label, tips_to_keep)
+mrbayes_tree_protein_filtered <- drop.tip(mrbayes_tree_protein, tips_to_drop)
+mrbayes_tree_protein_filtered_rooted_oldestFPV <- root(mrbayes_tree_protein_filtered, outgroup = "EU659112.1_ref_FPV_oldest", resolve.root = TRUE)
 
-# length(mrbayes_tree_protein_noJO24$tip.label)
-# length(mrbayes_tree_protein_noJO24_filtered_rooted_oldestFPV$tip.label)
-length(as.phylo(mrbayes_tree_protein_noJO24)$tip.label)
-length(as.phylo(mrbayes_tree_protein_noJO24_filtered)$tip.label)
+# length(mrbayes_tree_protein$tip.label)
+# length(mrbayes_tree_protein_filtered_rooted_oldestFPV$tip.label)
+length(as.phylo(mrbayes_tree_protein)$tip.label)
+length(as.phylo(mrbayes_tree_protein_filtered)$tip.label)
 
-ggtree(mrbayes_tree_protein_noJO24_filtered_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
+ggtree(mrbayes_tree_protein_filtered_rooted_oldestFPV, layout = "rectangular", size = 0.3) %<+% tip_df_mrbayes +
   geom_tiplab(aes(color = group), size = 2, offset = 0.002, align = TRUE, linesize = 0.1) +
   geom_tippoint(aes(color = group), size = 1.2) +
   geom_text2(aes(label = label, subset = !isTip), size = 1.8, hjust = 1.2, vjust = -0.4) +
@@ -1698,12 +1923,12 @@ protein_model_test[order(protein_model_test$BIC), ]
 
 plot_dir <- file.path(sys_dir, "Parvo_sanger_full_seq", "Rplots/paper")
 plot_names <- c(
-  "ggtreeplot_dna_ML_Muscle_trimmed_tree_filtered_rooted_oldestFPV",
-  "ggtreeplot_dna_ML_Muscle_trimmed_tree_rooted_oldestFPV",    
-  "ggtreeplot_protein_ML_Muscle_tree_filtered_rooted_oldestFPV",                  
-  "ggtreeplot_protein_ML_Muscle_tree_rooted_oldestFPV",
-  "ggtreeplot_mrbayes_tree_dna_noJO24_rooted_oldestFPV",            
-  "ggtreeplot_mrbayes_tree_protein_noJO24_rooted_oldestFPV" 
+  # "ggtreeplot_dna_ML_Muscle_trimmed_tree_filtered_rooted_oldestFPV",
+  # "ggtreeplot_dna_ML_Muscle_trimmed_tree_rooted_oldestFPV",    
+  # "ggtreeplot_protein_ML_Muscle_tree_filtered_rooted_oldestFPV",                  
+  # "ggtreeplot_protein_ML_Muscle_tree_rooted_oldestFPV"
+  "ggtreeplot_mrbayes_tree_dna_rooted_oldestFPV",
+  "ggtreeplot_mrbayes_tree_protein_rooted_oldestFPV"
   )
 
 # plot_dir <- file.path(sys_dir, "Parvo_sanger_full_seq", "Rplots/FINAL_SVRNA_v3")
@@ -1765,7 +1990,7 @@ dna_pcoa_df <- data.frame(
   Sample = rownames(dna_pcoa$points))
 dna_pcoa_df <- merge(dna_pcoa_df, tip_df, by.x = "Sample", by.y = "label", all.x = TRUE)
 
-pca_dna_v142 <- ggplot(dna_pcoa_df, aes(PC1, PC2, color = group, label = Sample)) +
+pca_dna_vVetRes <- ggplot(dna_pcoa_df, aes(PC1, PC2, color = group, label = Sample)) +
   geom_point(size = 3) +
   # geom_text_repel(size = 3, max.overlaps = Inf) +
   scale_color_manual(values = group_colors) +
@@ -1791,7 +2016,7 @@ protein_pcoa_df <- data.frame(
   Sample = rownames(protein_pcoa$points))
 protein_pcoa_df <- merge(protein_pcoa_df, tip_df, by.x = "Sample", by.y = "label", all.x = TRUE)
 
-pca_protein_v142 <- ggplot(protein_pcoa_df, aes(PC1, PC2, color = group, label = Sample)) +
+pca_protein_vVetRes <- ggplot(protein_pcoa_df, aes(PC1, PC2, color = group, label = Sample)) +
   geom_point(size = 3) +
   # geom_text_repel(size = 3, max.overlaps = Inf) +
   scale_color_manual(values = group_colors) +
@@ -1802,10 +2027,10 @@ pca_protein_v142 <- ggplot(protein_pcoa_df, aes(PC1, PC2, color = group, label =
     color = "Group") +
   theme_bw()
 
-ggsave(filename = file.path(sys_dir, "Parvo_sanger_full_seq/Rplots/paper", "pca_dna_v142.png"),
-       plot = pca_dna_v142, width = 8, height = 6, units = "in", dpi = 600, bg = "white", limitsize = FALSE)
-ggsave(filename = file.path(sys_dir, "Parvo_sanger_full_seq/Rplots/paper", "pca_protein_v142.png"),
-       plot = pca_protein_v142, width = 8, height = 6, units = "in", dpi = 600, bg = "white", limitsize = FALSE)
+ggsave(filename = file.path(sys_dir, "Parvo_sanger_full_seq/Rplots/paper", "pca_dna_vVetRes.png"),
+       plot = pca_dna_vVetRes, width = 8, height = 6, units = "in", dpi = 600, bg = "white", limitsize = FALSE)
+ggsave(filename = file.path(sys_dir, "Parvo_sanger_full_seq/Rplots/paper", "pca_protein_vVetRes.png"),
+       plot = pca_protein_vVetRes, width = 8, height = 6, units = "in", dpi = 600, bg = "white", limitsize = FALSE)
 
 ## Nucleotide diversity (π)
 
@@ -1831,13 +2056,12 @@ nucleotide_diversity$Pi <- sapply(nucleotide_diversity$Group,
                                   function(x) {round(nuc.div(dna_aln_bins[group == x, , drop = FALSE]), 6)})
 nucleotide_diversity
 # Group  N       Pi
-# 1       Jo_Canine  9 0.002495
+# 1       Jo_Canine  9 0.002119
 # 2       Jo_Feline  9 0.002975
-# 3         Jo_Lion  1      NaN
-# 4       Reference  6 0.007521
-# 5 Regional_Canine 57 0.008239
-# 6 Regional_Feline 56 0.004777
-# 7         Vaccine  4 0.006921
+# 3       Reference  6 0.007521
+# 4 Regional_Canine 57 0.008239
+# 5 Regional_Feline 56 0.004777
+# 6         Vaccine  5 0.007119
 
 # Variant calling - Protein analysis --------------------------------------
 
@@ -1854,15 +2078,15 @@ SamplesVacRef_seq_order <- c(
   "FJ222821.1_ref_CPV2C" ,
   "M38246.1_ref_FPV", "EU659112.1_ref_FPV_oldest",
   "M38245.1_ref_CPV2", "M24003.1_ref_CPV2A", "M74849.1_ref_CPV2B",
-  "Sample47_Canine"      ,"Sample68_Canine", "Sample72_Canine",
-  "Sample76_Canine"   ,"Sample77_Canine",
-  "Sample8_Canine"  , "sample51_canine","Sample57_Canine",  "Sample18_Canine",  
-  "sample12_feline","Sample25_Feline","Sample27_Feline",  
-  "Sample38_Feline","Sample44_Feline"        ,  "Sample69_Feline" , "Sample70_Feline" ,
-  "Sample7_Feline", "Sample67_Feline",
-  "Sample_Lion",
+  "Sample47_Canine", "Sample68_Canine", "Sample72_Canine",
+  "Sample76_Canine", "Sample77_Canine", "Sample8_Canine",
+  "sample51_canine", "Sample57_Canine", "Sample18_Canine",  
+  "sample12_feline", "Sample25_Feline", "Sample27_Feline",  
+  "Sample38_Feline", "Sample44_Feline", "Sample69_Feline",
+  "Sample70_Feline", "Sample7_Feline",  "Sample67_Feline",
+  # "Sample_Lion",
   # "FPV_JO24_Sample_11",
-  "vaccineCanine_MSD" , "vaccineCanine_Zoetis" , "vaccineFeline_MSD"  ,  "vaccineFeline_Zoetis"
+  "vaccineCanine_MSD" , "vaccineCanine_Zoetis" , "vaccineFeline_MSD"  ,  "vaccineFeline_Zoetis", "vaccineCanine_Hepra"
   )
 
 protein_alignment_Muscle_ss <- AAStringSet(protein_alignment_Muscle)
@@ -2000,9 +2224,9 @@ var_table_df_CPV2C_3letter[cols_to_convert] <- lapply(var_table_df_CPV2C_3letter
 })
 
 write.xlsx(ProMSA_SamplesVacRef_Var_allref_CPV2C_df,
-           file.path(sys_dir, "Parvo_sanger_full_seq/ProMSA_SamplesVacRef_Var_ref_CPV2C_v3_v142.xlsx"))
+           file.path(sys_dir, "Parvo_sanger_full_seq/ProMSA_SamplesVacRef_Var_ref_CPV2C_v3_vVetRes.xlsx"))
 write.xlsx(var_table_df_CPV2C_3letter,
-           file.path(sys_dir, "Parvo_sanger_full_seq/VP2_aa_var_table_3letter_ref_CPV2C_v3_v142.xlsx"))
+           file.path(sys_dir, "Parvo_sanger_full_seq/VP2_aa_var_table_3letter_ref_CPV2C_v3_vVetRes.xlsx"))
 
 # Haplotype network -------------------------------------------------------------
 
@@ -2066,11 +2290,12 @@ mysamp_vec_ref_to_keep <- c(
   "M74849.1_ref_CPV2B",
   "M24003.1_ref_CPV2A",
   "M38245.1_ref_CPV2",
+  "vaccineCanine_Hepra",
   "vaccineCanine_MSD",
   "vaccineCanine_Zoetis",
   "Sample70_Feline",
   "Sample38_Feline",
-  "Sample_Lion",
+  # "Sample_Lion",
   "Sample69_Feline",
   "Sample27_Feline",
   "Sample25_Feline",
@@ -2120,7 +2345,7 @@ dna_phy_Muscle_modified_trimmed <- phyDat(as.matrix(dna_alignment_Muscle_modifie
 dna_bin_hap <- as.DNAbin(dna_alignment_Muscle_modified_trimmed)
 hap <- pegas::haplotype(dna_bin_hap)
 hap
-# Number of haplotypes: 23 
+# Number of haplotypes: 24 
 # Sequence length: 1931 
 
 ## map each sample to its haplotype (tutorial's stack/setNames trick)
@@ -2158,8 +2383,8 @@ legend("topright", colnames(pie), col = group_colors[colnames(pie)], pch = 19, n
 dev.off()
 # png("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/Rplots/FINAL_SVRNA_v3/MrBayes_HapNet/haplotype_network.png",
 #     width = 8, height = 8, units = "in", res = 300)
-png("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/Rplots/paper/haplotype_network.png",
-    width = 8, height = 6, units = "in", res = 600)
+png("/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/Rplots/paper/haplotype_network_vVetRes.png",
+    width = 10, height = 8, units = "in", res = 600)
 plot(net, size = attr(net, "freq"), pie = pie,
      bg = group_colors[colnames(pie)],
      labels = FALSE,
@@ -2172,57 +2397,57 @@ dev.off()
 
 ## we need the trimmed coding seq of VP2 with no stop codons - dna_alignment_Muscle_trimmed_CPV2C
 
-width(dna_alignment_Muscle_trimmed_CPV2C)/3 ## aka Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_v142.fasta
+width(dna_alignment_Muscle_trimmed_CPV2C)/3 ## aka Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_vVetRes.fasta
 
 ## filter for the 65 rep seq not the 142 to run sel scan using Data Monkey
 
-## FINAL_SVRNA_v3_v142
+## FINAL_SVRNA_v3_vVetRes
 
 seq_to_keep <- c(
+  "Sample8_Canine",
+  "Sample18_Canine",
+  "Sample77_Canine",
+  "Sample76_Canine",
   "Sample68_Canine",
   "OM100697.1_Canine_parvovirus_2_Egypt",
   "Sample47_Canine",
-  "Sample8_Canine",
-  "Sample18_Canine",
   "OM100699.1_Canine_parvovirus_2_Egypt",
   # "OM100701.1_Canine_parvovirus_2_Egypt",
   # "OM100698.1_Canine_parvovirus_2_Egypt",
-  "OM100696.1_Canine_parvovirus_2_Egypt",
+  # "OM100696.1_Canine_parvovirus_2_Egypt",
   "MG013488.1_Canine_parvovirus_2c_China",
   "MF510157.1_Canine_parvovirus_2c_Italy",
   "Sample57_Canine",
   "MZ056886.1_Canine_parvovirus_2_Egypt",
   # "MZ056884.1_Canine_parvovirus_2_Egypt",
-  "Sample77_Canine",
-  "Sample76_Canine",
-  "MZ056885.1_Canine_parvovirus_2_Egypt",
   # "MZ056889.1_Canine_parvovirus_2_Egypt",
-  "sample51_canine",
   "Sample72_Canine",
+  "sample51_canine",
+  "MZ056885.1_Canine_parvovirus_2_Egypt",
   "OR667801.1_Canine_parvovirus_2_Iraq",
   # "OR667800.1_Canine_parvovirus_2_Iraq",
   # "OR667802.1_Canine_parvovirus_2_Iraq",
   # "OR451707.1_Canine_parvovirus_2_Iraq",
   # "OR667804.1_Canine_parvovirus_2_Iraq",
-  # "OR667803.1_Canine_parvovirus_2_Iraq",
-  "MW653250.1_Canine_parvovirus_2a_Iran",
-  "OL330980.1_Canine_parvovirus_2_Iran",
-  # "OL330978.1_Canine_parvovirus_2_Iran",
-  "MW653249.1_Canine_parvovirus_2a_Iran",
-  "OM100702.1_Canine_parvovirus_2_Egypt",
-  # "OM100700.1_Canine_parvovirus_2_Egypt",
-  "OL330979.1_Canine_parvovirus_2_Iran",
-  "MZ056892.1_Canine_parvovirus_2_Egypt",
-  # "MZ056883.1_Canine_parvovirus_2_Egypt",
-  # "MZ056891.1_Canine_parvovirus_2_Egypt",
-  "OM721655.1_Canine_parvovirus_2b_Turkey",
+  "OR667803.1_Canine_parvovirus_2_Iraq",
   "MZ056890.1_Canine_parvovirus_2_Egypt",
   # "MZ056882.1_Canine_parvovirus_2_Egypt",
   # "MZ056887.1_Canine_parvovirus_2_Egypt",
   # "MZ056888.1_Canine_parvovirus_2_Egypt",
   # "MZ056881.1_Canine_parvovirus_2_Egypt",
   "MW539053.1_Canine_parvovirus_2b_Turkey",
-  # "OM721656.1_Canine_parvovirus_2b_Turkey",
+  "OM721656.1_Canine_parvovirus_2b_Turkey",
+  # "OM721655.1_Canine_parvovirus_2b_Turkey",
+  # "MZ056892.1_Canine_parvovirus_2_Egypt",
+  # "MZ056883.1_Canine_parvovirus_2_Egypt",
+  # "MZ056891.1_Canine_parvovirus_2_Egypt",
+  "OL330979.1_Canine_parvovirus_2_Iran",
+  # "OM100702.1_Canine_parvovirus_2_Egypt",
+  # "OM100700.1_Canine_parvovirus_2_Egypt",
+  "MW653250.1_Canine_parvovirus_2a_Iran",
+  # "OL330980.1_Canine_parvovirus_2_Iran",
+  # "OL330978.1_Canine_parvovirus_2_Iran",
+  # "MW653249.1_Canine_parvovirus_2a_Iran",
   "OL330977.1_Canine_parvovirus_2_Iran",
   "KX268117.1_Canine_parvovirus_2_Turkey",
   # "KX268105.1_Canine_parvovirus_2_Turkey",
@@ -2234,7 +2459,7 @@ seq_to_keep <- c(
   # "KX268108.1_Canine_parvovirus_2_Turkey",
   "MW653251.1_Canine_parvovirus_2b_Iran",
   "MW653253.1_Canine_parvovirus_2c_Iran",
-  # "KX268109.1_Canine_parvovirus_2_Turkey",
+  "KX268109.1_Canine_parvovirus_2_Turkey",
   "FJ222821.1_ref_CPV2C",
   "MW653256.1_Canine_parvovirus_2a_Iran",
   "KX268115.1_Canine_parvovirus_2_Turkey",
@@ -2247,24 +2472,23 @@ seq_to_keep <- c(
   "MW653248.1_Canine_parvovirus_2a_Iran",
   "M74849.1_ref_CPV2B",
   "M24003.1_ref_CPV2A",
-  "M38245.1_ref_CPV2",
+  "vaccineCanine_Hepra",
   "vaccineCanine_MSD",
+  "M38245.1_ref_CPV2",
   "KX268119.1_Canine_parvovirus_2_Turkey",
   "vaccineCanine_Zoetis",
-  "Sample70_Feline",
-  "Sample38_Feline",
-  "Sample69_Feline",
-  "Sample_Lion",
-  "Sample25_Feline",
-  "Sample27_Feline",
-  "Sample7_Feline",
-  "Sample44_Feline",
-  "PV521947.1_Feline_parvovirus_Egypt",
-  # "PP663048.2_Feline_parvovirus_Egypt",
-  "OM638043.1_Feline_parvovirus_Egypt",
-  # "PV521964.1_Feline_parvovirus_Egypt",
-  # "PP663074.2_Feline_parvovirus_Egypt",
-  # "PV521948.1_Feline_parvovirus_Egypt",
+  "PP663073.2_Feline_parvovirus_Egypt",
+  # "PP663041.2_Feline_parvovirus_Egypt",
+  # "PP663070.2_Feline_parvovirus_Egypt",
+  # "PP663072.2_Feline_parvovirus_Egypt",
+  # "PP663050.2_Feline_parvovirus_Egypt",
+  # "PP663045.2_Feline_parvovirus_Egypt",
+  # "PV521963.1_Feline_parvovirus_Egypt",
+  # "PV521961.1_Feline_parvovirus_Egypt",
+  # "PV521949.1_Feline_parvovirus_Egypt",
+  # "PV521942.1_Feline_parvovirus_Egypt",
+  # "PV808495.1_Feline_parvovirus_Egypt",
+  # "PV521960.1_Feline_parvovirus_Egypt",
   # "PV808490.1_Feline_parvovirus_Egypt",
   # "PV808489.1_Feline_parvovirus_Egypt",
   # "PV521962.1_Feline_parvovirus_Egypt",
@@ -2272,49 +2496,50 @@ seq_to_keep <- c(
   # "PV521953.1_Feline_parvovirus_Egypt",
   # "PP663056.2_Feline_parvovirus_Egypt",
   # "PP663055.2_Feline_parvovirus_Egypt",
-  # "PV808495.1_Feline_parvovirus_Egypt",
-  # "PV521960.1_Feline_parvovirus_Egypt",
-  # "PP663070.2_Feline_parvovirus_Egypt",
-  # "PP663041.2_Feline_parvovirus_Egypt",
-  # "PP663072.2_Feline_parvovirus_Egypt",
-  # "PP663050.2_Feline_parvovirus_Egypt",
-  "PP663073.2_Feline_parvovirus_Egypt",
-  # "PV521961.1_Feline_parvovirus_Egypt",
-  # "PV521949.1_Feline_parvovirus_Egypt",
-  # "PP663045.2_Feline_parvovirus_Egypt",
-  # "PV521942.1_Feline_parvovirus_Egypt",
-  # "PV521963.1_Feline_parvovirus_Egypt",
+  "OM638043.1_Feline_parvovirus_Egypt",
+  # "PV521964.1_Feline_parvovirus_Egypt",
+  "PP663074.2_Feline_parvovirus_Egypt",
+  "Sample70_Feline",
+  "Sample38_Feline",
+  "Sample25_Feline",
+  "Sample69_Feline",
+  "Sample27_Feline",
+  "Sample7_Feline",
+  "Sample44_Feline",
+  "PV521947.1_Feline_parvovirus_Egypt",
+  # "PP663048.2_Feline_parvovirus_Egypt",
+  # "PV521948.1_Feline_parvovirus_Egypt",
   # "PP663071.2_Feline_parvovirus_Egypt",
   # "PP663044.2_Feline_parvovirus_Egypt",
   # "PV521955.1_Feline_parvovirus_Egypt",
   # "PP663059.2_Feline_parvovirus_Egypt",
-  # "PV808491.1_Feline_parvovirus_Egypt",
+  "KX434461.1_Feline_parvovirus_IZSSI_Italy",
+  "PV808491.1_Feline_parvovirus_Egypt",
   # "PV521951.1_Feline_parvovirus_Egypt",
-  # "PV808488.1_Feline_parvovirus_Egypt",
-  # "PV521944.1_Feline_parvovirus_Egypt",
-  # "PV521943.1_Feline_parvovirus_Egypt",
-  # "PP663042.2_Feline_parvovirus_Egypt",
-  # "PV521965.1_Feline_parvovirus_Egypt",
-  # "PV521945.1_Feline_parvovirus_Egypt",
-  # "PV521959.1_Feline_parvovirus_Egypt",
-  # "PV521958.1_Feline_parvovirus_Egypt",
-  # "PV521957.1_Feline_parvovirus_Egypt",
   # "PV808492.1_Feline_parvovirus_Egypt",
   # "PV521952.1_Feline_parvovirus_Egypt",
   # "PV521956.1_Feline_parvovirus_Egypt",
   # "PP663061.2_Feline_parvovirus_Egypt",
-  # "PV808496.1_Feline_parvovirus_Egypt",
+  # "PV521965.1_Feline_parvovirus_Egypt",
+  # "PV521945.1_Feline_parvovirus_Egypt",
+  # "PV521958.1_Feline_parvovirus_Egypt",
+  # "PV521959.1_Feline_parvovirus_Egypt",
+  # "PV521957.1_Feline_parvovirus_Egypt",
+  # "PV808488.1_Feline_parvovirus_Egypt",
+  # "PV521944.1_Feline_parvovirus_Egypt",
+  # "PV521943.1_Feline_parvovirus_Egypt",
+  # "PP663042.2_Feline_parvovirus_Egypt",
+  # "PV808486.1_Feline_parvovirus_Egypt",
   # "PP663062.2_Feline_parvovirus_Egypt",
   # "PV808493.1_Feline_parvovirus_Egypt",
-  # "PV808486.1_Feline_parvovirus_Egypt",
+  # "PV808496.1_Feline_parvovirus_Egypt",
   # "PP663067.2_Feline_parvovirus_Egypt",
   # "PV521946.1_Feline_parvovirus_Egypt",
   "PP663047.2_Feline_parvovirus_Egypt",
   "sample12_feline",
   "PV521950.1_Feline_parvovirus_Egypt",
-  # "PP663052.2_Feline_parvovirus_Egypt",
+  "PP663052.2_Feline_parvovirus_Egypt",
   "Sample67_Feline",
-  "KX434461.1_Feline_parvovirus_IZSSI_Italy",
   "KX900570.1_Feline_parvovirus_HH6_China",
   "M38246.1_ref_FPV",
   "KP081409.1_Feline_parvovirus_Iran",
@@ -2333,9 +2558,9 @@ length(dna_alignment_Muscle_trimmed_CPV2C_repseq)
 length(seq_to_keep)
 
 writeXStringSet(DNAStringSet(dna_alignment_Muscle_trimmed_CPV2C_repseq),
-                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_v142_repseq.fasta"))
+                file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_vVetRes_repseq.fasta"))
 
-## run Data Monkey on Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_v142_repseq.fasta
+## run Data Monkey on Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_vVetRes_repseq.fasta
 
 ## SLAC
 
@@ -2370,7 +2595,7 @@ ggplot(slac_res, aes(x = Site, y = dN_dS)) +
   geom_point(aes(color = Selection), size = 1.5) +
   scale_color_manual(values = c("Purifying_selection" = "firebrick", "Positive_selection" = "darkgreen", "Not_significant" = "grey")) +
   scale_x_continuous(breaks = seq(0, max(slac_res$Site, na.rm = TRUE), by = 50)) +
-  labs(x = "Codon site", y = "Nonsynonymous-to-synonymous substitution rate ratio (dN/dS)") +
+  labs(x = "Codon site", y = "dN-dS") +
   theme_classic()
 
 ## FEL
@@ -2409,7 +2634,7 @@ ggplot(fel_res, aes(x = codon, y = alpha.beta)) +
   geom_point(aes(color = class), size = 1.5) +
   scale_color_manual(values = c("Purifying" = "firebrick","Diversifying" = "darkgreen","Neutral" = "gray60", "Invariable" = "grey")) +
   scale_x_continuous(breaks = seq(0, max(fel_res$codon, na.rm = TRUE), by = 50)) +
-  labs(x = "Codon site", y = "Nonsynonymous-to-synonymous substitution rate ratio (β/α)") +
+  labs(x = "Codon site", y = "β.α") +
   theme_classic()
 
 ggplot((fel_res), aes(x = codon)) +
@@ -2493,12 +2718,12 @@ fubar_sum_plot <- ggplot(fubar_res_summary, aes(x = Selection, y = n)) +
   theme_classic()
 
 ggplot(fubar_res, aes(x = Site, y = beta_alpha)) +
-  geom_hline(yintercept = 1, linetype = "dashed") +
+  geom_hline(yintercept = 1, linetype = "dashed") + # maybe yintercept = 0
   geom_segment(aes(xend = Site, y = 1, yend = beta_alpha, color = Selection)) +
   geom_point(aes(color = Selection), size = 1.5) +
   scale_color_manual(values = c("Purifying" = "firebrick","Diversifying" = "darkgreen","Neutral" = "gray60")) +
   scale_x_continuous(breaks = seq(0, max(fubar_res$Site, na.rm = TRUE), by = 50)) +
-  labs(x = "Codon site", y = "Nonsynonymous-to-synonymous substitution rate ratio (β/α)") +
+  labs(x = "Codon site", y = "β_α") +
   theme_classic()
 
 ## combine slac + fel + meme + fubar
@@ -2612,17 +2837,20 @@ selection_res_combine <- slac_res %>%
 
 table(selection_res_combine$combined_sel)
 
-Diversifying           <- 2+2+1
-Purifying              <- 36+18+7
-Not_significant        <- 518
+# Diversifying           <- 2+2+1
+# Purifying              <- 36+18+7
+# Not_significant        <- 518
+Diversifying           <- 2+1
+Purifying              <- 40+17+7
+Not_significant        <- 517
 codon_number <- sum(Diversifying,Not_significant,Purifying)
 100-((codon_number-Diversifying)/codon_number)*100 
 100-((codon_number-Purifying)/codon_number)*100 
 100-((codon_number-Not_significant)/codon_number)*100 
 
 dN_dS_selection_VP2_plot <- ggplot(selection_res_combine, aes(x = Site, y = dN_dS)) +
-  geom_hline(yintercept = 1, linetype = "dashed") +
-  geom_segment(aes(xend = Site, y = 1, yend = dN_dS, color = combined_sel)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_segment(aes(xend = Site, y = 0, yend = dN_dS, color = combined_sel)) +
   geom_point(aes(color = combined_sel), size = 1.8) +
   scale_color_manual(
     values = c(
@@ -2639,18 +2867,18 @@ dN_dS_selection_VP2_plot <- ggplot(selection_res_combine, aes(x = Site, y = dN_d
       "Purifying_FEL_FUBAR" = "Purifying (FUBAR + FEL)",
       "Purifying_SLAC_FEL_FUBAR" = "Purifying (FUBAR + FEL + SLAC)",
       "Diversifying_MEME_FUBAR" = "Diversifying (MEME + FUBAR)",
-      "Diversifying_FUBAR" = "",
-      "Diversifying_MEME" = "Diversifying (MEME or FUBAR)"),
+      "Diversifying_FUBAR" = "Diversifying (FUBAR)",
+      "Diversifying_MEME" = ""),
     breaks = c(
       "Diversifying_MEME_FUBAR",
-      "Diversifying_MEME",
+      "Diversifying_FUBAR",
       "Purifying_SLAC_FEL_FUBAR",
       "Purifying_FEL_FUBAR",
       "Purifying_FUBAR",
       "Not_significant_SLAC_FEL_MEME_FUBAR",
-      "Diversifying_FUBAR")) +
+      "Diversifying_MEME")) +
   scale_x_continuous(breaks = seq(0, max(slac_res$Site, na.rm = TRUE), by = 50)) +
-  labs(x = "Codon site", y = "Substitution rate ratio (dN/dS)", color = "") +
+  labs(x = "Codon site", y = "dN-dS", color = "") +
   theme_classic()+
   theme(
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -2659,6 +2887,43 @@ dN_dS_selection_VP2_plot <- ggplot(selection_res_combine, aes(x = Site, y = dN_d
 
 ggsave(filename = file.path(sys_dir, "Parvo_sanger_full_seq/Rplots/paper", "dN_dS_selection_VP2_plot.png"),
        plot = dN_dS_selection_VP2_plot, width = 14, height = 8, units = "in", dpi = 600, bg = "white", limitsize = FALSE)
+
+# ggplot(selection_res_combine, aes(x = Site, y = (dN/dS))) +
+#   geom_hline(yintercept = 1, linetype = "dashed") +
+#   geom_segment(aes(xend = Site, y = 1, yend = (dN/dS), color = combined_sel)) +
+#   geom_point(aes(color = combined_sel), size = 1.8) +
+#   scale_color_manual(
+#     values = c(
+#       "Not_significant_SLAC_FEL_MEME_FUBAR" = "gray40",
+#       "Purifying_FUBAR" = "firebrick1",
+#       "Purifying_FEL_FUBAR" = "firebrick", 
+#       "Purifying_SLAC_FEL_FUBAR" = "firebrick",
+#       "Diversifying_MEME_FUBAR" = "darkgreen",
+#       "Diversifying_FUBAR" = "#4DAF4A",
+#       "Diversifying_MEME" = "#4DAF4A"),
+#     labels = c(
+#       "Not_significant_SLAC_FEL_MEME_FUBAR" = "Not significant",
+#       "Purifying_FUBAR" = "Purifying (FUBAR)",
+#       "Purifying_FEL_FUBAR" = "Purifying (FUBAR + FEL)",
+#       "Purifying_SLAC_FEL_FUBAR" = "Purifying (FUBAR + FEL + SLAC)",
+#       "Diversifying_MEME_FUBAR" = "Diversifying (MEME + FUBAR)",
+#       "Diversifying_FUBAR" = "",
+#       "Diversifying_MEME" = "Diversifying (MEME or FUBAR)"),
+#     breaks = c(
+#       "Diversifying_MEME_FUBAR",
+#       "Diversifying_MEME",
+#       "Purifying_SLAC_FEL_FUBAR",
+#       "Purifying_FEL_FUBAR",
+#       "Purifying_FUBAR",
+#       "Not_significant_SLAC_FEL_MEME_FUBAR",
+#       "Diversifying_FUBAR")) +
+#   scale_x_continuous(breaks = seq(0, max(slac_res$Site, na.rm = TRUE), by = 50)) +
+#   labs(x = "Codon site", y = "Substitution rate ratio (dN/dS)", color = "") +
+#   theme_classic()+
+#   theme(
+#     axis.title.x = element_text(size = 14, face = "bold"),
+#     axis.title.y = element_text(size = 14, face = "bold"),
+#     legend.position = "bottom")
 
 ## write supp table to export selection scan results to Excel
 
