@@ -1,0 +1,3 @@
+Analysis,n_params,min_ESS,worst_param,min_avgESS,PSRF_range,n_branch_PSRF,max_branch_PSRF,n_splits,n_splits_ge_0.10,ASDSF,max_split_SD
+DNA,3,1269.334,TL,1385.167,0.9997-1.0008,368,,226,226,0.0495457937084071,0.317515
+Protein,2,1119.892,pinvar,1237.241,0.9997-1.0007,246,1.029125,104,104,0.0118633261826923,0.08856501
