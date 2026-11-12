@@ -4,6 +4,7 @@
 
 sys_dir <- "/home/shadi/Desktop/ParvoProject/"
 
+library(data.table)
 library(ips)
 library(treeio)
 library(tidytree)
@@ -205,6 +206,56 @@ writeXStringSet(AAStringSet(protein_alignment_Muscle),
 
 writeXStringSet(DNAStringSet(dna_alignment_Muscle_trimmed_CPV2C),
                 file.path(sys_dir, "Parvo_sanger_full_seq/aln/paper/Parvovirus_DNA_alignment_Muscle_trimmed_CPV2C_FINAL_SVRNA_v3_vVetRes.fasta"))
+
+## Alignment statistics
+
+## DNA and Protein
+
+dna_aln_stats <- function(alignment, type = "DNA") {
+  
+  aln_mat <- as.matrix(alignment)
+  
+  missing_chars <- if (type == "DNA") {
+    c("-", "N", "?")
+  } else {
+    c("-", "X", "?", "*")
+  }
+  
+  missing_positions <- aln_mat %in% missing_chars
+  aln_mat[missing_positions] <- NA
+  
+  n_sequences <- nrow(aln_mat)
+  aln_length <- ncol(aln_mat)
+  
+  site_patterns <- apply(aln_mat, 2, function(x) {
+    table(x, useNA = "no")
+  })
+  
+  variable_sites <- sum(sapply(site_patterns, function(x) {
+    length(x) > 1
+  }))
+  
+  parsimony_informative_sites <- sum(sapply(site_patterns, function(x) {
+    sum(x >= 2) >= 2
+  }))
+  
+  data.frame(
+    Sequences = n_sequences,
+    Alignment_length = aln_length,
+    Variable_sites = variable_sites,
+    Parsimony_informative_sites = parsimony_informative_sites,
+    Missing_characters = sum(missing_positions),
+    Missing_percentage = round(mean(missing_positions) * 100, 2)
+  )
+}
+
+dna_aln_stats_full <- dna_aln_stats(dna_alignment_Muscle_trimmed)
+protein_aln_stats_full <- dna_aln_stats(protein_alignment_Muscle, type = "AA")
+
+dna_aln_stats_full$aln <- "DNA"
+protein_aln_stats_full$aln <- "Protein"
+
+aln_stats_full <- rbind(dna_aln_stats_full,protein_aln_stats_full)
 
 ## define color palette first for groups
 group_colors <- c(
@@ -1916,6 +1967,52 @@ protein_model_test <- modelTest(protein_phy_Muscle,
                                 model = c("JTT","WAG","LG","Dayhoff"),
                                 G = TRUE, I = TRUE)
 protein_model_test[order(protein_model_test$BIC), ]
+
+## summary stats for MrBayes
+
+base <- c(DNA     = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_dna_MSA_trimmed_FINAL_SVRNA_v3_vVetRes.nex",
+          Protein = "/home/shadi/Desktop/ParvoProject/Parvo_sanger_full_seq/mrbayes_output/mrbayes_protein_MSA_FINAL_SVRNA_v3_vVetRes.nex")
+
+out_dir <- dirname(base[1])
+
+# read a MrBayes table: drop blank and [ID: ...] lines, collapse double tabs
+read_mb <- function(f) {
+  ln <- readLines(f)
+  ln <- ln[nzchar(trimws(ln)) & !grepl("^\\[", ln)]
+  ln <- gsub("\t+", "\t", ln)
+  fread(text = ln, sep = "\t", header = TRUE)
+}
+
+summarise_run <- function(b) {
+  pstat <- read_mb(paste0(b, ".pstat"))
+  tstat <- read_mb(paste0(b, ".tstat"))
+  vstat <- read_mb(paste0(b, ".vstat"))
+  
+  list(
+    pstat = pstat,
+    summary = data.table(
+      n_params         = nrow(pstat),
+      min_ESS          = min(pstat$minESS),
+      worst_param      = pstat$Parameter[which.min(pstat$minESS)],
+      min_avgESS       = min(pstat$avgESS),
+      PSRF_range       = sprintf("%.4f-%.4f", min(pstat$PSRF), max(pstat$PSRF)),
+      n_branch_PSRF    = nrow(vstat),
+      max_branch_PSRF  = max(vstat$PSRF),
+      n_splits         = nrow(tstat),
+      n_splits_ge_0.10 = tstat[`Max(s)` >= 0.10, .N],
+      ASDSF            = tstat[`Max(s)` >= 0.10, mean(`Stddev(s)`)],
+      max_split_SD     = max(tstat$`Stddev(s)`)))}
+
+# check headers were read correctly
+print(names(read_mb(paste0(base[1], ".tstat"))))
+
+res <- lapply(base, summarise_run)
+
+final <- rbindlist(lapply(res, `[[`, "summary"), idcol = "Analysis")
+print(final)
+
+fwrite(final, file.path(out_dir, "mrbayes_convergence_summary.csv"))
+for (n in names(res)) fwrite(res[[n]]$pstat, file.path(out_dir, paste0("pstat_", n, ".csv")))
 
 # save ggtree plots ------------------------------------------------------------
 
